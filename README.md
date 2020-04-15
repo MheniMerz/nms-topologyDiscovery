@@ -13,7 +13,9 @@ in this repository you will find
 - java software that discovers the physical topology 
 
 ### links
+
 [azure deployment steps]([https://github.com/MheniMerz/nms-topologyDiscovery/azure-deployment/Readme.md](https://github.com/MheniMerz/nms-topologyDiscovery/))
+
 [startup-config backups]([https://github.com/MheniMerz/nms-topologyDiscovery/startup-config-bkp/Readme.md](https://github.com/MheniMerz/nms-topologyDiscovery/))
 
 
