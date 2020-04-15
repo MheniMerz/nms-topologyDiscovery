@@ -14,9 +14,9 @@ in this repository you will find
 
 ### links
 
-[azure deployment steps](https://github.com/MheniMerz/nms-topologyDiscovery/)
+[azure deployment steps](https://github.com/MheniMerz/nms-topologyDiscovery/azure-deployment/)
 
-[startup-config backups](https://github.com/MheniMerz/nms-topologyDiscovery/)
+[startup-config backups](https://github.com/MheniMerz/nms-topologyDiscovery/startup-config-bkp/)
 
 
 
