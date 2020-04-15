@@ -4,7 +4,7 @@
 2. login
 3. open the cloud shell
 
-![image how to open cloud shell](https://github.com/MheniMerz/nms-topologyDiscovery/blob/master/azure-deployment/img/open-cloud-shell.PNG)
+![image how to open cloud shell](https://github.com/MheniMerz/nms-topologyDiscovery/blob/master/azure-deployment/img/open_cloud_shell.PNG)
 
 4. copy and paste the `deploy-vm.ps1` script 
 > change any usernames or passwords if you  need to
