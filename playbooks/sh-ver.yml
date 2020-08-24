@@ -1,0 +1,7 @@
+  - name: run show version on remote devices
+    hosts: routers
+    tasks:
+      - name: show version of ios
+        ios_command:
+          commands: show version
+

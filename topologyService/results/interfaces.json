@@ -1,0 +1,653 @@
+{
+    "SH1.pni.nist.gov": [
+        {
+            "ifAdminStatus": "up",
+            "ifDescr": "Ethernet0/0",
+            "ifMtu": "1500",
+            "ifOperStatus": "up",
+            "ifPhysAddress": "aa:bb:cc:00:02:00",
+            "ifSpeed": "10000000",
+            "ifType": "ethernetCsmacd",
+            "index": 1
+        },
+        {
+            "ifAdminStatus": "up",
+            "ifDescr": "Ethernet0/1",
+            "ifMtu": "1500",
+            "ifOperStatus": "up",
+            "ifPhysAddress": "aa:bb:cc:00:02:10",
+            "ifSpeed": "10000000",
+            "ifType": "ethernetCsmacd",
+            "index": 2
+        },
+        {
+            "ifAdminStatus": "up",
+            "ifDescr": "Ethernet0/2",
+            "ifMtu": "1500",
+            "ifOperStatus": "up",
+            "ifPhysAddress": "aa:bb:cc:00:02:20",
+            "ifSpeed": "10000000",
+            "ifType": "ethernetCsmacd",
+            "index": 3
+        },
+        {
+            "ifAdminStatus": "up",
+            "ifDescr": "Ethernet0/3",
+            "ifMtu": "1500",
+            "ifOperStatus": "up",
+            "ifPhysAddress": "aa:bb:cc:00:02:30",
+            "ifSpeed": "10000000",
+            "ifType": "ethernetCsmacd",
+            "index": 4
+        },
+        {
+            "ifAdminStatus": "down",
+            "ifDescr": "Ethernet1/0",
+            "ifMtu": "1500",
+            "ifOperStatus": "down",
+            "ifPhysAddress": "aa:bb:cc:00:02:01",
+            "ifSpeed": "10000000",
+            "ifType": "ethernetCsmacd",
+            "index": 5
+        },
+        {
+            "ifAdminStatus": "down",
+            "ifDescr": "Ethernet1/1",
+            "ifMtu": "1500",
+            "ifOperStatus": "down",
+            "ifPhysAddress": "aa:bb:cc:00:02:11",
+            "ifSpeed": "10000000",
+            "ifType": "ethernetCsmacd",
+            "index": 6
+        },
+        {
+            "ifAdminStatus": "down",
+            "ifDescr": "Ethernet1/2",
+            "ifMtu": "1500",
+            "ifOperStatus": "down",
+            "ifPhysAddress": "aa:bb:cc:00:02:21",
+            "ifSpeed": "10000000",
+            "ifType": "ethernetCsmacd",
+            "index": 7
+        },
+        {
+            "ifAdminStatus": "down",
+            "ifDescr": "Ethernet1/3",
+            "ifMtu": "1500",
+            "ifOperStatus": "down",
+            "ifPhysAddress": "aa:bb:cc:00:02:31",
+            "ifSpeed": "10000000",
+            "ifType": "ethernetCsmacd",
+            "index": 8
+        },
+        {
+            "ifAdminStatus": "down",
+            "ifDescr": "Serial2/0",
+            "ifMtu": "1500",
+            "ifOperStatus": "down",
+            "ifPhysAddress": "",
+            "ifSpeed": "1544000",
+            "ifType": "propPointToPointSerial",
+            "index": 9
+        },
+        {
+            "ifAdminStatus": "down",
+            "ifDescr": "Serial2/1",
+            "ifMtu": "1500",
+            "ifOperStatus": "down",
+            "ifPhysAddress": "",
+            "ifSpeed": "1544000",
+            "ifType": "propPointToPointSerial",
+            "index": 10
+        },
+        {
+            "ifAdminStatus": "down",
+            "ifDescr": "Serial2/2",
+            "ifMtu": "1500",
+            "ifOperStatus": "down",
+            "ifPhysAddress": "",
+            "ifSpeed": "1544000",
+            "ifType": "propPointToPointSerial",
+            "index": 11
+        },
+        {
+            "ifAdminStatus": "down",
+            "ifDescr": "Serial2/3",
+            "ifMtu": "1500",
+            "ifOperStatus": "down",
+            "ifPhysAddress": "",
+            "ifSpeed": "1544000",
+            "ifType": "propPointToPointSerial",
+            "index": 12
+        },
+        {
+            "ifAdminStatus": "down",
+            "ifDescr": "Serial3/0",
+            "ifMtu": "1500",
+            "ifOperStatus": "down",
+            "ifPhysAddress": "",
+            "ifSpeed": "1544000",
+            "ifType": "propPointToPointSerial",
+            "index": 13
+        },
+        {
+            "ifAdminStatus": "down",
+            "ifDescr": "Serial3/1",
+            "ifMtu": "1500",
+            "ifOperStatus": "down",
+            "ifPhysAddress": "",
+            "ifSpeed": "1544000",
+            "ifType": "propPointToPointSerial",
+            "index": 14
+        },
+        {
+            "ifAdminStatus": "down",
+            "ifDescr": "Serial3/2",
+            "ifMtu": "1500",
+            "ifOperStatus": "down",
+            "ifPhysAddress": "",
+            "ifSpeed": "1544000",
+            "ifType": "propPointToPointSerial",
+            "index": 15
+        },
+        {
+            "ifAdminStatus": "down",
+            "ifDescr": "Serial3/3",
+            "ifMtu": "1500",
+            "ifOperStatus": "down",
+            "ifPhysAddress": "",
+            "ifSpeed": "1544000",
+            "ifType": "propPointToPointSerial",
+            "index": 16
+        }
+    ],
+    "SH2.pni.nist.gov": [
+        {
+            "ifAdminStatus": "up",
+            "ifDescr": "Ethernet0/0",
+            "ifMtu": "1500",
+            "ifOperStatus": "up",
+            "ifPhysAddress": "aa:bb:cc:00:03:00",
+            "ifSpeed": "10000000",
+            "ifType": "ethernetCsmacd",
+            "index": 1
+        },
+        {
+            "ifAdminStatus": "down",
+            "ifDescr": "Ethernet0/1",
+            "ifMtu": "1500",
+            "ifOperStatus": "down",
+            "ifPhysAddress": "aa:bb:cc:00:03:10",
+            "ifSpeed": "10000000",
+            "ifType": "ethernetCsmacd",
+            "index": 2
+        },
+        {
+            "ifAdminStatus": "up",
+            "ifDescr": "Ethernet0/2",
+            "ifMtu": "1500",
+            "ifOperStatus": "up",
+            "ifPhysAddress": "aa:bb:cc:00:03:20",
+            "ifSpeed": "10000000",
+            "ifType": "ethernetCsmacd",
+            "index": 3
+        },
+        {
+            "ifAdminStatus": "up",
+            "ifDescr": "Ethernet0/3",
+            "ifMtu": "1500",
+            "ifOperStatus": "up",
+            "ifPhysAddress": "aa:bb:cc:00:03:30",
+            "ifSpeed": "10000000",
+            "ifType": "ethernetCsmacd",
+            "index": 4
+        },
+        {
+            "ifAdminStatus": "down",
+            "ifDescr": "Ethernet1/0",
+            "ifMtu": "1500",
+            "ifOperStatus": "down",
+            "ifPhysAddress": "aa:bb:cc:00:03:01",
+            "ifSpeed": "10000000",
+            "ifType": "ethernetCsmacd",
+            "index": 5
+        },
+        {
+            "ifAdminStatus": "down",
+            "ifDescr": "Ethernet1/1",
+            "ifMtu": "1500",
+            "ifOperStatus": "down",
+            "ifPhysAddress": "aa:bb:cc:00:03:11",
+            "ifSpeed": "10000000",
+            "ifType": "ethernetCsmacd",
+            "index": 6
+        },
+        {
+            "ifAdminStatus": "down",
+            "ifDescr": "Ethernet1/2",
+            "ifMtu": "1500",
+            "ifOperStatus": "down",
+            "ifPhysAddress": "aa:bb:cc:00:03:21",
+            "ifSpeed": "10000000",
+            "ifType": "ethernetCsmacd",
+            "index": 7
+        },
+        {
+            "ifAdminStatus": "down",
+            "ifDescr": "Ethernet1/3",
+            "ifMtu": "1500",
+            "ifOperStatus": "down",
+            "ifPhysAddress": "aa:bb:cc:00:03:31",
+            "ifSpeed": "10000000",
+            "ifType": "ethernetCsmacd",
+            "index": 8
+        },
+        {
+            "ifAdminStatus": "down",
+            "ifDescr": "Serial2/0",
+            "ifMtu": "1500",
+            "ifOperStatus": "down",
+            "ifPhysAddress": "",
+            "ifSpeed": "1544000",
+            "ifType": "propPointToPointSerial",
+            "index": 9
+        },
+        {
+            "ifAdminStatus": "down",
+            "ifDescr": "Serial2/1",
+            "ifMtu": "1500",
+            "ifOperStatus": "down",
+            "ifPhysAddress": "",
+            "ifSpeed": "1544000",
+            "ifType": "propPointToPointSerial",
+            "index": 10
+        },
+        {
+            "ifAdminStatus": "down",
+            "ifDescr": "Serial2/2",
+            "ifMtu": "1500",
+            "ifOperStatus": "down",
+            "ifPhysAddress": "",
+            "ifSpeed": "1544000",
+            "ifType": "propPointToPointSerial",
+            "index": 11
+        },
+        {
+            "ifAdminStatus": "down",
+            "ifDescr": "Serial2/3",
+            "ifMtu": "1500",
+            "ifOperStatus": "down",
+            "ifPhysAddress": "",
+            "ifSpeed": "1544000",
+            "ifType": "propPointToPointSerial",
+            "index": 12
+        },
+        {
+            "ifAdminStatus": "down",
+            "ifDescr": "Serial3/0",
+            "ifMtu": "1500",
+            "ifOperStatus": "down",
+            "ifPhysAddress": "",
+            "ifSpeed": "1544000",
+            "ifType": "propPointToPointSerial",
+            "index": 13
+        },
+        {
+            "ifAdminStatus": "down",
+            "ifDescr": "Serial3/1",
+            "ifMtu": "1500",
+            "ifOperStatus": "down",
+            "ifPhysAddress": "",
+            "ifSpeed": "1544000",
+            "ifType": "propPointToPointSerial",
+            "index": 14
+        },
+        {
+            "ifAdminStatus": "down",
+            "ifDescr": "Serial3/2",
+            "ifMtu": "1500",
+            "ifOperStatus": "down",
+            "ifPhysAddress": "",
+            "ifSpeed": "1544000",
+            "ifType": "propPointToPointSerial",
+            "index": 15
+        },
+        {
+            "ifAdminStatus": "down",
+            "ifDescr": "Serial3/3",
+            "ifMtu": "1500",
+            "ifOperStatus": "down",
+            "ifPhysAddress": "",
+            "ifSpeed": "1544000",
+            "ifType": "propPointToPointSerial",
+            "index": 16
+        }
+    ],
+    "SH3.pni.nist.gov": [
+        {
+            "ifAdminStatus": "up",
+            "ifDescr": "Ethernet0/0",
+            "ifMtu": "1500",
+            "ifOperStatus": "up",
+            "ifPhysAddress": "aa:bb:cc:00:04:00",
+            "ifSpeed": "10000000",
+            "ifType": "ethernetCsmacd",
+            "index": 1
+        },
+        {
+            "ifAdminStatus": "down",
+            "ifDescr": "Ethernet0/1",
+            "ifMtu": "1500",
+            "ifOperStatus": "down",
+            "ifPhysAddress": "aa:bb:cc:00:04:10",
+            "ifSpeed": "10000000",
+            "ifType": "ethernetCsmacd",
+            "index": 2
+        },
+        {
+            "ifAdminStatus": "up",
+            "ifDescr": "Ethernet0/2",
+            "ifMtu": "1500",
+            "ifOperStatus": "up",
+            "ifPhysAddress": "aa:bb:cc:00:04:20",
+            "ifSpeed": "10000000",
+            "ifType": "ethernetCsmacd",
+            "index": 3
+        },
+        {
+            "ifAdminStatus": "up",
+            "ifDescr": "Ethernet0/3",
+            "ifMtu": "1500",
+            "ifOperStatus": "up",
+            "ifPhysAddress": "aa:bb:cc:00:04:30",
+            "ifSpeed": "10000000",
+            "ifType": "ethernetCsmacd",
+            "index": 4
+        },
+        {
+            "ifAdminStatus": "down",
+            "ifDescr": "Ethernet1/0",
+            "ifMtu": "1500",
+            "ifOperStatus": "down",
+            "ifPhysAddress": "aa:bb:cc:00:04:01",
+            "ifSpeed": "10000000",
+            "ifType": "ethernetCsmacd",
+            "index": 5
+        },
+        {
+            "ifAdminStatus": "down",
+            "ifDescr": "Ethernet1/1",
+            "ifMtu": "1500",
+            "ifOperStatus": "down",
+            "ifPhysAddress": "aa:bb:cc:00:04:11",
+            "ifSpeed": "10000000",
+            "ifType": "ethernetCsmacd",
+            "index": 6
+        },
+        {
+            "ifAdminStatus": "down",
+            "ifDescr": "Ethernet1/2",
+            "ifMtu": "1500",
+            "ifOperStatus": "down",
+            "ifPhysAddress": "aa:bb:cc:00:04:21",
+            "ifSpeed": "10000000",
+            "ifType": "ethernetCsmacd",
+            "index": 7
+        },
+        {
+            "ifAdminStatus": "down",
+            "ifDescr": "Ethernet1/3",
+            "ifMtu": "1500",
+            "ifOperStatus": "down",
+            "ifPhysAddress": "aa:bb:cc:00:04:31",
+            "ifSpeed": "10000000",
+            "ifType": "ethernetCsmacd",
+            "index": 8
+        },
+        {
+            "ifAdminStatus": "down",
+            "ifDescr": "Serial2/0",
+            "ifMtu": "1500",
+            "ifOperStatus": "down",
+            "ifPhysAddress": "",
+            "ifSpeed": "1544000",
+            "ifType": "propPointToPointSerial",
+            "index": 9
+        },
+        {
+            "ifAdminStatus": "down",
+            "ifDescr": "Serial2/1",
+            "ifMtu": "1500",
+            "ifOperStatus": "down",
+            "ifPhysAddress": "",
+            "ifSpeed": "1544000",
+            "ifType": "propPointToPointSerial",
+            "index": 10
+        },
+        {
+            "ifAdminStatus": "down",
+            "ifDescr": "Serial2/2",
+            "ifMtu": "1500",
+            "ifOperStatus": "down",
+            "ifPhysAddress": "",
+            "ifSpeed": "1544000",
+            "ifType": "propPointToPointSerial",
+            "index": 11
+        },
+        {
+            "ifAdminStatus": "down",
+            "ifDescr": "Serial2/3",
+            "ifMtu": "1500",
+            "ifOperStatus": "down",
+            "ifPhysAddress": "",
+            "ifSpeed": "1544000",
+            "ifType": "propPointToPointSerial",
+            "index": 12
+        },
+        {
+            "ifAdminStatus": "down",
+            "ifDescr": "Serial3/0",
+            "ifMtu": "1500",
+            "ifOperStatus": "down",
+            "ifPhysAddress": "",
+            "ifSpeed": "1544000",
+            "ifType": "propPointToPointSerial",
+            "index": 13
+        },
+        {
+            "ifAdminStatus": "down",
+            "ifDescr": "Serial3/1",
+            "ifMtu": "1500",
+            "ifOperStatus": "down",
+            "ifPhysAddress": "",
+            "ifSpeed": "1544000",
+            "ifType": "propPointToPointSerial",
+            "index": 14
+        },
+        {
+            "ifAdminStatus": "down",
+            "ifDescr": "Serial3/2",
+            "ifMtu": "1500",
+            "ifOperStatus": "down",
+            "ifPhysAddress": "",
+            "ifSpeed": "1544000",
+            "ifType": "propPointToPointSerial",
+            "index": 15
+        },
+        {
+            "ifAdminStatus": "down",
+            "ifDescr": "Serial3/3",
+            "ifMtu": "1500",
+            "ifOperStatus": "down",
+            "ifPhysAddress": "",
+            "ifSpeed": "1544000",
+            "ifType": "propPointToPointSerial",
+            "index": 16
+        }
+    ],
+    "br.pni.nist.gov": [
+        {
+            "ifAdminStatus": "down",
+            "ifDescr": "Ethernet0/0",
+            "ifMtu": "1500",
+            "ifOperStatus": "down",
+            "ifPhysAddress": "aa:bb:cc:00:01:00",
+            "ifSpeed": "10000000",
+            "ifType": "ethernetCsmacd",
+            "index": 1
+        },
+        {
+            "ifAdminStatus": "down",
+            "ifDescr": "Ethernet0/1",
+            "ifMtu": "1500",
+            "ifOperStatus": "down",
+            "ifPhysAddress": "aa:bb:cc:00:01:10",
+            "ifSpeed": "10000000",
+            "ifType": "ethernetCsmacd",
+            "index": 2
+        },
+        {
+            "ifAdminStatus": "down",
+            "ifDescr": "Ethernet0/2",
+            "ifMtu": "1500",
+            "ifOperStatus": "down",
+            "ifPhysAddress": "aa:bb:cc:00:01:20",
+            "ifSpeed": "10000000",
+            "ifType": "ethernetCsmacd",
+            "index": 3
+        },
+        {
+            "ifAdminStatus": "down",
+            "ifDescr": "Ethernet0/3",
+            "ifMtu": "1500",
+            "ifOperStatus": "down",
+            "ifPhysAddress": "aa:bb:cc:00:01:30",
+            "ifSpeed": "10000000",
+            "ifType": "ethernetCsmacd",
+            "index": 4
+        },
+        {
+            "ifAdminStatus": "up",
+            "ifDescr": "Ethernet1/0",
+            "ifMtu": "1500",
+            "ifOperStatus": "up",
+            "ifPhysAddress": "aa:bb:cc:00:01:01",
+            "ifSpeed": "10000000",
+            "ifType": "ethernetCsmacd",
+            "index": 5
+        },
+        {
+            "ifAdminStatus": "up",
+            "ifDescr": "Ethernet1/1",
+            "ifMtu": "1500",
+            "ifOperStatus": "up",
+            "ifPhysAddress": "aa:bb:cc:00:01:11",
+            "ifSpeed": "10000000",
+            "ifType": "ethernetCsmacd",
+            "index": 6
+        },
+        {
+            "ifAdminStatus": "down",
+            "ifDescr": "Ethernet1/2",
+            "ifMtu": "1500",
+            "ifOperStatus": "down",
+            "ifPhysAddress": "aa:bb:cc:00:01:21",
+            "ifSpeed": "10000000",
+            "ifType": "ethernetCsmacd",
+            "index": 7
+        },
+        {
+            "ifAdminStatus": "down",
+            "ifDescr": "Ethernet1/3",
+            "ifMtu": "1500",
+            "ifOperStatus": "down",
+            "ifPhysAddress": "aa:bb:cc:00:01:31",
+            "ifSpeed": "10000000",
+            "ifType": "ethernetCsmacd",
+            "index": 8
+        },
+        {
+            "ifAdminStatus": "down",
+            "ifDescr": "Serial2/0",
+            "ifMtu": "1500",
+            "ifOperStatus": "down",
+            "ifPhysAddress": "",
+            "ifSpeed": "1544000",
+            "ifType": "propPointToPointSerial",
+            "index": 9
+        },
+        {
+            "ifAdminStatus": "down",
+            "ifDescr": "Serial2/1",
+            "ifMtu": "1500",
+            "ifOperStatus": "down",
+            "ifPhysAddress": "",
+            "ifSpeed": "1544000",
+            "ifType": "propPointToPointSerial",
+            "index": 10
+        },
+        {
+            "ifAdminStatus": "down",
+            "ifDescr": "Serial2/2",
+            "ifMtu": "1500",
+            "ifOperStatus": "down",
+            "ifPhysAddress": "",
+            "ifSpeed": "1544000",
+            "ifType": "propPointToPointSerial",
+            "index": 11
+        },
+        {
+            "ifAdminStatus": "down",
+            "ifDescr": "Serial2/3",
+            "ifMtu": "1500",
+            "ifOperStatus": "down",
+            "ifPhysAddress": "",
+            "ifSpeed": "1544000",
+            "ifType": "propPointToPointSerial",
+            "index": 12
+        },
+        {
+            "ifAdminStatus": "down",
+            "ifDescr": "Serial3/0",
+            "ifMtu": "1500",
+            "ifOperStatus": "down",
+            "ifPhysAddress": "",
+            "ifSpeed": "1544000",
+            "ifType": "propPointToPointSerial",
+            "index": 13
+        },
+        {
+            "ifAdminStatus": "down",
+            "ifDescr": "Serial3/1",
+            "ifMtu": "1500",
+            "ifOperStatus": "down",
+            "ifPhysAddress": "",
+            "ifSpeed": "1544000",
+            "ifType": "propPointToPointSerial",
+            "index": 14
+        },
+        {
+            "ifAdminStatus": "down",
+            "ifDescr": "Serial3/2",
+            "ifMtu": "1500",
+            "ifOperStatus": "down",
+            "ifPhysAddress": "",
+            "ifSpeed": "1544000",
+            "ifType": "propPointToPointSerial",
+            "index": 15
+        },
+        {
+            "ifAdminStatus": "down",
+            "ifDescr": "Serial3/3",
+            "ifMtu": "1500",
+            "ifOperStatus": "down",
+            "ifPhysAddress": "",
+            "ifSpeed": "1544000",
+            "ifType": "propPointToPointSerial",
+            "index": 16
+        }
+    ],
+    "sw1.pni.nist.gov": [],
+    "sw2": [],
+    "sw3": []
+}

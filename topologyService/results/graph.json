@@ -1,0 +1,137 @@
+{
+    "links": [
+        {
+            "highest_utilization": 0,
+            "source": "SH1.pni.nist.gov",
+            "source_interfaces": [
+                "Et0/0"
+            ],
+            "source_interfaces_indes": [
+                null
+            ],
+            "speed": "1",
+            "target": "sw1.pni.nist.gov",
+            "target_interfaces": [],
+            "target_interfaces_indes": []
+        },
+        {
+            "highest_utilization": 0,
+            "source": "SH1.pni.nist.gov",
+            "source_interfaces": [
+                "Et0/2"
+            ],
+            "source_interfaces_indes": [
+                null
+            ],
+            "speed": "1",
+            "target": "SH2.pni.nist.gov",
+            "target_interfaces": [
+                "Et0/2"
+            ],
+            "target_interfaces_indes": [
+                null
+            ]
+        },
+        {
+            "highest_utilization": 0,
+            "source": "SH1.pni.nist.gov",
+            "source_interfaces": [
+                "Et0/3"
+            ],
+            "source_interfaces_indes": [
+                null
+            ],
+            "speed": "1",
+            "target": "SH3.pni.nist.gov",
+            "target_interfaces": [
+                "Et0/3"
+            ],
+            "target_interfaces_indes": [
+                null
+            ]
+        },
+        {
+            "highest_utilization": 0,
+            "source": "SH2.pni.nist.gov",
+            "source_interfaces": [
+                "Et0/0"
+            ],
+            "source_interfaces_indes": [
+                null
+            ],
+            "speed": "1",
+            "target": "sw2",
+            "target_interfaces": [],
+            "target_interfaces_indes": []
+        },
+        {
+            "highest_utilization": 0,
+            "source": "SH2.pni.nist.gov",
+            "source_interfaces": [
+                "Et0/3"
+            ],
+            "source_interfaces_indes": [
+                null
+            ],
+            "speed": "1",
+            "target": "SH3.pni.nist.gov",
+            "target_interfaces": [
+                "Et0/2"
+            ],
+            "target_interfaces_indes": [
+                null
+            ]
+        },
+        {
+            "highest_utilization": 0,
+            "source": "SH3.pni.nist.gov",
+            "source_interfaces": [
+                "Et0/0"
+            ],
+            "source_interfaces_indes": [
+                null
+            ],
+            "speed": "1",
+            "target": "sw3",
+            "target_interfaces": [],
+            "target_interfaces_indes": []
+        }
+    ],
+    "nodes": [
+        {
+            "group": "1",
+            "id": "br.pni.nist.gov",
+            "image": "default.png"
+        },
+        {
+            "group": "1",
+            "id": "SH1.pni.nist.gov",
+            "image": "default.png"
+        },
+        {
+            "group": "1",
+            "id": "sw1.pni.nist.gov",
+            "image": "default.png"
+        },
+        {
+            "group": "1",
+            "id": "SH2.pni.nist.gov",
+            "image": "default.png"
+        },
+        {
+            "group": "1",
+            "id": "SH3.pni.nist.gov",
+            "image": "default.png"
+        },
+        {
+            "group": "1",
+            "id": "sw2",
+            "image": "default.png"
+        },
+        {
+            "group": "1",
+            "id": "sw3",
+            "image": "default.png"
+        }
+    ]
+}
