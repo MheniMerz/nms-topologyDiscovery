@@ -143,8 +143,8 @@ def get_topology(args):
 
     return "DONE!"
 
-#if __name__ == "__main__":
-def run():
+if __name__ == "__main__":
+#def run():
     parser = argparse.ArgumentParser(
         formatter_class=argparse.RawDescriptionHelpFormatter
     )

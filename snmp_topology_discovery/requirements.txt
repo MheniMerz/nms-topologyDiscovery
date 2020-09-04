@@ -1,0 +1,7 @@
+Flask==0.12.2
+pysmi==0.3.4
+pysnmp==4.4.12
+pysnmp-mibs==0.1.6
+jsonschema==2.6.0
+simplejson==3.13.2
+
