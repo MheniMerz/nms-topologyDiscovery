@@ -1,0 +1,7 @@
+sw1#sh ip route
+Default gateway is not set
+
+Host               Gateway           Last Use    Total Uses  Interface
+ICMP redirect cache is empty
+sw1#
+

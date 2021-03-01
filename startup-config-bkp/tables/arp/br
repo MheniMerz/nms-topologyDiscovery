@@ -1,0 +1,10 @@
+br#sh arp
+Protocol  Address          Age (min)  Hardware Addr   Type   Interface
+Internet  10.11.200.217          11   0c9d.5fde.3f01  ARPA   Ethernet1/0
+Internet  10.11.200.218           -   aabb.cc00.0101  ARPA   Ethernet1/0
+Internet  172.17.0.1              8   0242.6164.2199  ARPA   Ethernet1/1
+Internet  172.17.0.3             11   0242.ac11.0003  ARPA   Ethernet1/1
+Internet  172.17.1.1              -   aabb.cc00.0111  ARPA   Ethernet1/1
+br#
+
+

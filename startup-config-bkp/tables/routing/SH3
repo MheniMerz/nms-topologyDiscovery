@@ -1,0 +1,35 @@
+SH3#sh ip route
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route, H - NHRP, l - LISP
+       a - application route
+       + - replicated route, % - next hop override
+
+Gateway of last resort is 10.11.200.202 to network 0.0.0.0
+
+D*EX  0.0.0.0/0 [170/565760] via 10.11.200.202, 00:04:30, Ethernet0/3
+      3.0.0.0/32 is subnetted, 1 subnets
+C        3.3.3.3 is directly connected, Loopback0
+      10.0.0.0/8 is variably subnetted, 15 subnets, 3 masks
+D        10.11.200.0/27 [90/307200] via 10.11.200.202, 00:05:29, Ethernet0/3
+D        10.11.200.32/27 [90/307200] via 10.11.200.202, 00:05:29, Ethernet0/3
+C        10.11.200.64/27 is directly connected, Ethernet0/0.50
+L        10.11.200.65/32 is directly connected, Ethernet0/0.50
+C        10.11.200.96/27 is directly connected, Ethernet0/0.60
+L        10.11.200.97/32 is directly connected, Ethernet0/0.60
+D        10.11.200.128/27 [90/307200] via 10.11.200.206, 00:05:29, Ethernet0/2
+D        10.11.200.160/27 [90/307200] via 10.11.200.206, 00:05:29, Ethernet0/2
+D        10.11.200.196/30 [90/307200] via 10.11.200.206, 00:05:29, Ethernet0/2
+                          [90/307200] via 10.11.200.202, 00:05:29, Ethernet0/3
+C        10.11.200.200/30 is directly connected, Ethernet0/3
+L        10.11.200.201/32 is directly connected, Ethernet0/3
+C        10.11.200.204/30 is directly connected, Ethernet0/2
+L        10.11.200.205/32 is directly connected, Ethernet0/2
+D        10.11.200.208/30 [90/307200] via 10.11.200.202, 00:05:29, Ethernet0/3
+D        10.11.200.216/30 [90/309760] via 10.11.200.202, 00:04:30, Ethernet0/3
+SH3#
+

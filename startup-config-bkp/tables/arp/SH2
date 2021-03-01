@@ -1,0 +1,10 @@
+SH2#sh arp
+Protocol  Address          Age (min)  Hardware Addr   Type   Interface
+Internet  10.11.200.129           -   aabb.cc00.0300  ARPA   Ethernet0/0.30
+Internet  10.11.200.161           -   aabb.cc00.0300  ARPA   Ethernet0/0.40
+Internet  10.11.200.197           -   aabb.cc00.0320  ARPA   Ethernet0/2
+Internet  10.11.200.198          14   aabb.cc00.0220  ARPA   Ethernet0/2
+Internet  10.11.200.205          14   aabb.cc00.0420  ARPA   Ethernet0/3
+Internet  10.11.200.206           -   aabb.cc00.0330  ARPA   Ethernet0/3
+SH2#
+

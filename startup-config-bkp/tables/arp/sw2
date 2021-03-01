@@ -1,0 +1,6 @@
+sw2#sh arp
+Protocol  Address          Age (min)  Hardware Addr   Type   Interface
+Internet  10.11.200.139           -   0c9d.5f61.801e  ARPA   Vlan30
+Internet  10.11.200.169           -   0c9d.5f61.8028  ARPA   Vlan40
+sw2#
+

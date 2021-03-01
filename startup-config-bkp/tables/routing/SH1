@@ -1,0 +1,36 @@
+SH1#sh ip route
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route, H - NHRP, l - LISP
+       a - application route
+       + - replicated route, % - next hop override
+
+Gateway of last resort is 10.11.200.210 to network 0.0.0.0
+
+D*EX  0.0.0.0/0 [170/540160] via 10.11.200.210, 00:02:52, Ethernet0/1
+      1.0.0.0/32 is subnetted, 1 subnets
+C        1.1.1.1 is directly connected, Loopback0
+      10.0.0.0/8 is variably subnetted, 16 subnets, 3 masks
+C        10.11.200.0/27 is directly connected, Ethernet0/0.10
+L        10.11.200.1/32 is directly connected, Ethernet0/0.10
+C        10.11.200.32/27 is directly connected, Ethernet0/0.20
+L        10.11.200.33/32 is directly connected, Ethernet0/0.20
+D        10.11.200.64/27 [90/307200] via 10.11.200.201, 00:03:52, Ethernet0/3
+D        10.11.200.96/27 [90/307200] via 10.11.200.201, 00:03:52, Ethernet0/3
+D        10.11.200.128/27 [90/307200] via 10.11.200.197, 00:03:50, Ethernet0/2
+D        10.11.200.160/27 [90/307200] via 10.11.200.197, 00:03:50, Ethernet0/2
+C        10.11.200.196/30 is directly connected, Ethernet0/2
+L        10.11.200.198/32 is directly connected, Ethernet0/2
+C        10.11.200.200/30 is directly connected, Ethernet0/3
+L        10.11.200.202/32 is directly connected, Ethernet0/3
+D        10.11.200.204/30 [90/307200] via 10.11.200.201, 00:03:52, Ethernet0/3
+                          [90/307200] via 10.11.200.197, 00:03:52, Ethernet0/2
+C        10.11.200.208/30 is directly connected, Ethernet0/1
+L        10.11.200.209/32 is directly connected, Ethernet0/1
+D        10.11.200.216/30 [90/284160] via 10.11.200.210, 00:02:52, Ethernet0/1
+SH1#
+

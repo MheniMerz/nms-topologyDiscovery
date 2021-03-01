@@ -1,0 +1,9 @@
+sw2#sh ip route
+Default gateway is not set
+
+Host               Gateway           Last Use    Total Uses  Interface
+ICMP redirect cache is empty
+sw2#
+*Mar  1 19:37:30.327: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on GigabitEthernet0/0 (not half duplex), with SH2.pni.nist.gov Ethernet0/0 (half duplex).
+sw2#
+

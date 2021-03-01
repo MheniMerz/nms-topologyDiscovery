@@ -1,0 +1,6 @@
+ciscoasa# sh arp
+        inside 10.11.200.209 aabb.cc00.0210 746
+        outside 10.11.200.218 aabb.cc00.0101 746
+ciscoasa#
+
+

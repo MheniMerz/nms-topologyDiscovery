@@ -1,0 +1,35 @@
+ciscoasa# show route
+
+Codes: C - connected, S - static, I - IGRP, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2, E - EGP
+       i - IS-IS, L1 - IS-IS level-1, L2 - IS-IS level-2, ia - IS-IS inter area
+       * - candidate default, U - per-user static route, o - ODR
+       P - periodic downloaded static route
+
+Gateway of last resort is 10.11.200.218 to network 0.0.0.0
+
+D    10.11.200.200 255.255.255.252
+           [90/284160] via 10.11.200.209, 0:02:03, inside
+D    10.11.200.204 255.255.255.252
+           [90/309760] via 10.11.200.209, 0:02:03, inside
+D    10.11.200.196 255.255.255.252
+           [90/284160] via 10.11.200.209, 0:02:03, inside
+C    10.11.200.216 255.255.255.252 is directly connected, outside
+C    10.11.200.208 255.255.255.252 is directly connected, inside
+D    10.11.200.128 255.255.255.224
+           [90/309760] via 10.11.200.209, 0:02:03, inside
+D    10.11.200.160 255.255.255.224
+           [90/309760] via 10.11.200.209, 0:02:03, inside
+D    10.11.200.64 255.255.255.224
+           [90/309760] via 10.11.200.209, 0:02:03, inside
+D    10.11.200.96 255.255.255.224
+           [90/309760] via 10.11.200.209, 0:02:06, inside
+D    10.11.200.0 255.255.255.224
+           [90/284160] via 10.11.200.209, 0:02:06, inside
+D    10.11.200.32 255.255.255.224
+           [90/284160] via 10.11.200.209, 0:02:06, inside
+D*EX 0.0.0.0 0.0.0.0 [170/284160] via 10.11.200.218, 0:02:06, outside
+ciscoasa#
+
