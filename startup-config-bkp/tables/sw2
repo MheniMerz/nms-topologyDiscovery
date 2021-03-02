@@ -1,0 +1,30 @@
+==============================================
+	 before PC34 -> PC162 ping
+==============================================
+sw2#show mac address-table
+          Mac Address Table
+-------------------------------------------
+
+Vlan    Mac Address       Type        Ports
+----    -----------       --------    -----
+   1    aabb.cc00.0300    DYNAMIC     Gi0/0
+  30    aabb.cc00.0300    DYNAMIC     Gi0/0
+  40    aabb.cc00.0300    DYNAMIC     Gi0/0
+Total Mac Addresses for this criterion: 3
+
+
+==============================================
+	after PC34 -> PC162 ping 
+==============================================
+sw2#sh mac address-table
+          Mac Address Table
+-------------------------------------------
+
+Vlan    Mac Address       Type        Ports
+----    -----------       --------    -----
+   1    aabb.cc00.0300    DYNAMIC     Gi0/0
+  30    aabb.cc00.0300    DYNAMIC     Gi0/0
+  40    0050.7966.6805    DYNAMIC     Gi0/2
+  40    aabb.cc00.0300    DYNAMIC     Gi0/0
+Total Mac Addresses for this criterion: 4
+

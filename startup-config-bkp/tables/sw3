@@ -1,0 +1,31 @@
+=============================================
+	  before PC98 -> PC02 ping
+=============================================
+
+sw3#show mac address-table
+          Mac Address Table
+-------------------------------------------
+
+Vlan    Mac Address       Type        Ports
+----    -----------       --------    -----
+   1    aabb.cc00.0400    DYNAMIC     Gi0/0
+  50    aabb.cc00.0400    DYNAMIC     Gi0/0
+  60    aabb.cc00.0400    DYNAMIC     Gi0/0
+Total Mac Addresses for this criterion: 3
+
+
+=============================================
+	after PC98 -> PC02 ping 
+=============================================
+sw3#show mac address-table
+          Mac Address Table
+-------------------------------------------
+
+Vlan    Mac Address       Type        Ports
+----    -----------       --------    -----
+   1    aabb.cc00.0400    DYNAMIC     Gi0/0
+  50    aabb.cc00.0400    DYNAMIC     Gi0/0
+  60    0050.7966.6802    DYNAMIC     Gi0/2
+  60    aabb.cc00.0400    DYNAMIC     Gi0/0
+Total Mac Addresses for this criterion: 4
+
