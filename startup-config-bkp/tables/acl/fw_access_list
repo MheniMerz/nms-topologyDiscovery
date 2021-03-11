@@ -1,0 +1,14 @@
+ciscoasa# show access-list
+access-list cached ACL log flows: total 0, denied 0 (deny-flow-max 4096)
+            alert-interval 300
+access-list ALLOW_INBOUND; 8 elements; name hash: 0x37312e4d
+access-list ALLOW_INBOUND line 1 extended permit eigrp any any (hitcnt=0) 0x9adb2779
+access-list ALLOW_INBOUND line 2 extended permit icmp any any (hitcnt=0) 0xb12353c8
+access-list ALLOW_INBOUND line 3 extended permit icmp any any echo (hitcnt=0) 0x9e676207
+access-list ALLOW_INBOUND line 4 extended permit icmp any any echo-reply (hitcnt=0) 0xd973775b
+access-list ALLOW_INBOUND line 5 extended permit udp any any eq snmp (hitcnt=0) 0x56e2b93d
+access-list ALLOW_INBOUND line 6 extended permit udp any any eq snmptrap (hitcnt=0) 0x38a7b81c
+access-list ALLOW_INBOUND line 7 extended permit tcp any any (hitcnt=0) 0x9ab3a73c
+access-list ALLOW_INBOUND line 8 extended permit udp any any (hitcnt=0) 0x389de6e6
+ciscoasa#
+
