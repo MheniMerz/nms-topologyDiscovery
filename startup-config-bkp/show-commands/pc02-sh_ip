@@ -1,0 +1,13 @@
+PC02> show ip
+
+NAME        : PC02[1]
+IP/MASK     : 10.11.200.2/27
+GATEWAY     : 10.11.200.1
+DNS         :
+MAC         : 00:50:79:66:68:03
+LPORT       : 20060
+RHOST:PORT  : 127.0.0.1:20061
+MTU:        : 1500
+
+PC02>
+
