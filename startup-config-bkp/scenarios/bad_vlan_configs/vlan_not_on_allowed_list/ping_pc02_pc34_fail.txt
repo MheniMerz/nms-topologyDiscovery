@@ -1,0 +1,7 @@
+PC02> ping 10.11.200.34
+10.11.200.34 icmp_seq=1 timeout
+10.11.200.34 icmp_seq=2 timeout
+10.11.200.34 icmp_seq=3 timeout
+10.11.200.34 icmp_seq=4 timeout
+10.11.200.34 icmp_seq=5 timeout
+

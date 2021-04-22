@@ -1,0 +1,3 @@
+PC34> ping 10.11.200.02
+host (10.11.200.33) not reachable
+

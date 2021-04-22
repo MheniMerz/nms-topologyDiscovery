@@ -1,0 +1,8 @@
+PC164> ping 10.11.200.02
+84 bytes from 10.11.200.2 icmp_seq=1 ttl=62 time=5.714 ms
+84 bytes from 10.11.200.2 icmp_seq=2 ttl=62 time=2.707 ms
+84 bytes from 10.11.200.2 icmp_seq=3 ttl=62 time=3.730 ms
+84 bytes from 10.11.200.2 icmp_seq=4 ttl=62 time=3.282 ms
+84 bytes from 10.11.200.2 icmp_seq=5 ttl=62 time=2.582 ms
+
+
