@@ -4,6 +4,7 @@ in this scenario a VLAN missconfiguration was introduced which drops packets to 
 
 #### HOW?
 this is acheived by configuring the trunk port on `sw1` to allow only `VLAN 10`.
+
 from [sw1.conf](./sw1.conf)
 
 ```
