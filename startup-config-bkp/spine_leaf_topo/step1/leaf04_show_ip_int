@@ -1,4 +1,3 @@
-admin@spine01:~$ show ip int
 Interface    Master    IPv4 address/mask    Admin/Oper    BGP Neighbor    Neighbor IP
 -----------  --------  -------------------  ------------  --------------  -------------
 Ethernet0              10.0.0.0/31          up/up         ARISTA01T2      10.0.0.1
@@ -35,5 +34,5 @@ Ethernet120            10.0.0.60/31         up/up         ARISTA15T0      10.0.0
 Ethernet124            10.0.0.62/31         up/up         ARISTA16T0      10.0.0.63
 Loopback0              10.1.0.1/32          up/up         N/A             N/A
 docker0                240.127.1.1/24       up/down       N/A             N/A
-eth0                   192.168.200.21/24    up/up         N/A             N/A
-lo                     127.0.0.1/8          up/up         N/A             N/A
+eth0                   192.168.200.14/24    up/up         N/A             N/A
+lo                     127.0.0.1/16         up/up         N/A             N/A

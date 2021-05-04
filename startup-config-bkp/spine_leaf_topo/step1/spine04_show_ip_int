@@ -1,4 +1,5 @@
-admin@spine01:~$ show ip intInterface    Master    IPv4 address/mask    Admin/Oper    BGP Neighbor    Neighbor IP
+admin@spine01:~$ show ip int
+Interface    Master    IPv4 address/mask    Admin/Oper    BGP Neighbor    Neighbor IP
 -----------  --------  -------------------  ------------  --------------  -------------
 Ethernet0              10.0.0.0/31          up/up         ARISTA01T2      10.0.0.1
 Ethernet4              10.0.0.2/31          up/up         ARISTA02T2      10.0.0.3
