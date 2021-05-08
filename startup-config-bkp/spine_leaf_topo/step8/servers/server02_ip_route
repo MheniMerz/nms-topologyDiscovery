@@ -1,0 +1,5 @@
+default via 192.168.200.1 dev eth0
+10.0.101.0/24 dev eth1 proto kernel scope link src 10.0.101.102
+10.0.102.0/24 dev eth2 proto kernel scope link src 10.0.102.102
+192.168.200.0/24 dev eth0 proto kernel scope link src 192.168.200.32
+

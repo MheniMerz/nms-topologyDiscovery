@@ -1,0 +1,3 @@
+Name             Type       Binding  Description    Stage
+---------------  -------  ---------  -------------  -------
+ACL_BLK_INGRESS  CTPLANE         22  drop           ingress

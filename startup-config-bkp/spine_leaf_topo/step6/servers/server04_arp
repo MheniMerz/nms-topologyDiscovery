@@ -1,0 +1,7 @@
+Address                  HWtype  HWaddress           Flags Mask            Iface
+10.0.103.1               ether   52:54:00:12:34:56   C                     eth1
+oob-mgmt-server          ether   44:38:39:00:00:6d   C                     eth0
+10.0.102.1                       (incomplete)                              eth1
+netq-ts                  ether   44:38:39:00:01:80   C                     eth0
+10.0.104.1               ether   52:54:00:12:34:56   C                     eth2
+

@@ -1,11 +1,14 @@
 Interface Bridge is up, line protocol is up
-  Link ups:       1    last: 2021/05/06 11:06:27.09  Link downs:     5    last: 2021/05/06 11:06:19.75
+  Link ups:       1    last: 2021/05/06 11:06:27.09
+  Link downs:     5    last: 2021/05/06 11:06:19.75
   vrf: default  index 48 metric 0 mtu 9100 speed 0
   flags: <UP,BROADCAST,RUNNING,MULTICAST>  Type: Unknown
   HWaddr: a6:3b:a2:a1:d9:b3  inet6 fe80::d0b2:cfff:febe:d67/64
   Interface Type Bridge  Interface Slave Type None
-  Bridge VLAN-aware: yesInterface Ethernet0 is up, line protocol is up
-  Link ups:       1    last: 2021/05/06 11:06:26.61  Link downs:     2    last: 2021/05/06 11:06:26.53
+  Bridge VLAN-aware: yes
+Interface Ethernet0 is up, line protocol is up
+  Link ups:       1    last: 2021/05/06 11:06:26.61
+  Link downs:     2    last: 2021/05/06 11:06:26.53
   vrf: default
   index 58 metric 0 mtu 9216 speed 10
   flags: <UP,BROADCAST,RUNNING,MULTICAST>
@@ -16,12 +19,14 @@ Interface Bridge is up, line protocol is up
   Interface Slave Type Bridge
   Master interface: Bridge
 Interface Ethernet4 is up, line protocol is up
-  Link ups:       1    last: 2021/05/06 11:06:28.43  Link downs:     4    last: 2021/05/06 11:06:28.30
+  Link ups:       1    last: 2021/05/06 11:06:28.43
+  Link downs:     4    last: 2021/05/06 11:06:28.30
   vrf: default  index 59 metric 0 mtu 9216 speed 10
   flags: <UP,BROADCAST,RUNNING,MULTICAST>  Type: Unknown
   HWaddr: 52:54:00:12:34:56  inet6 fe80::5054:ff:fe12:3456/64
   Interface Type Other  Interface Slave Type Bridge
-  Master interface: BridgeInterface Ethernet8 is up, line protocol is up
+  Master interface: Bridge
+Interface Ethernet8 is up, line protocol is up
   Link ups:       1    last: 2021/05/06 11:06:31.22
   Link downs:     4    last: 2021/05/06 11:06:31.08
   vrf: default

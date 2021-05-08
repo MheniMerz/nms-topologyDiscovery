@@ -1,0 +1,26 @@
+
+Firewall :[
+	{ name : fw1}
+]
+
+router :[
+	{ name: leaf01 }, 
+	{ name: leaf02 }, 
+	{ name: leaf03 }, 
+	{ name: leaf04 }, 
+	{ name: border01 },
+	{ name: border02 },
+	{ name: spine01 },
+	{ name: spine02 },
+	{ name: spine03 },
+	{ name: spine04 }
+]
+
+server :{
+	{ name: server01 },
+	{ name: server02 },
+	{ name: server03 },
+	{ name: server04 },
+	{ name: server05 },
+	{ name: server06 }
+}

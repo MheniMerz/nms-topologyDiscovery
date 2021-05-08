@@ -1,0 +1,4 @@
+Table            Rule           Priority  Action    Match
+---------------  -----------  ----------  --------  ------------------
+ACL_BLK_INGRESS  ACE_DROP              2  DROP      SRC_IP: 14.0.0.0/8
+ACL_BLK_INGRESS  ACE_FORWARD           1  FORWARD   IP_TYPE: ANY
