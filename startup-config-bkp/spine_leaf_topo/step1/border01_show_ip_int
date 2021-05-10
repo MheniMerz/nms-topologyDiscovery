@@ -9,4 +9,3 @@ Vlan111                10.0.111.1/24        up/up         N/A             N/A
 docker0                240.127.1.1/24       up/down       N/A             N/A
 eth0                   192.168.200.63/24    up/up         N/A             N/A
 lo                     127.0.0.1/16         up/up         N/A             N/A
-

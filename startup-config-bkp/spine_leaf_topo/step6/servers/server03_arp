@@ -1,6 +1,5 @@
-Address                  HWtype  HWaddress           Flags Mask            Iface
+ddress                  HWtype  HWaddress           Flags Mask            Iface
 192.168.200.250          ether   44:38:39:00:01:80   C                     eth0
-10.0.102.1               ether   52:54:00:12:34:56   C                     eth2
-10.0.101.1               ether   52:54:00:12:34:56   C                     eth1
+10.0.101.1               ether   52:11:00:11:11:56   C                     eth1
+10.0.102.1               ether   52:22:00:22:22:56   C                     eth2
 _gateway                 ether   44:38:39:00:00:6d   C                     eth0
-
