@@ -1,0 +1,284 @@
+Interface Bridge is up, line protocol is down
+  Link ups:       0    last: (never)
+  Link downs:     4    last: 2021/05/14 13:23:40.42
+  vrf: default
+  index 10 metric 0 mtu 9100 speed 0
+  flags: <UP,BROADCAST,MULTICAST>
+  Type: Unknown
+  HWaddr: 52:54:00:44:44:57
+  inet6 fe80::3017:e9ff:fe03:bc38/64
+  Interface Type Bridge
+  Interface Slave Type None
+  Bridge VLAN-aware: yes
+Interface Ethernet0 is up, line protocol is up
+  Link ups:       1    last: 2021/05/14 13:23:47.38
+  Link downs:     3    last: 2021/05/14 13:23:47.28
+  vrf: default
+  index 19 metric 0 mtu 9216 speed 0
+  flags: <UP,BROADCAST,RUNNING,MULTICAST>
+  Type: Unknown
+  HWaddr: 3a:91:cf:ec:64:2b
+  inet 172.0.4.0/31
+  inet6 fe80::3891:cfff:feec:642b/64
+  Interface Type Other
+  Interface Slave Type None
+Interface Ethernet4 is up, line protocol is up
+  Link ups:       1    last: 2021/05/14 13:23:45.42
+  Link downs:     3    last: 2021/05/14 13:23:45.24
+  vrf: default
+  index 20 metric 0 mtu 9216 speed 0
+  flags: <UP,BROADCAST,RUNNING,MULTICAST>
+  Type: Unknown
+  HWaddr: e6:35:72:7c:c7:cc
+  inet 172.0.4.2/31
+  inet6 fe80::e435:72ff:fe7c:c7cc/64
+  Interface Type Other
+  Interface Slave Type None
+Interface Ethernet8 is up, line protocol is up
+  Link ups:       1    last: 2021/05/14 13:23:46.21
+  Link downs:     3    last: 2021/05/14 13:23:46.05
+  vrf: default
+  index 21 metric 0 mtu 9216 speed 0
+  flags: <UP,BROADCAST,RUNNING,MULTICAST>
+  Type: Unknown
+  HWaddr: b6:b1:29:59:cc:73
+  inet 172.0.4.4/31
+  inet6 fe80::b4b1:29ff:fe59:cc73/64
+  Interface Type Other
+  Interface Slave Type None
+Interface Ethernet12 is up, line protocol is up
+  Link ups:       1    last: 2021/05/14 13:23:47.50
+  Link downs:     3    last: 2021/05/14 13:23:47.44
+  vrf: default
+  index 22 metric 0 mtu 9216 speed 0
+  flags: <UP,BROADCAST,RUNNING,MULTICAST>
+  Type: Unknown
+  HWaddr: ca:77:c9:3d:23:a0
+  inet 172.0.4.6/31
+  inet6 fe80::c877:c9ff:fe3d:23a0/64
+  Interface Type Other
+  Interface Slave Type None
+Interface Ethernet16 is up, line protocol is up
+  Link ups:       1    last: 2021/05/14 13:23:47.58
+  Link downs:     3    last: 2021/05/14 13:23:47.53
+  vrf: default
+  index 24 metric 0 mtu 9216 speed 0
+  flags: <UP,BROADCAST,RUNNING,MULTICAST>
+  Type: Unknown
+  HWaddr: 4e:84:4a:48:d4:fe
+  inet 172.0.4.8/31
+  inet6 fe80::4c84:4aff:fe48:d4fe/64
+  Interface Type Other
+  Interface Slave Type None
+Interface Ethernet20 is up, line protocol is up
+  Link ups:       1    last: 2021/05/14 13:23:47.67
+  Link downs:     2    last: 2021/05/14 13:23:47.61
+  vrf: default
+  index 23 metric 0 mtu 9216 speed 0
+  flags: <UP,BROADCAST,RUNNING,MULTICAST>
+  Type: Unknown
+  HWaddr: 52:54:00:44:44:57
+  inet 172.0.4.10/31
+  inet6 fe80::5054:ff:fe44:4457/64
+  Interface Type Other
+  Interface Slave Type None
+Interface Ethernet24 is up, line protocol is up
+  Link ups:       1    last: 2021/05/14 13:23:44.45
+  Link downs:     2    last: 2021/05/14 13:23:44.33
+  vrf: default
+  index 13 metric 0 mtu 9216 speed 10
+  flags: <UP,BROADCAST,RUNNING,MULTICAST>
+  Type: Unknown
+  HWaddr: 52:54:00:44:44:57
+  inet6 fe80::5054:ff:fe44:4457/64
+  Interface Type Other
+  Interface Slave Type None
+Interface Ethernet28 is up, line protocol is up
+  Link ups:       1    last: 2021/05/14 13:23:44.70
+  Link downs:     3    last: 2021/05/14 13:23:44.62
+  vrf: default
+  index 14 metric 0 mtu 9216 speed 10
+  flags: <UP,BROADCAST,RUNNING,MULTICAST>
+  Type: Unknown
+  HWaddr: 56:da:60:3b:a8:0c
+  inet6 fe80::54da:60ff:fe3b:a80c/64
+  Interface Type Other
+  Interface Slave Type None
+Interface Ethernet32 is up, line protocol is up
+  Link ups:       1    last: 2021/05/14 13:23:45.01
+  Link downs:     3    last: 2021/05/14 13:23:44.88
+  vrf: default
+  index 16 metric 0 mtu 9216 speed 10
+  flags: <UP,BROADCAST,RUNNING,MULTICAST>
+  Type: Unknown
+  HWaddr: 4a:31:c3:33:42:bd
+  inet6 fe80::4831:c3ff:fe33:42bd/64
+  Interface Type Other
+  Interface Slave Type None
+Interface Ethernet36 is up, line protocol is up
+  Link ups:       1    last: 2021/05/14 13:23:45.18
+  Link downs:     3    last: 2021/05/14 13:23:45.07
+  vrf: default
+  index 15 metric 0 mtu 9216 speed 10
+  flags: <UP,BROADCAST,RUNNING,MULTICAST>
+  Type: Unknown
+  HWaddr: 1a:b5:94:d5:d7:50
+  inet6 fe80::18b5:94ff:fed5:d750/64
+  Interface Type Other
+  Interface Slave Type None
+Interface Ethernet40 is up, line protocol is up
+  Link ups:       1    last: 2021/05/14 13:23:45.61
+  Link downs:     3    last: 2021/05/14 13:23:45.48
+  vrf: default
+  index 17 metric 0 mtu 9216 speed 10
+  flags: <UP,BROADCAST,RUNNING,MULTICAST>
+  Type: Unknown
+  HWaddr: ee:ce:f1:03:38:81
+  inet6 fe80::ecce:f1ff:fe03:3881/64
+  Interface Type Other
+  Interface Slave Type None
+Interface Ethernet44 is up, line protocol is up
+  Link ups:       1    last: 2021/05/14 13:23:45.79
+  Link downs:     3    last: 2021/05/14 13:23:45.68
+  vrf: default
+  index 18 metric 0 mtu 9216 speed 10
+  flags: <UP,BROADCAST,RUNNING,MULTICAST>
+  Type: Unknown
+  HWaddr: d2:68:66:66:75:5b
+  inet6 fe80::d068:66ff:fe66:755b/64
+  Interface Type Other
+  Interface Slave Type None
+Interface Ethernet48 is up, line protocol is up
+  Link ups:       1    last: 2021/05/14 13:23:45.98
+  Link downs:     3    last: 2021/05/14 13:23:45.84
+  vrf: default
+  index 25 metric 0 mtu 9216 speed 10
+  flags: <UP,BROADCAST,RUNNING,MULTICAST>
+  Type: Unknown
+  HWaddr: 52:90:8f:f4:05:cd
+  inet6 fe80::5090:8fff:fef4:5cd/64
+  Interface Type Other
+  Interface Slave Type None
+Interface Loopback0 is up, line protocol is up
+  Link ups:       1    last: 2021/05/14 13:23:40.15
+  Link downs:     1    last: 2021/05/14 13:23:40.12
+  vrf: default
+  index 11 metric 0 mtu 65536 speed 0
+  flags: <UP,BROADCAST,RUNNING,NOARP>
+  Type: Unknown
+  HWaddr: e6:3a:e9:74:45:0b
+  inet 10.255.255.104/32 unnumbered
+  inet6 fe80::e43a:e9ff:fe74:450b/64
+  Interface Type Other
+  Interface Slave Type None
+Interface docker0 is up, line protocol is down
+  Link ups:       0    last: (never)
+  Link downs:     0    last: (never)
+  vrf: default
+  index 9 metric 0 mtu 1500 speed 0
+  flags: <UP,BROADCAST,MULTICAST>
+  Type: Ethernet
+  HWaddr: 02:b3:8b:ac:4c:3c
+  inet6 fd00::1/80
+  inet6 fe80::1/64
+  Interface Type Bridge
+  Interface Slave Type None
+  Bridge VLAN-aware: no
+Interface dummy is down
+  Link ups:       0    last: (never)
+  Link downs:     3    last: 2021/05/14 13:23:40.32
+  vrf: default
+  index 12 metric 0 mtu 1500 speed 0
+  flags: <BROADCAST,NOARP>
+  Type: Unknown
+  HWaddr: d6:96:80:91:77:52
+  Interface Type Other
+  Interface Slave Type Bridge
+  Master interface: Bridge
+Interface eth0 is up, line protocol is up
+  Link ups:       0    last: (never)
+  Link downs:     0    last: (never)
+  vrf: default
+  index 2 metric 0 mtu 1500 speed 4294967295
+  flags: <UP,BROADCAST,RUNNING,MULTICAST>
+  Type: Ethernet
+  HWaddr: 44:38:39:00:01:6c
+  inet 192.168.200.24/24
+  inet6 fe80::4638:39ff:fe00:16c/64
+  Interface Type Other
+  Interface Slave Type None
+Interface eth1 is up, line protocol is up
+  Link ups:       1    last: 2021/05/14 13:23:44.94
+  Link downs:     3    last: 2021/05/14 13:23:44.93
+  vrf: default
+  index 3 metric 0 mtu 9238 speed 4294967295
+  flags: <UP,BROADCAST,RUNNING,PROMISC,MULTICAST>
+  Type: Ethernet
+  HWaddr: 44:38:39:00:00:07
+  inet6 fe80::4638:39ff:fe00:7/64
+  Interface Type Other
+  Interface Slave Type None
+Interface eth2 is up, line protocol is up
+  Link ups:       1    last: 2021/05/14 13:23:45.02
+  Link downs:     3    last: 2021/05/14 13:23:45.02
+  vrf: default
+  index 4 metric 0 mtu 9238 speed 4294967295
+  flags: <UP,BROADCAST,RUNNING,PROMISC,MULTICAST>
+  Type: Ethernet
+  HWaddr: 44:38:39:00:00:0f
+  inet6 fe80::4638:39ff:fe00:f/64
+  Interface Type Other
+  Interface Slave Type None
+Interface eth3 is up, line protocol is up
+  Link ups:       1    last: 2021/05/14 13:23:45.03
+  Link downs:     3    last: 2021/05/14 13:23:45.03
+  vrf: default
+  index 5 metric 0 mtu 9238 speed 4294967295
+  flags: <UP,BROADCAST,RUNNING,PROMISC,MULTICAST>
+  Type: Ethernet
+  HWaddr: 44:38:39:00:00:17
+  inet6 fe80::4638:39ff:fe00:17/64
+  Interface Type Other
+  Interface Slave Type None
+Interface eth4 is up, line protocol is up
+  Link ups:       1    last: 2021/05/14 13:23:44.94
+  Link downs:     3    last: 2021/05/14 13:23:44.94
+  vrf: default
+  index 6 metric 0 mtu 9238 speed 4294967295
+  flags: <UP,BROADCAST,RUNNING,PROMISC,MULTICAST>
+  Type: Ethernet
+  HWaddr: 44:38:39:00:00:1f
+  inet6 fe80::4638:39ff:fe00:1f/64
+  Interface Type Other
+  Interface Slave Type None
+Interface eth5 is up, line protocol is up
+  Link ups:       1    last: 2021/05/14 13:23:44.96
+  Link downs:     3    last: 2021/05/14 13:23:44.95
+  vrf: default
+  index 7 metric 0 mtu 9238 speed 4294967295
+  flags: <UP,BROADCAST,RUNNING,PROMISC,MULTICAST>
+  Type: Ethernet
+  HWaddr: 44:38:39:00:00:27
+  inet6 fe80::4638:39ff:fe00:27/64
+  Interface Type Other
+  Interface Slave Type None
+Interface eth6 is up, line protocol is up
+  Link ups:       1    last: 2021/05/14 13:23:44.97
+  Link downs:     3    last: 2021/05/14 13:23:44.96
+  vrf: default
+  index 8 metric 0 mtu 9238 speed 4294967295
+  flags: <UP,BROADCAST,RUNNING,PROMISC,MULTICAST>
+  Type: Ethernet
+  HWaddr: 44:38:39:00:00:2f
+  inet6 fe80::4638:39ff:fe00:2f/64
+  Interface Type Other
+  Interface Slave Type None
+Interface lo is up, line protocol is up
+  Link ups:       0    last: (never)
+  Link downs:     0    last: (never)
+  vrf: default
+  index 1 metric 0 mtu 65536 speed 0
+  flags: <UP,LOOPBACK,RUNNING>
+  Type: Loopback
+  Interface Type Other
+  Interface Slave Type None
