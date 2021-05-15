@@ -1,6 +1,7 @@
 
 Firewall :[
-	{ name : fw1}
+	{ name : fw1},
+	{ name : fw2}
 ]
 
 router :[
@@ -8,12 +9,12 @@ router :[
 	{ name: leaf02 }, 
 	{ name: leaf03 }, 
 	{ name: leaf04 }, 
-	{ name: border01 },
-	{ name: border02 },
 	{ name: spine01 },
 	{ name: spine02 },
 	{ name: spine03 },
-	{ name: spine04 }
+	{ name: spine04 },
+	{ name: border01 },
+	{ name: border02 }
 ]
 
 server :{
@@ -22,5 +23,7 @@ server :{
 	{ name: server03 },
 	{ name: server04 },
 	{ name: server05 },
-	{ name: server06 }
+	{ name: server06 },
+	{ name: server07 },
+	{ name: server08 }
 }

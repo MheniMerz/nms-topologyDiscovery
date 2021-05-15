@@ -1,0 +1,29 @@
+Codes: K - kernel route, C - connected, S - static, R - RIP,
+       O - OSPF, I - IS-IS, B - BGP, E - EIGRP, N - NHRP,
+       T - Table, v - VNC, V - VNC-Direct, A - Babel, D - SHARP,
+       F - PBR, f - OpenFabric,
+       > - selected route, * - FIB route, q - queued, r - rejected, b - backup
+
+K>* 0.0.0.0/0 [0/202] via 192.168.200.1, eth0, 19:59:57
+B>* 10.0.101.0/24 [20/0] via 172.0.3.1, Ethernet0, weight 1, 09:25:26
+B>* 10.0.102.0/24 [20/0] via 172.0.3.3, Ethernet4, weight 1, 09:03:05
+B>* 10.0.103.0/24 [20/0] via 172.0.3.5, Ethernet8, weight 1, 19:59:16
+B>* 10.0.104.0/24 [20/0] via 172.0.3.7, Ethernet12, weight 1, 01:09:30
+B>* 10.255.255.1/32 [20/0] via 172.0.3.1, Ethernet0, weight 1, 09:25:26
+B>* 10.255.255.2/32 [20/0] via 172.0.3.3, Ethernet4, weight 1, 09:03:05
+B>* 10.255.255.3/32 [20/0] via 172.0.3.5, Ethernet8, weight 1, 19:59:16
+B>* 10.255.255.4/32 [20/0] via 172.0.3.7, Ethernet12, weight 1, 01:09:30
+C>* 10.255.255.103/32 is directly connected, Loopback0, 19:59:31
+C>* 172.0.3.0/31 is directly connected, Ethernet0, 19:59:21
+C>* 172.0.3.2/31 is directly connected, Ethernet4, 19:59:23
+C>* 172.0.3.4/31 is directly connected, Ethernet8, 19:59:22
+C>* 172.0.3.6/31 is directly connected, Ethernet12, 19:59:21
+C>* 172.0.3.8/31 is directly connected, Ethernet16, 19:59:20
+C>* 172.0.3.10/31 is directly connected, Ethernet20, 19:59:20
+C>* 192.168.200.0/24 is directly connected, eth0, 19:59:57
+B>* 192.168.255.1/32 [20/0] via 172.0.3.1, Ethernet0, weight 1, 09:02:58
+  *                         via 172.0.3.3, Ethernet4, weight 1, 09:02:58
+B>* 192.168.255.2/32 [20/0] via 172.0.3.1, Ethernet0, weight 1, 09:02:58
+  *                         via 172.0.3.3, Ethernet4, weight 1, 09:02:58
+B>* 192.168.255.3/32 [20/0] via 172.0.3.1, Ethernet0, weight 1, 09:02:58
+  *                         via 172.0.3.3, Ethernet4, weight 1, 09:02:58
