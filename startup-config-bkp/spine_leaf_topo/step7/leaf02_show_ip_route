@@ -4,34 +4,34 @@ Codes: K - kernel route, C - connected, S - static, R - RIP,
        F - PBR, f - OpenFabric,
        > - selected route, * - FIB route, q - queued, r - rejected, b - backup
 
-K>* 0.0.0.0/0 [0/202] via 192.168.200.1, eth0, 08:51:48
-C>* 10.0.102.0/24 is directly connected, Vlan102, 08:51:00
-B>* 10.0.103.0/24 [20/0] via 172.0.1.2, Ethernet20, weight 1, 08:50:51
-  *                      via 172.0.2.2, Ethernet24, weight 1, 08:50:51
-  *                      via 172.0.3.2, Ethernet28, weight 1, 08:50:51
-  *                      via 172.0.4.2, Ethernet32, weight 1, 08:50:51
-B>* 10.0.104.0/24 [20/0] via 172.0.1.2, Ethernet20, weight 1, 00:57:22
-  *                      via 172.0.2.2, Ethernet24, weight 1, 00:57:22
-  *                      via 172.0.3.2, Ethernet28, weight 1, 00:57:22
-  *                      via 172.0.4.2, Ethernet32, weight 1, 00:57:22
-C>* 10.255.255.2/32 is directly connected, Loopback0, 08:51:21
-B>* 10.255.255.3/32 [20/0] via 172.0.1.2, Ethernet20, weight 1, 08:50:51
-  *                        via 172.0.2.2, Ethernet24, weight 1, 08:50:51
-  *                        via 172.0.3.2, Ethernet28, weight 1, 08:50:51
-  *                        via 172.0.4.2, Ethernet32, weight 1, 08:50:51
-B>* 10.255.255.4/32 [20/0] via 172.0.1.2, Ethernet20, weight 1, 00:57:22
-  *                        via 172.0.2.2, Ethernet24, weight 1, 00:57:22
-  *                        via 172.0.3.2, Ethernet28, weight 1, 00:57:22
-  *                        via 172.0.4.2, Ethernet32, weight 1, 00:57:22
-B>* 10.255.255.101/32 [20/0] via 172.0.1.2, Ethernet20, weight 1, 08:50:53
-B>* 10.255.255.102/32 [20/0] via 172.0.2.2, Ethernet24, weight 1, 08:50:51
-B>* 10.255.255.103/32 [20/0] via 172.0.3.2, Ethernet28, weight 1, 08:50:59
-B>* 10.255.255.104/32 [20/0] via 172.0.4.2, Ethernet32, weight 1, 08:50:59
-C>* 172.0.1.2/31 is directly connected, Ethernet20, 08:50:55
-C>* 172.0.2.2/31 is directly connected, Ethernet24, 08:51:02
-C>* 172.0.3.2/31 is directly connected, Ethernet28, 08:51:02
-C>* 172.0.4.2/31 is directly connected, Ethernet32, 08:51:01
-C>* 192.168.200.0/24 is directly connected, eth0, 08:51:48
-B>* 192.168.255.1/32 [20/0] via 10.0.102.101, Vlan102, weight 1, 08:50:53
-B>* 192.168.255.2/32 [20/0] via 10.0.102.102, Vlan102, weight 1, 08:50:53
-B>* 192.168.255.3/32 [20/0] via 10.0.102.103, Vlan102, weight 1, 08:50:53
+K>* 0.0.0.0/0 [0/202] via 192.168.200.1, eth0, 01:14:43
+C>* 10.0.102.0/24 is directly connected, Vlan102, 01:14:13
+B>* 10.0.103.0/24 [20/0] via 172.0.1.2, Ethernet20, weight 1, 01:14:09
+  *                      via 172.0.2.2, Ethernet24, weight 1, 01:14:09
+  *                      via 172.0.3.2, Ethernet28, weight 1, 01:14:09
+  *                      via 172.0.4.2, Ethernet32, weight 1, 01:14:09
+B>* 10.0.104.0/24 [20/0] via 172.0.1.2, Ethernet20, weight 1, 01:14:09
+  *                      via 172.0.2.2, Ethernet24, weight 1, 01:14:09
+  *                      via 172.0.3.2, Ethernet28, weight 1, 01:14:09
+  *                      via 172.0.4.2, Ethernet32, weight 1, 01:14:09
+C>* 10.255.255.2/32 is directly connected, Loopback0, 01:14:17
+B>* 10.255.255.3/32 [20/0] via 172.0.1.2, Ethernet20, weight 1, 01:14:09
+  *                        via 172.0.2.2, Ethernet24, weight 1, 01:14:09
+  *                        via 172.0.3.2, Ethernet28, weight 1, 01:14:09
+  *                        via 172.0.4.2, Ethernet32, weight 1, 01:14:09
+B>* 10.255.255.4/32 [20/0] via 172.0.1.2, Ethernet20, weight 1, 01:14:09
+  *                        via 172.0.2.2, Ethernet24, weight 1, 01:14:09
+  *                        via 172.0.3.2, Ethernet28, weight 1, 01:14:09
+  *                        via 172.0.4.2, Ethernet32, weight 1, 01:14:09
+B>* 10.255.255.101/32 [20/0] via 172.0.1.2, Ethernet20, weight 1, 01:14:09
+B>* 10.255.255.102/32 [20/0] via 172.0.2.2, Ethernet24, weight 1, 01:14:09
+B>* 10.255.255.103/32 [20/0] via 172.0.3.2, Ethernet28, weight 1, 01:14:09
+B>* 10.255.255.104/32 [20/0] via 172.0.4.2, Ethernet32, weight 1, 01:14:09
+C>* 172.0.1.2/31 is directly connected, Ethernet20, 01:14:13
+C>* 172.0.2.2/31 is directly connected, Ethernet24, 01:14:12
+C>* 172.0.3.2/31 is directly connected, Ethernet28, 01:14:12
+C>* 172.0.4.2/31 is directly connected, Ethernet32, 01:14:12
+C>* 192.168.200.0/24 is directly connected, eth0, 01:14:43
+B>* 192.168.255.1/32 [20/0] via 10.0.102.101, Vlan102, weight 1, 01:14:09
+B>* 192.168.255.2/32 [20/0] via 10.0.102.102, Vlan102, weight 1, 01:14:06
+B>* 192.168.255.3/32 [20/0] via 10.0.102.103, Vlan102, weight 1, 01:14:03

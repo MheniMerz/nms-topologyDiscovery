@@ -1,16 +1,16 @@
 Capability codes: (R) Router, (B) Bridge, (O) Other
-LocalPort    RemoteDevice                RemotePortID       Capability    RemotePortDescr
------------  --------------------------  -----------------  ------------  -----------------
-Ethernet0    server07                    44:38:39:00:00:4a  O             eth1
-Ethernet4    server08                    44:38:39:00:00:4c  O             eth1
-Ethernet8    fw1                         fortyGigE0/0       BR            Ethernet0
-Ethernet12   fw2                         fortyGigE0/0       BR            Ethernet0
-Ethernet16   border02                    fortyGigE0/16      BR            Ethernet16
-Ethernet20   border02                    fortyGigE0/20      BR            Ethernet20
-Ethernet24   spine01                     fortyGigE0/16      BR            Ethernet16
-Ethernet28   spine02                     fortyGigE0/16      BR            Ethernet16
-Ethernet32   spine03                     fortyGigE0/16      BR            Ethernet16
-Ethernet36   spine04                     fortyGigE0/16      BR            Ethernet16
-eth0         oob-mgmt-switch.simulation  swp20              BR            swp20
+LocalPort    RemoteDevice     RemotePortID       Capability    RemotePortDescr
+-----------  ---------------  -----------------  ------------  -----------------
+Ethernet0    server07         44:38:39:00:00:4a  O             eth1
+Ethernet4    server08         44:38:39:00:00:4c  O             eth1
+Ethernet8    fw1              fortyGigE0/0       BR            Ethernet0
+Ethernet12   fw2              fortyGigE0/0       BR            Ethernet0
+Ethernet16   border02         fortyGigE0/16      BR            Ethernet16
+Ethernet20   border02         fortyGigE0/20      BR            Ethernet20
+Ethernet24   spine01          fortyGigE0/16      BR            Ethernet16
+Ethernet28   spine02          fortyGigE0/16      BR            Ethernet16
+Ethernet32   spine03          fortyGigE0/16      BR            Ethernet16
+Ethernet36   spine04          fortyGigE0/16      BR            Ethernet16
+eth0         oob-mgmt-switch  swp20              BR            swp20
 --------------------------------------------------
 Total entries displayed:  11

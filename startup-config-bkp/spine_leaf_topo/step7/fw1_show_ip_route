@@ -4,8 +4,8 @@ Codes: K - kernel route, C - connected, S - static, R - RIP,
        F - PBR, f - OpenFabric,
        > - selected route, * - FIB route, q - queued, r - rejected, b - backup
 
-K>* 0.0.0.0/0 [0/202] via 192.168.200.1, eth0, 20:16:39
-C>* 10.255.255.11/32 is directly connected, Loopback0, 20:16:07
-C>* 172.0.11.8/31 is directly connected, Ethernet0, 20:16:04
-C>* 172.0.21.8/31 is directly connected, Ethernet4, 20:16:02
-C>* 192.168.200.0/24 is directly connected, eth0, 20:16:39
+K>* 0.0.0.0/0 [0/202] via 192.168.200.1, eth0, 20:05:37
+C>* 10.255.255.11/32 is directly connected, Loopback0, 20:05:08
+C>* 172.0.11.8/31 is directly connected, Ethernet0, 20:04:55
+C>* 172.0.21.8/31 is directly connected, Ethernet4, 20:04:58
+C>* 192.168.200.0/24 is directly connected, eth0, 20:05:37
