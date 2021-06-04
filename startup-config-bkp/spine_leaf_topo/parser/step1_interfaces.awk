@@ -12,8 +12,10 @@ BEGIN{
 	type = "-";
 }
 
-/^\s+HWaddr/ {
-	mac_addr = $2;
+/^.+HWaddr/ {
+	for (x=1;x<=NF;x++) 
+		if ($x~"HWaddr")  
+			mac_addr = $(x+1);
 }
 
 /^\s+inet\s/ {

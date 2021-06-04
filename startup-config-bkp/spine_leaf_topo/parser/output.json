@@ -304,9 +304,9 @@
     "interface": {
        "columns": ["name", "macAddr", "ipAddr", "type"],
           "rows": [
-            ["Bridge","-","-","Bridge"],
-            ["Ethernet0","-","-","Other"],
-            ["Ethernet4","-","-","Other"],
+            ["Bridge","52:11:00:11:11:56","-","Bridge"],
+            ["Ethernet0","88:88:00:11:00:00","-","Other"],
+            ["Ethernet4","88:88:00:11:00:04","-","Other"],
             ["Ethernet8","88:88:00:11:00:08","-","Other"],
             ["Ethernet12","88:88:00:11:00:12","-","Other"],
             ["Ethernet16","88:88:00:11:00:16","-","Other"],
@@ -522,9 +522,9 @@
     "interface": {
        "columns": ["name", "macAddr", "ipAddr", "type"],
           "rows": [
-            ["Bridge","-","-","Bridge"],
-            ["Ethernet0","-","-","Other"],
-            ["Ethernet4","-","-","Other"],
+            ["Bridge","52:33:00:33:33:56","-","Bridge"],
+            ["Ethernet0","88:88:00:13:00:00","-","Other"],
+            ["Ethernet4","88:88:00:13:00:04","-","Other"],
             ["Ethernet8","88:88:00:13:00:08","-","Other"],
             ["Ethernet12","88:88:00:13:00:12","-","Other"],
             ["Ethernet16","88:88:00:13:00:16","-","Other"],
