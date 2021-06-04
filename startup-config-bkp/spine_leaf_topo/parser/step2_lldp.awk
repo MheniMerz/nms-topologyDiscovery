@@ -3,12 +3,15 @@
 #!/usr/bin/awk -f
 
 BEGIN{
-	i = 1
+	i = 0
         print "    \"lldp\": {\n       \"columns\": [\"localPort\", \"remoteDevice\", \"remotePort\"],\n          \"rows\": ["
 }
 
-(NR>3) {
-	print "            [\""$1"\",\""$2"\", \""$5"\"]" 
+{
+	i = i+1
+	if (i>3){
+		print "          [\""$1"\",\""$2"\", \""$5"\"]"
+	}
 }
 
 END{

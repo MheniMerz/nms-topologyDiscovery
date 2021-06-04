@@ -1,6 +1,7 @@
 #!/usr/bin/awk -f
 
 BEGIN{
+	i = 1
         print "    \"ipRoute\": {\n       \"columns\": [\"interface\", \"via\", \"to\", \"type\"],\n          \"rows\": ["
 }
 
@@ -20,7 +21,10 @@ BEGIN{
 
 # print one row
 {
-        print "            [\""interface"\",\""via"\",\""to"\",\""type"\"]";
+	i = i + 1
+	if (i>7){
+		print "            [\""interface"\",\""via"\",\""to"\",\""type"\"]";
+	}
 }
 
 END{
