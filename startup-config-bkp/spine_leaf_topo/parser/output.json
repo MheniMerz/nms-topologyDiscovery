@@ -47,7 +47,7 @@
     },
 
     "lldp": {
-       "columns": ["localPort", "remoteDevice", "remotePort", ],
+       "columns": ["localPort", "remoteDevice", "remotePort"],
           "rows": [
             ["Ethernet0","server07", "eth1"]
             ["Ethernet4","server08", "eth1"]
@@ -66,7 +66,7 @@
     },
 
     "arp": {
-       "columns": ["interface", "macAddr", "ipAddr", ],
+       "columns": ["interface", "macAddr", "ipAddr"],
           "rows": [
             ["-","44:38:39:00:00:4a", "10.0.111.107"]
             ["-","44:38:39:00:00:4c", "10.0.111.108"]
@@ -149,7 +149,7 @@
     },
 
     "lldp": {
-       "columns": ["localPort", "remoteDevice", "remotePort", ],
+       "columns": ["localPort", "remoteDevice", "remotePort"],
           "rows": [
             ["Ethernet0","server07", "eth2"]
             ["Ethernet4","server08", "eth2"]
@@ -168,7 +168,7 @@
     },
 
     "arp": {
-       "columns": ["interface", "macAddr", "ipAddr", ],
+       "columns": ["interface", "macAddr", "ipAddr"],
           "rows": [
             ["-","44:38:39:00:00:52", "10.0.112.107"]
             ["-","44:38:39:00:00:54", "10.0.112.108"]
@@ -215,11 +215,11 @@
           "rows": [
 
     "lldp": {
-       "columns": ["localPort", "remoteDevice", "remotePort", ],
+       "columns": ["localPort", "remoteDevice", "remotePort"],
           "rows": [
 
     "arp": {
-       "columns": ["interface", "macAddr", "ipAddr", ],
+       "columns": ["interface", "macAddr", "ipAddr"],
           "rows": [
 
     "ipRoute": {
@@ -263,7 +263,7 @@
     },
 
     "lldp": {
-       "columns": ["localPort", "remoteDevice", "remotePort", ],
+       "columns": ["localPort", "remoteDevice", "remotePort"],
           "rows": [
             ["Ethernet0","border01", "Ethernet8"]
             ["Ethernet4","border02", "Ethernet8"]
@@ -274,7 +274,7 @@
     },
 
     "arp": {
-       "columns": ["interface", "macAddr", "ipAddr", ],
+       "columns": ["interface", "macAddr", "ipAddr"],
           "rows": [
             ["eth0","44:38:39:00:00:6d", "192.168.200.1"]
          ]
@@ -334,7 +334,7 @@
     },
 
     "lldp": {
-       "columns": ["localPort", "remoteDevice", "remotePort", ],
+       "columns": ["localPort", "remoteDevice", "remotePort"],
           "rows": [
             ["Ethernet0","border01", "Ethernet12"]
             ["Ethernet4","border02", "Ethernet12"]
@@ -345,7 +345,7 @@
     },
 
     "arp": {
-       "columns": ["interface", "macAddr", "ipAddr", ],
+       "columns": ["interface", "macAddr", "ipAddr"],
           "rows": [
             ["eth0","44:38:39:00:00:6d", "192.168.200.1"]
          ]
@@ -415,7 +415,7 @@
     },
 
     "lldp": {
-       "columns": ["localPort", "remoteDevice", "remotePort", ],
+       "columns": ["localPort", "remoteDevice", "remotePort"],
           "rows": [
             ["Ethernet0","server01", "eth1"]
             ["Ethernet4","server02", "eth1"]
@@ -433,7 +433,7 @@
     },
 
     "arp": {
-       "columns": ["interface", "macAddr", "ipAddr", ],
+       "columns": ["interface", "macAddr", "ipAddr"],
           "rows": [
             ["-","44:38:39:00:00:32", "10.0.101.101"]
             ["-","44:38:39:00:00:34", "10.0.101.102"]
@@ -534,7 +534,7 @@
     },
 
     "lldp": {
-       "columns": ["localPort", "remoteDevice", "remotePort", ],
+       "columns": ["localPort", "remoteDevice", "remotePort"],
           "rows": [
             ["Ethernet0","server01", "eth2"]
             ["Ethernet4","server02", "eth2"]
@@ -552,7 +552,7 @@
     },
 
     "arp": {
-       "columns": ["interface", "macAddr", "ipAddr", ],
+       "columns": ["interface", "macAddr", "ipAddr"],
           "rows": [
             ["-","44:38:39:00:00:38", "10.0.102.101"]
             ["-","44:38:39:00:00:3a", "10.0.102.102"]
@@ -655,7 +655,7 @@
     },
 
     "lldp": {
-       "columns": ["localPort", "remoteDevice", "remotePort", ],
+       "columns": ["localPort", "remoteDevice", "remotePort"],
           "rows": [
             ["Ethernet0","server04", "eth1"]
             ["Ethernet4","server05", "eth1"]
@@ -673,7 +673,7 @@
     },
 
     "arp": {
-       "columns": ["interface", "macAddr", "ipAddr", ],
+       "columns": ["interface", "macAddr", "ipAddr"],
           "rows": [
             ["-","44:38:39:00:00:3e", "10.0.103.104"]
             ["-","44:38:39:00:00:40", "10.0.103.105"]
@@ -785,7 +785,7 @@
     },
 
     "lldp": {
-       "columns": ["localPort", "remoteDevice", "remotePort", ],
+       "columns": ["localPort", "remoteDevice", "remotePort"],
           "rows": [
             ["Ethernet0","server04", "eth2"]
             ["Ethernet4","server05", "eth2"]
@@ -803,7 +803,7 @@
     },
 
     "arp": {
-       "columns": ["interface", "macAddr", "ipAddr", ],
+       "columns": ["interface", "macAddr", "ipAddr"],
           "rows": [
             ["-","44:38:39:00:00:44", "10.0.104.104"]
             ["-","44:38:39:00:00:46", "10.0.104.105"]
@@ -892,7 +892,7 @@
     },
 
     "lldp": {
-       "columns": ["localPort", "remoteDevice", "remotePort", ],
+       "columns": ["localPort", "remoteDevice", "remotePort"],
           "rows": [
             ["","", ""]
             ["BEGIN{","", ""]
@@ -912,7 +912,7 @@
     },
 
     "arp": {
-       "columns": ["interface", "macAddr", "ipAddr", ],
+       "columns": ["interface", "macAddr", "ipAddr"],
           "rows": [
          ]
     },
@@ -1279,7 +1279,7 @@
     },
 
     "lldp": {
-       "columns": ["localPort", "remoteDevice", "remotePort", ],
+       "columns": ["localPort", "remoteDevice", "remotePort"],
           "rows": [
             ["Ethernet0","leaf01", "Ethernet20"]
             ["Ethernet4","leaf02", "Ethernet20"]
@@ -1294,7 +1294,7 @@
     },
 
     "arp": {
-       "columns": ["interface", "macAddr", "ipAddr", ],
+       "columns": ["interface", "macAddr", "ipAddr"],
           "rows": [
             ["Ethernet0","88:88:00:11:00:20", "172.0.1.1"]
             ["Ethernet4","88:88:00:12:00:20", "172.0.1.3"]
@@ -1382,7 +1382,7 @@
     },
 
     "lldp": {
-       "columns": ["localPort", "remoteDevice", "remotePort", ],
+       "columns": ["localPort", "remoteDevice", "remotePort"],
           "rows": [
             ["Ethernet0","leaf01", "Ethernet24"]
             ["Ethernet4","leaf02", "Ethernet24"]
@@ -1397,7 +1397,7 @@
     },
 
     "arp": {
-       "columns": ["interface", "macAddr", "ipAddr", ],
+       "columns": ["interface", "macAddr", "ipAddr"],
           "rows": [
             ["Ethernet0","88:88:00:11:00:24", "172.0.2.1"]
             ["Ethernet4","88:88:00:12:00:24", "172.0.2.3"]
@@ -1485,7 +1485,7 @@
     },
 
     "lldp": {
-       "columns": ["localPort", "remoteDevice", "remotePort", ],
+       "columns": ["localPort", "remoteDevice", "remotePort"],
           "rows": [
             ["Ethernet0","leaf01", "Ethernet28"]
             ["Ethernet4","leaf02", "Ethernet28"]
@@ -1500,7 +1500,7 @@
     },
 
     "arp": {
-       "columns": ["interface", "macAddr", "ipAddr", ],
+       "columns": ["interface", "macAddr", "ipAddr"],
           "rows": [
             ["Ethernet0","88:88:00:11:00:28", "172.0.3.1"]
             ["Ethernet4","88:88:00:12:00:28", "172.0.3.3"]
@@ -1588,7 +1588,7 @@
     },
 
     "lldp": {
-       "columns": ["localPort", "remoteDevice", "remotePort", ],
+       "columns": ["localPort", "remoteDevice", "remotePort"],
           "rows": [
             ["Ethernet0","leaf01", "Ethernet32"]
             ["Ethernet4","leaf02", "Ethernet32"]
@@ -1603,7 +1603,7 @@
     },
 
     "arp": {
-       "columns": ["interface", "macAddr", "ipAddr", ],
+       "columns": ["interface", "macAddr", "ipAddr"],
           "rows": [
             ["Ethernet0","88:88:00:11:00:32", "172.0.4.1"]
             ["Ethernet4","88:88:00:12:00:32", "172.0.4.3"]
