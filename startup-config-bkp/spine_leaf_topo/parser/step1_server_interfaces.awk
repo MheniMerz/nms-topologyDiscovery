@@ -1,7 +1,7 @@
 #!/usr/bin/awk -f
 
 BEGIN{
-	print "\n    \"interface\": {\n       \"columns\": [\"name\", \"macAddr\", \"ipAddr\", \"type\"],\n          \"rows\": ["
+	print "    \"interface\": {\n       \"columns\": [\"name\", \"macAddr\", \"ipAddr\", \"type\"],\n          \"rows\": ["
 }
 
 # first line extract interface_name and initialize other variables

@@ -1,7 +1,7 @@
 #!/usr/bin/awk -f
 
 BEGIN{
-        print "\n    \"arp\": {\n       \"columns\": [\"interface\", \"macAddr\", \"ipAddr\"],\n          \"rows\": ["
+        print "    \"arp\": {\n       \"columns\": [\"interface\", \"macAddr\", \"ipAddr\"],\n          \"rows\": ["
 }
 
 # ignore lines that don't start with an IP address

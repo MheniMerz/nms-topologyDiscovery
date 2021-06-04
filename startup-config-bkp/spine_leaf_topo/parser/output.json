@@ -1,6 +1,5 @@
 {
 "border01": {
-
     "interface": {
        "columns": ["name", "macAddr", "ipAddr", "type"],
           "rows": [
@@ -36,7 +35,6 @@
             ["lo","-","-","Other"]
          ]
     },
-
     "vlan": {
        "columns": ["name", "vid", "member", "mode"],
           "rows": [
@@ -45,7 +43,6 @@
             ["Vlan111","111", "Ethernet8", "untagged"]
          ]
     },
-
     "lldp": {
        "columns": ["localPort", "remoteDevice", "remotePort"],
           "rows": [
@@ -64,7 +61,6 @@
             ["Total","entries", ""]
          ]
     },
-
     "arp": {
        "columns": ["interface", "macAddr", "ipAddr"],
           "rows": [
@@ -77,7 +73,6 @@
             ["eth0","44:38:39:00:00:6d", "192.168.200.1"]
          ]
     },
-
     "ipRoute": {
        "columns": ["interface", "via", "to", "type"],
           "rows": [
@@ -102,7 +97,6 @@
     },
 },
 "border02": {
-
     "interface": {
        "columns": ["name", "macAddr", "ipAddr", "type"],
           "rows": [
@@ -138,7 +132,6 @@
             ["lo","-","-","Other"]
          ]
     },
-
     "vlan": {
        "columns": ["name", "vid", "member", "mode"],
           "rows": [
@@ -147,7 +140,6 @@
             ["Vlan112","112", "Ethernet8", "untagged"]
          ]
     },
-
     "lldp": {
        "columns": ["localPort", "remoteDevice", "remotePort"],
           "rows": [
@@ -166,7 +158,6 @@
             ["Total","entries", ""]
          ]
     },
-
     "arp": {
        "columns": ["interface", "macAddr", "ipAddr"],
           "rows": [
@@ -179,7 +170,6 @@
             ["eth0","44:38:39:00:00:6d", "192.168.200.1"]
          ]
     },
-
     "ipRoute": {
        "columns": ["interface", "via", "to", "type"],
           "rows": [
@@ -203,31 +193,25 @@
     },
 },
 "capabilities": {
-
     "interface": {
        "columns": ["name", "macAddr", "ipAddr", "type"],
           "rows": [
          ]
     },
-
     "vlan": {
        "columns": ["name", "vid", "member", "mode"],
           "rows": [
-
     "lldp": {
        "columns": ["localPort", "remoteDevice", "remotePort"],
           "rows": [
-
     "arp": {
        "columns": ["interface", "macAddr", "ipAddr"],
           "rows": [
-
     "ipRoute": {
        "columns": ["interface", "via", "to", "type"],
           "rows": [
 },
 "fw1": {
-
     "interface": {
        "columns": ["name", "macAddr", "ipAddr", "type"],
           "rows": [
@@ -255,13 +239,11 @@
             ["lo","-","-","Other"]
          ]
     },
-
     "vlan": {
        "columns": ["name", "vid", "member", "mode"],
           "rows": [
          ]
     },
-
     "lldp": {
        "columns": ["localPort", "remoteDevice", "remotePort"],
           "rows": [
@@ -272,14 +254,12 @@
             ["Total","entries", ""]
          ]
     },
-
     "arp": {
        "columns": ["interface", "macAddr", "ipAddr"],
           "rows": [
             ["eth0","44:38:39:00:00:6d", "192.168.200.1"]
          ]
     },
-
     "ipRoute": {
        "columns": ["interface", "via", "to", "type"],
           "rows": [
@@ -298,7 +278,6 @@
     },
 },
 "fw2": {
-
     "interface": {
        "columns": ["name", "macAddr", "ipAddr", "type"],
           "rows": [
@@ -326,13 +305,11 @@
             ["lo","-","-","Other"]
          ]
     },
-
     "vlan": {
        "columns": ["name", "vid", "member", "mode"],
           "rows": [
          ]
     },
-
     "lldp": {
        "columns": ["localPort", "remoteDevice", "remotePort"],
           "rows": [
@@ -343,14 +320,12 @@
             ["Total","entries", ""]
          ]
     },
-
     "arp": {
        "columns": ["interface", "macAddr", "ipAddr"],
           "rows": [
             ["eth0","44:38:39:00:00:6d", "192.168.200.1"]
          ]
     },
-
     "ipRoute": {
        "columns": ["interface", "via", "to", "type"],
           "rows": [
@@ -369,7 +344,6 @@
     },
 },
 "leaf01": {
-
     "interface": {
        "columns": ["name", "macAddr", "ipAddr", "type"],
           "rows": [
@@ -404,7 +378,6 @@
             ["lo","-","-","Other"]
          ]
     },
-
     "vlan": {
        "columns": ["name", "vid", "member", "mode"],
           "rows": [
@@ -413,7 +386,6 @@
             ["Vlan101","101", "Ethernet8", "untagged"]
          ]
     },
-
     "lldp": {
        "columns": ["localPort", "remoteDevice", "remotePort"],
           "rows": [
@@ -431,7 +403,6 @@
             ["Total","entries", ""]
          ]
     },
-
     "arp": {
        "columns": ["interface", "macAddr", "ipAddr"],
           "rows": [
@@ -445,7 +416,6 @@
             ["eth0","44:38:39:00:00:6d", "192.168.200.1"]
          ]
     },
-
     "ipRoute": {
        "columns": ["interface", "via", "to", "type"],
           "rows": [
@@ -491,7 +461,6 @@
     },
 },
 "leaf02": {
-
     "interface": {
        "columns": ["name", "macAddr", "ipAddr", "type"],
           "rows": [
@@ -523,7 +492,6 @@
             ["lo","-","-","Other"]
          ]
     },
-
     "vlan": {
        "columns": ["name", "vid", "member", "mode"],
           "rows": [
@@ -532,7 +500,6 @@
             ["Vlan102","102", "Ethernet8", "untagged"]
          ]
     },
-
     "lldp": {
        "columns": ["localPort", "remoteDevice", "remotePort"],
           "rows": [
@@ -550,7 +517,6 @@
             ["Total","entries", ""]
          ]
     },
-
     "arp": {
        "columns": ["interface", "macAddr", "ipAddr"],
           "rows": [
@@ -564,7 +530,6 @@
             ["eth0","44:38:39:00:00:6d", "192.168.200.1"]
          ]
     },
-
     "ipRoute": {
        "columns": ["interface", "via", "to", "type"],
           "rows": [
@@ -609,7 +574,6 @@
     },
 },
 "leaf03": {
-
     "interface": {
        "columns": ["name", "macAddr", "ipAddr", "type"],
           "rows": [
@@ -644,7 +608,6 @@
             ["lo","-","-","Other"]
          ]
     },
-
     "vlan": {
        "columns": ["name", "vid", "member", "mode"],
           "rows": [
@@ -653,7 +616,6 @@
             ["Vlan103","103", "Ethernet8", "untagged"]
          ]
     },
-
     "lldp": {
        "columns": ["localPort", "remoteDevice", "remotePort"],
           "rows": [
@@ -671,7 +633,6 @@
             ["Total","entries", ""]
          ]
     },
-
     "arp": {
        "columns": ["interface", "macAddr", "ipAddr"],
           "rows": [
@@ -685,7 +646,6 @@
             ["eth0","44:38:39:00:00:6d", "192.168.200.1"]
          ]
     },
-
     "ipRoute": {
        "columns": ["interface", "via", "to", "type"],
           "rows": [
@@ -739,7 +699,6 @@
     },
 },
 "leaf04": {
-
     "interface": {
        "columns": ["name", "macAddr", "ipAddr", "type"],
           "rows": [
@@ -774,7 +733,6 @@
             ["lo","-","-","Other"]
          ]
     },
-
     "vlan": {
        "columns": ["name", "vid", "member", "mode"],
           "rows": [
@@ -783,7 +741,6 @@
             ["Vlan104","104", "Ethernet8", "untagged"]
          ]
     },
-
     "lldp": {
        "columns": ["localPort", "remoteDevice", "remotePort"],
           "rows": [
@@ -801,7 +758,6 @@
             ["Total","entries", ""]
          ]
     },
-
     "arp": {
        "columns": ["interface", "macAddr", "ipAddr"],
           "rows": [
@@ -815,7 +771,6 @@
             ["eth0","44:38:39:00:00:6d", "192.168.200.1"]
          ]
     },
-
     "ipRoute": {
        "columns": ["interface", "via", "to", "type"],
           "rows": [
@@ -869,18 +824,16 @@
     },
 },
 "parser": {
-
     "interface": {
        "columns": ["name", "macAddr", "ipAddr", "type"],
           "rows": [
          ]
     },
-
     "vlan": {
        "columns": ["name", "vid", "member", "mode"],
           "rows": [
             ["BEGIN{","", "", ""]
-            ["print",""\n", "\"vlan\":", "{\n"]
+            ["print",""", "\"vlan\":", "{\n"]
             ["}","", "", ""]
             ["","", "", ""]
             ["(NR>2)","{print", """, "[\""$1"\",\""$2"\","]
@@ -890,14 +843,13 @@
             ["}","", "", ""]
          ]
     },
-
     "lldp": {
        "columns": ["localPort", "remoteDevice", "remotePort"],
           "rows": [
             ["","", ""]
             ["BEGIN{","", ""]
             ["i","=", ""]
-            ["print",""\n", "\"columns\":"]
+            ["print",""", "\"columns\":"]
             ["}","", ""]
             ["","", ""]
             ["(NR>3)","{", ""]
@@ -910,13 +862,11 @@
             ["","", ""]
          ]
     },
-
     "arp": {
        "columns": ["interface", "macAddr", "ipAddr"],
           "rows": [
          ]
     },
-
     "ipRoute": {
        "columns": ["interface", "via", "to", "type"],
           "rows": [
@@ -984,7 +934,6 @@
     },
 },
 "server01": {
-
     "interface": {
        "columns": ["name", "macAddr", "ipAddr", "type"],
           "rows": [
@@ -995,7 +944,6 @@
             ["eth2","44:38:39:00:00:38","10.0.102.101/24","-"]
          ]
     },
-
     "arp": {
        "columns": ["interface", "macAddr", "ipAddr", ],
           "rows": [
@@ -1004,7 +952,6 @@
             ["eth0","44:38:39:00:00:6d", "_gateway"]
          ]
     },
-
     "ipRoute": {
        "columns": ["interface", "via", "to", "type"],
           "rows": [
@@ -1016,7 +963,6 @@
     },
 },
 "server02": {
-
     "interface": {
        "columns": ["name", "macAddr", "ipAddr", "type"],
           "rows": [
@@ -1027,7 +973,6 @@
             ["eth2","44:38:39:00:00:3a","10.0.102.102/24","-"]
          ]
     },
-
     "arp": {
        "columns": ["interface", "macAddr", "ipAddr", ],
           "rows": [
@@ -1036,7 +981,6 @@
             ["eth0","44:38:39:00:01:80", "192.168.200.250"]
          ]
     },
-
     "ipRoute": {
        "columns": ["interface", "via", "to", "type"],
           "rows": [
@@ -1048,7 +992,6 @@
     },
 },
 "server03": {
-
     "interface": {
        "columns": ["name", "macAddr", "ipAddr", "type"],
           "rows": [
@@ -1059,7 +1002,6 @@
             ["eth2","44:38:39:00:00:3c","10.0.102.103/24","-"]
          ]
     },
-
     "arp": {
        "columns": ["interface", "macAddr", "ipAddr", ],
           "rows": [
@@ -1068,7 +1010,6 @@
             ["eth0","44:38:39:00:01:80", "192.168.200.250"]
          ]
     },
-
     "ipRoute": {
        "columns": ["interface", "via", "to", "type"],
           "rows": [
@@ -1080,7 +1021,6 @@
     },
 },
 "server04": {
-
     "interface": {
        "columns": ["name", "macAddr", "ipAddr", "type"],
           "rows": [
@@ -1091,7 +1031,6 @@
             ["eth2","44:38:39:00:00:44","10.0.104.104/24","-"]
          ]
     },
-
     "arp": {
        "columns": ["interface", "macAddr", "ipAddr", ],
           "rows": [
@@ -1100,7 +1039,6 @@
             ["eth1","52:33:00:33:33:56", "10.0.103.1"]
          ]
     },
-
     "ipRoute": {
        "columns": ["interface", "via", "to", "type"],
           "rows": [
@@ -1112,7 +1050,6 @@
     },
 },
 "server05": {
-
     "interface": {
        "columns": ["name", "macAddr", "ipAddr", "type"],
           "rows": [
@@ -1123,7 +1060,6 @@
             ["eth2","44:38:39:00:00:46","10.0.104.105/24","-"]
          ]
     },
-
     "arp": {
        "columns": ["interface", "macAddr", "ipAddr", ],
           "rows": [
@@ -1132,7 +1068,6 @@
             ["eth2","52:44:00:44:44:56", "10.0.104.1"]
          ]
     },
-
     "ipRoute": {
        "columns": ["interface", "via", "to", "type"],
           "rows": [
@@ -1144,7 +1079,6 @@
     },
 },
 "server06": {
-
     "interface": {
        "columns": ["name", "macAddr", "ipAddr", "type"],
           "rows": [
@@ -1155,7 +1089,6 @@
             ["eth2","44:38:39:00:00:48","10.0.104.106/24","-"]
          ]
     },
-
     "arp": {
        "columns": ["interface", "macAddr", "ipAddr", ],
           "rows": [
@@ -1164,7 +1097,6 @@
             ["eth0","44:38:39:00:01:80", "192.168.200.250"]
          ]
     },
-
     "ipRoute": {
        "columns": ["interface", "via", "to", "type"],
           "rows": [
@@ -1176,7 +1108,6 @@
     },
 },
 "server07": {
-
     "interface": {
        "columns": ["name", "macAddr", "ipAddr", "type"],
           "rows": [
@@ -1187,7 +1118,6 @@
             ["eth2","44:38:39:00:00:52","10.0.112.107/24","-"]
          ]
     },
-
     "arp": {
        "columns": ["interface", "macAddr", "ipAddr", ],
           "rows": [
@@ -1196,7 +1126,6 @@
             ["eth1","52:54:00:01:11:56", "10.0.111.1"]
          ]
     },
-
     "ipRoute": {
        "columns": ["interface", "via", "to", "type"],
           "rows": [
@@ -1208,7 +1137,6 @@
     },
 },
 "server08": {
-
     "interface": {
        "columns": ["name", "macAddr", "ipAddr", "type"],
           "rows": [
@@ -1219,7 +1147,6 @@
             ["eth2","44:38:39:00:00:54","10.0.112.108/24","-"]
          ]
     },
-
     "arp": {
        "columns": ["interface", "macAddr", "ipAddr", ],
           "rows": [
@@ -1228,7 +1155,6 @@
             ["eth0","44:38:39:00:00:6d", "_gateway"]
          ]
     },
-
     "ipRoute": {
        "columns": ["interface", "via", "to", "type"],
           "rows": [
@@ -1240,7 +1166,6 @@
     },
 },
 "spine01": {
-
     "interface": {
        "columns": ["name", "macAddr", "ipAddr", "type"],
           "rows": [
@@ -1271,13 +1196,11 @@
             ["lo","-","-","Other"]
          ]
     },
-
     "vlan": {
        "columns": ["name", "vid", "member", "mode"],
           "rows": [
          ]
     },
-
     "lldp": {
        "columns": ["localPort", "remoteDevice", "remotePort"],
           "rows": [
@@ -1292,7 +1215,6 @@
             ["Total","entries", ""]
          ]
     },
-
     "arp": {
        "columns": ["interface", "macAddr", "ipAddr"],
           "rows": [
@@ -1305,7 +1227,6 @@
             ["eth0","44:38:39:00:00:6d", "192.168.200.1"]
          ]
     },
-
     "ipRoute": {
        "columns": ["interface", "via", "to", "type"],
           "rows": [
@@ -1343,7 +1264,6 @@
     },
 },
 "spine02": {
-
     "interface": {
        "columns": ["name", "macAddr", "ipAddr", "type"],
           "rows": [
@@ -1374,13 +1294,11 @@
             ["lo","-","-","Other"]
          ]
     },
-
     "vlan": {
        "columns": ["name", "vid", "member", "mode"],
           "rows": [
          ]
     },
-
     "lldp": {
        "columns": ["localPort", "remoteDevice", "remotePort"],
           "rows": [
@@ -1395,7 +1313,6 @@
             ["Total","entries", ""]
          ]
     },
-
     "arp": {
        "columns": ["interface", "macAddr", "ipAddr"],
           "rows": [
@@ -1408,7 +1325,6 @@
             ["eth0","44:38:39:00:00:6d", "192.168.200.1"]
          ]
     },
-
     "ipRoute": {
        "columns": ["interface", "via", "to", "type"],
           "rows": [
@@ -1446,7 +1362,6 @@
     },
 },
 "spine03": {
-
     "interface": {
        "columns": ["name", "macAddr", "ipAddr", "type"],
           "rows": [
@@ -1477,13 +1392,11 @@
             ["lo","-","-","Other"]
          ]
     },
-
     "vlan": {
        "columns": ["name", "vid", "member", "mode"],
           "rows": [
          ]
     },
-
     "lldp": {
        "columns": ["localPort", "remoteDevice", "remotePort"],
           "rows": [
@@ -1498,7 +1411,6 @@
             ["Total","entries", ""]
          ]
     },
-
     "arp": {
        "columns": ["interface", "macAddr", "ipAddr"],
           "rows": [
@@ -1511,7 +1423,6 @@
             ["eth0","44:38:39:00:00:6d", "192.168.200.1"]
          ]
     },
-
     "ipRoute": {
        "columns": ["interface", "via", "to", "type"],
           "rows": [
@@ -1549,7 +1460,6 @@
     },
 },
 "spine04": {
-
     "interface": {
        "columns": ["name", "macAddr", "ipAddr", "type"],
           "rows": [
@@ -1580,13 +1490,11 @@
             ["lo","-","-","Other"]
          ]
     },
-
     "vlan": {
        "columns": ["name", "vid", "member", "mode"],
           "rows": [
          ]
     },
-
     "lldp": {
        "columns": ["localPort", "remoteDevice", "remotePort"],
           "rows": [
@@ -1601,7 +1509,6 @@
             ["Total","entries", ""]
          ]
     },
-
     "arp": {
        "columns": ["interface", "macAddr", "ipAddr"],
           "rows": [
@@ -1614,7 +1521,6 @@
             ["eth0","44:38:39:00:00:6d", "192.168.200.1"]
          ]
     },
-
     "ipRoute": {
        "columns": ["interface", "via", "to", "type"],
           "rows": [

@@ -1,7 +1,7 @@
 #!/usr/bin/awk -f
 
 BEGIN{
-        print "\n    \"ipRoute\": {\n       \"columns\": [\"interface\", \"via\", \"to\", \"type\"],\n          \"rows\": ["
+        print "    \"ipRoute\": {\n       \"columns\": [\"interface\", \"via\", \"to\", \"type\"],\n          \"rows\": ["
 }
 
 # for lines that start with route codes, extract wanted values
