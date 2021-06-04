@@ -18,7 +18,7 @@ BEGIN{
 
 /^\s+inet\s/ {
 	ip_addr = $2;
-	print "            [\""interface_name"\",\""mac_addr"\",\""ip_addr"\",\""type"\"]";
+	print "            [\""interface_name"\",\""mac_addr"\",\""ip_addr"\",\""type"\"],";
 }
 
 END{

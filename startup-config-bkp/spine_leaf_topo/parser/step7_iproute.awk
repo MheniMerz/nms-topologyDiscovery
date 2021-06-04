@@ -23,7 +23,7 @@ BEGIN{
 {
 	i = i + 1
 	if (i>7){
-		print "            [\""interface"\",\""via"\",\""to"\",\""type"\"]";
+		print "            [\""interface"\",\""via"\",\""to"\",\""type"\"],";
 	}
 }
 

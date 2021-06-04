@@ -23,7 +23,7 @@ BEGIN{
 # get interface type and print one row
 /^\s+Interface\sType/ {
 	type = $3;	
-	print "            [\""interface_name"\",\""mac_addr"\",\""ip_addr"\",\""type"\"]";
+	print "            [\""interface_name"\",\""mac_addr"\",\""ip_addr"\",\""type"\"],";
 }
 
 END{

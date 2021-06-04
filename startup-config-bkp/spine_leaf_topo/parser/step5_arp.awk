@@ -6,7 +6,7 @@ BEGIN{
 
 # ignore lines that don't start with an IP address
 /^[0-9]/{
-	print "            [\""$3"\",\""$2"\", \""$1"\",\""$4"\"]"
+	print "            [\""$3"\",\""$2"\", \""$1"\",\""$4"\"],"
 }
 
 END{

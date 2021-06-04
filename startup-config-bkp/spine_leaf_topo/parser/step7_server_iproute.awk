@@ -22,7 +22,7 @@ BEGIN{
 
 # print one row
 {
-        print "            [\""interface"\",\""via"\",\""to"\",\""type"\"]";
+        print "            [\""interface"\",\""via"\",\""to"\",\""type"\"],";
 }
 
 END{
