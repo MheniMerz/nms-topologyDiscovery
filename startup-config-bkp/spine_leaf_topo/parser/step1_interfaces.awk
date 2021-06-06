@@ -1,6 +1,7 @@
 #!/usr/bin/awk -f
 
 BEGIN{
+	i = 1;
 	print "    \"interface\": {\n       \"columns\": [\"name\", \"macAddr\", \"ipAddr\", \"type\"],\n          \"rows\": ["
 }
 
@@ -24,6 +25,7 @@ BEGIN{
 
 # get interface type and print one row
 /^\s+Interface\sType/ {
+	i = i+1;
 	type = $3;	
 	print "            [\""interface_name"\",\""mac_addr"\",\""ip_addr"\",\""type"\"],";
 }

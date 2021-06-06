@@ -7,16 +7,16 @@ BEGIN{
 
 # for lines that start with route codes, extract wanted values
 /^[A-Z]>/ {
-        interface = $6;
-	via = $5;
+        interface = substr($6, 1, length($6)-1);
+	via = substr($5, 1, length($5)-1);
         to = $2;
         type = $1;
 }
 
 # for routes for the same target subnet, keep to and type records from the last line
 /^\s+\*/ {
-        via = $3;
-	interface = $4;
+        interface = substr($4, 1, length($4)-1);
+	via = substr($3, 1, length($3)-1);
 }
 
 # print one row
