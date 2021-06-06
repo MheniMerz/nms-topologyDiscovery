@@ -26,6 +26,7 @@ BEGIN{
 /^\s+Interface\sType/ {
 	type = $3;	
 	print "            [\""interface_name"\",\""mac_addr"\",\""ip_addr"\",\""type"\"],";
+		
 }
 
 END{

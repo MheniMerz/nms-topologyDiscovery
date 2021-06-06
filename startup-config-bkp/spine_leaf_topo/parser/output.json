@@ -415,6 +415,9 @@
     "interface": {
        "columns": ["name", "macAddr", "ipAddr", "type"],
           "rows": [
+            ["Bridge","52:22:00:22:22:56","-","Bridge"],
+            ["Ethernet0","88:88:00:12:00:00","-","Other"],
+            ["Ethernet4","88:88:00:12:00:04","-","Other"],
             ["Ethernet8","88:88:00:12:00:08","-","Other"],
             ["Ethernet12","88:88:00:12:00:12","-","Other"],
             ["Ethernet16","88:88:00:12:00:16","-","Other"],
