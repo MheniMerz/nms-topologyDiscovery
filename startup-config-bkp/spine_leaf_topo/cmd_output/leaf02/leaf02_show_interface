@@ -4,7 +4,8 @@ Interface Bridge is up, line protocol is up
   index 30 metric 0 mtu 9100 speed 0
   flags: <UP,BROADCAST,RUNNING,MULTICAST>  Type: Unknown
   HWaddr: 52:22:00:22:22:56
-  inet6 fe80::880c:20ff:fee3:b6d5/64  Interface Type Bridge
+  inet6 fe80::880c:20ff:fee3:b6d5/64  
+  Interface Type Bridge
   Interface Slave Type None
   Bridge VLAN-aware: yes
 Interface Ethernet0 is up, line protocol is up
@@ -13,7 +14,8 @@ Interface Ethernet0 is up, line protocol is up
   index 40 metric 0 mtu 9216 speed 10
   flags: <UP,BROADCAST,RUNNING,MULTICAST>  Type: Unknown
   HWaddr: 88:88:00:12:00:00
-  inet6 fe80::5022:ff:fe22:2256/64  Interface Type Other
+  inet6 fe80::5022:ff:fe22:2256/64  
+  Interface Type Other
   Interface Slave Type Bridge
   Master interface: Bridge
 Interface Ethernet4 is up, line protocol is up
@@ -22,7 +24,8 @@ Interface Ethernet4 is up, line protocol is up
   index 41 metric 0 mtu 9216 speed 10
   flags: <UP,BROADCAST,RUNNING,MULTICAST>  Type: Unknown
   HWaddr: 88:88:00:12:00:04
-  inet6 fe80::5022:ff:fe22:2256/64  Interface Type Other
+  inet6 fe80::5022:ff:fe22:2256/64  
+  Interface Type Other
   Interface Slave Type Bridge
   Master interface: Bridge
 Interface Ethernet8 is up, line protocol is up
