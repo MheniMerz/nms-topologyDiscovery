@@ -1,0 +1,5 @@
+Name       VID  Member     Mode
+-------  -----  ---------  --------
+Vlan102    102  Ethernet0  untagged
+Vlan102    102  Ethernet4  untagged
+Vlan102    102  Ethernet8  untagged

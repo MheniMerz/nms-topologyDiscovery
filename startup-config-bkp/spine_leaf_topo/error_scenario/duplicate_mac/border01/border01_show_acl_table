@@ -1,0 +1,3 @@
+Name     Type         Binding  Description    Stage
+-------  ---------  ---------  -------------  -------
+BLK_SSH  CTRLPLANE         22  drop           ingress

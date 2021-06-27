@@ -1,0 +1,8 @@
+Capability codes: (R) Router, (B) Bridge, (O) Other
+LocalPort    RemoteDevice                RemotePortID    Capability    RemotePortDescr
+-----------  --------------------------  --------------  ------------  -----------------
+Ethernet0    border01                    fortyGigE0/12   BR            Ethernet12
+Ethernet4    border02                    fortyGigE0/12   BR            Ethernet12
+eth0         oob-mgmt-switch.simulation  swp19           BR            swp19
+--------------------------------------------------
+Total entries displayed:  3

@@ -1,0 +1,12 @@
+Interface    Master    IPv4 address/mask    Admin/Oper    BGP Neighbor    Neighbor IP
+-----------  --------  -------------------  ------------  --------------  -------------
+Ethernet0              172.0.4.0/31         up/up         leaf01          172.0.4.1
+Ethernet4              172.0.4.2/31         up/up         leaf02          172.0.4.3
+Ethernet8              172.0.4.4/31         up/up         leaf03          172.0.4.5
+Ethernet12             172.0.4.6/31         up/up         leaf04          172.0.4.7
+Ethernet16             172.0.4.8/31         up/up         border01        172.0.4.9
+Ethernet20             172.0.4.10/31        up/up         border02        172.0.4.11
+Loopback0              10.255.255.104/32    up/up         N/A             N/A
+docker0                240.127.1.1/24       up/down       N/A             N/A
+eth0                   192.168.200.24/24    up/up         N/A             N/A
+lo                     127.0.0.1/16         up/up         N/A             N/A
