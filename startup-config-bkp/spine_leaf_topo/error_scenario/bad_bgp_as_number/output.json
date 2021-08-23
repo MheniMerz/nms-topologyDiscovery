@@ -1,1140 +1,5012 @@
 {
-    "border01": {
-      "arp": {
-        "columns": [ "IPADDR", "MACADDR", "INTERFACE", "VLAN"],
-        "rows": [          
-                     ["172.0.1.8", "88:88:00:51:00:16", "Ethernet24", ""],
-                     [ "172.0.2.8", "88:88:00:52:00:16", "Ethernet28", ""],
-                     [ "172.0.3.8", "88:88:00:53:00:16", "Ethernet32", ""],
-                     [ "172.0.4.8", "88:88:00:54:00:16", "Ethernet36", ""],
-                     [ "192.168.200.1", "44:38:39:00:00:6d", "eth0", ""]
-        ]
-      },      
-      "ipRoute": {
-        "columns": [ "INTERFACE", "VIA", "TO", "TYPE"],        
-        "rows": [
-                     [ "eth0", "192.168.200.1", "0.0.0.0/0", "K>*"],
-                     [ "Vlan111", "connected", "10.0.111.0/24", "C>*"],
-                     [ "Loopback0", "connected", "10.255.255.5/32", "C>*"],
-                     [ "Ethernet24", "connected", "172.0.1.8/31", "C>*"],
-                     [ "Ethernet28", "connected", "172.0.2.8/31", "C>*"],
-                     [ "Ethernet32", "connected", "172.0.3.8/31", "C>*"],
-                     [ "Ethernet36", "connected", "172.0.4.8/31", "C>*"],
-                     [ "Ethernet8", "connected", "172.0.11.8/31", "C>*"],
-                     [ "Ethernet12", "connected", "172.0.12.8/31", "C>*"],
-                     [ "eth0", "connected", "192.168.200.0/24", "C>*"]
-        ]
-      },      
-      "aclTable": {
-        "columns": [ "NAME", "TYPE", "BINDING", "DESCRIPTION", "STAGE"],
-        "rows": [
-                     [ "BLK_SSH", "CTRLPLANE", "22", "drop", "ingress"]
-        ]
-      },      
-      "aclRule": {
-        "columns": [ "TABLE", "RULE", "PRIORITY", "ACTION", "MATCH"],
-        "rows": [
-                     [ "BLK_SSH", "ACE_DROP", "2", "DROP", "SRC_IP:"],
-                     [ "BLK_SSH", "ACE_FORWARD", "1", "FORWARD", "IP_TYPE:"]
-        ]
-      },      
-      "lldp": {
-        "columns": [ "LOCALPORT", "REMOTEDEVICE", "REMOTEPORT"],        
-        "rows": [
-                     [ "Ethernet8", "fw1", "fortyGigE0/0"],
-                     [ "Ethernet12", "fw2", "fortyGigE0/0"],
-                     [ "Ethernet16", "border02", "fortyGigE0/16"],
-                     [ "Ethernet20", "border02", "fortyGigE0/20"],
-                     [ "Ethernet24", "spine01", "fortyGigE0/16"],
-                     [ "Ethernet28", "spine02", "fortyGigE0/16"],
-                     [ "Ethernet32", "spine03", "fortyGigE0/16"],
-                     [ "Ethernet36", "spine04", "fortyGigE0/16"]
-        ]
-      },      
-      "vlan": {
-        "columns": [ "NAME", "VID", "MEMBER", "MODE"],        
-        "rows": [
-                     [ "Vlan111", "111", "Ethernet0", "untagged"],
-                     [ "Vlan111", "111", "Ethernet4", "untagged"],
-                     [ "Vlan111", "111", "Ethernet8", "untagged"]
-        ]
-      },      
-      "interface": {
-        "columns": [ "NAME", "MACADDR", "IPADDR", "TYPE"],        
-        "rows": [
-                     [ "Bridge", "52:54:00:01:11:56", "", "Bridge"],
-                     [ "Ethernet0", "52:54:00:01:11:56", "", "Other"],
-                     [ "Ethernet4", "52:54:00:01:11:56", "", "Other"],
-                     [ "Ethernet8", "52:54:00:01:11:56", "172.0.11.8/31", "Other"],
-                     [ "Ethernet12", "52:54:00:01:11:56", "172.0.12.8/31", "Other"],
-                     [ "Ethernet16", "52:54:00:01:11:56", "", "Other"],
-                     [ "Ethernet20", "52:54:00:01:11:56", "", "Other"],
-                     [ "Ethernet24", "52:54:00:01:11:56", "172.0.1.9/31", "Other"],
-                     [ "Ethernet28", "52:54:00:01:11:56", "172.0.2.9/31", "Other"],
-                     [ "Ethernet32", "52:54:00:01:11:56", "172.0.3.9/31", "Other"],
-                     [ "Ethernet36", "52:54:00:01:11:56", "172.0.4.9/31", "Other"],
-                     [ "Ethernet40", "52:54:00:01:11:56", "", "Other"],
-                     [ "Ethernet44", "52:54:00:01:11:56", "", "Other"],
-                     [ "Ethernet48", "52:54:00:01:11:56", "", "Other"],
-                     [ "Loopback0", "f6:02:b1:2f:cf:fc", "10.255.255.5/32", "Other"],
-                     [ "Vlan111", "52:54:00:01:11:56", "10.0.111.1/24", "Vlan"],
-                     [ "docker0", "02:42:f8:a4:14:cf", "", "Bridge"],
-                     [ "dummy", "1e:c4:c5:a3:b1:69", "", "Other"],
-                     [ "eth0", "44:38:39:00:01:74", "192.168.200.63/24", "Other"],
-                     [ "eth1", "44:38:39:00:00:49", "", "Other"],
-                     [ "eth2", "44:38:39:00:00:4b", "", "Other"],
-                     [ "eth3", "44:38:39:00:00:4d", "", "Other"],
-                     [ "eth4", "44:38:39:00:00:4f", "", "Other"],
-                     [ "eth5", "44:38:39:00:00:61", "", "Other"],
-                     [ "eth6", "44:38:39:00:00:63", "", "Other"],
-                     [ "eth7", "44:38:39:00:00:22", "", "Other"],
-                     [ "eth8", "44:38:39:00:00:24", "", "Other"],
-                     [ "eth9", "44:38:39:00:00:26", "", "Other"],
-                     [ "eth10", "44:38:39:00:00:28", "", "Other"],
-                     [ "lo", "", "", "Other"]
-        ]
-      },      
-      "bgp": {
-        "columns": [ "NEIGHBORADDRESS", "REMOTEAS", "LOCALAS", "REMOTEROUTERID", "LOCALROUTERID", "BGPSTATE"],        
-        "rows": [
-                     [ "172.0.1.8", "65199", "65103", "10.255.255.101", "10.255.255.5", "Idle"],
-                     [ "172.0.2.8", "65199", "65103", "10.255.255.102", "10.255.255.5", "Idle"],
-                     [ "172.0.3.8", "65199", "65103", "10.255.255.103", "10.255.255.5", "Idle"],
-                     [ "172.0.4.8", "65199", "65103", "10.255.255.104", "10.255.255.5", "Idle"]
-        ]
-      }
-    },    
-    "border02": {
-      "arp": {
-        "columns": [ "IPADDR", "MACADDR", "INTERFACE", "VLAN"],        
-        "rows": [
-                     [ "172.0.1.10", "88:88:00:51:00:20", "Ethernet24", ""],
-                     [ "172.0.2.10", "88:88:00:52:00:20", "Ethernet28", ""],
-                     [ "172.0.3.10", "88:88:00:53:00:20", "Ethernet32", ""],
-                     [ "172.0.4.10", "88:88:00:54:00:20", "Ethernet36", ""],
-                     [ "192.168.200.1", "44:38:39:00:00:6d", "eth0", ""]
-        ]
-      }, 
-      "ipRoute": {
-        "columns": [ "INTERFACE", "VIA", "TO", "TYPE"],        
-        "rows": [
-                     [ "eth0", "192.168.200.1", "0.0.0.0/0", "K>*"],
-                     [ "Vlan112", "connected", "10.0.112.0/24", "C>*"],
-                     [ "Loopback0", "connected", "10.255.255.6/32", "C>*"],
-                     [ "Ethernet24", "connected", "172.0.1.10/31", "C>*"],
-                     [ "Ethernet28", "connected", "172.0.2.10/31", "C>*"],
-                     [ "Ethernet32", "connected", "172.0.3.10/31", "C>*"],
-                     [ "Ethernet36", "connected", "172.0.4.10/31", "C>*"],
-                     [ "Ethernet8", "connected", "172.0.21.8/31", "C>*"],
-                     [ "Ethernet12", "connected", "172.0.22.8/31", "C>*"],
-                     [ "eth0", "connected", "192.168.200.0/24", "C>*"]
-        ]
-      },      
-      "aclTable": {
-        "columns": [ "NAME", "TYPE", "BINDING", "DESCRIPTION", "STAGE"], 
-        "rows": [
-                     [ "BLK_SSH", "CTRLPLANE", "22", "drop", "ingress"]
-        ]
-      },      
-      "aclRule": {
-        "columns": [ "TABLE", "RULE", "PRIORITY", "ACTION", "MATCH"],        
-        "rows": [
-                     [ "BLK_SSH", "ACE_DROP", "2", "DROP", "SRC_IP:"],
-                     [ "BLK_SSH", "ACE_FORWARD", "1", "FORWARD", "IP_TYPE:"]
-        ]
-      },      
-      "lldp": {
-        "columns": [ "LOCALPORT", "REMOTEDEVICE", "REMOTEPORT"],        
-        "rows": [
-                     [ "Ethernet8", "fw1", "fortyGigE0/4"],
-                     [ "Ethernet12", "fw2", "fortyGigE0/4"],
-                     [ "Ethernet16", "border01", "fortyGigE0/16"],
-                     [ "Ethernet20", "border01", "fortyGigE0/20"],
-                     [ "Ethernet24", "spine01", "fortyGigE0/20"],
-                     [ "Ethernet28", "spine02", "fortyGigE0/20"],
-                     [ "Ethernet32", "spine03", "fortyGigE0/20"],
-                     [ "Ethernet36", "spine04", "fortyGigE0/20"]
-        ]
-      },      
-      "vlan": {
-        "columns": [ "NAME", "VID", "MEMBER", "MODE"],        
-        "rows": [
-                     [ "Vlan112", "112", "Ethernet0", "untagged"],
-                     [ "Vlan112", "112", "Ethernet4", "untagged"],
-                     [ "Vlan112", "112", "Ethernet8", "untagged"]
-        ]
-      },      
-      "interface": {
-        "columns": [ "NAME", "MACADDR", "IPADDR", "TYPE"],        
-        "rows": [
-                     [ "Bridge", "52:54:00:02:22:56", "", "Bridge"],
-                     [ "Ethernet0", "52:54:00:02:22:56", "", "Other"],
-                     [ "Ethernet4", "52:54:00:02:22:56", "", "Other"],
-                     [ "Ethernet8", "52:54:00:02:22:56", "172.0.21.8/31", "Other"],
-                     [ "Ethernet12", "52:54:00:02:22:56", "172.0.22.8/31", "Other"],
-                     [ "Ethernet16", "52:54:00:02:22:56", "", "Other"],
-                     [ "Ethernet20", "52:54:00:02:22:56", "", "Other"],
-                     [ "Ethernet24", "52:54:00:02:22:56", "172.0.1.11/31", "Other"],
-                     [ "Ethernet28", "52:54:00:02:22:56", "172.0.2.11/31", "Other"],
-                     [ "Ethernet32", "52:54:00:02:22:56", "172.0.3.11/31", "Other"],
-                     [ "Ethernet36", "52:54:00:02:22:56", "172.0.4.11/31", "Other"],
-                     [ "Ethernet40", "52:54:00:02:22:56", "", "Other"],
-                     [ "Ethernet44", "52:54:00:02:22:56", "", "Other"],
-                     [ "Ethernet48", "52:54:00:02:22:56", "", "Other"],
-                     [ "Loopback0", "8a:2c:bd:0a:27:86", "10.255.255.6/32", "Other"],
-                     [ "Vlan112", "52:54:00:02:22:56", "10.0.112.1/24", "Vlan"],
-                     [ "docker0", "02:42:4b:e9:8e:4a", "", "Bridge"],
-                     [ "dummy", "4e:b7:76:f6:cc:15", "", "Other"],
-                     [ "eth0", "44:38:39:00:01:7c", "192.168.200.64/24", "Other"],
-                     [ "eth1", "44:38:39:00:00:51", "", "Other"],
-                     [ "eth2", "44:38:39:00:00:53", "", "Other"],
-                     [ "eth3", "44:38:39:00:00:55", "", "Other"],
-                     [ "eth4", "44:38:39:00:00:57", "", "Other"],
-                     [ "eth5", "44:38:39:00:00:62", "", "Other"],
-                     [ "eth6", "44:38:39:00:00:64", "", "Other"],
-                     [ "eth7", "44:38:39:00:00:2a", "", "Other"],
-                     [ "eth8", "44:38:39:00:00:2c", "", "Other"],
-                     [ "eth9", "44:38:39:00:00:2e", "", "Other"],
-                     [ "eth10", "44:38:39:00:00:30", "", "Other"],
-                     [ "lo", "", "", "Other"]
-        ]
-      },      
-      "bgp": {
-        "columns": [ "NEIGHBORADDRESS", "REMOTEAS", "LOCALAS", "REMOTEROUTERID", "LOCALROUTERID", "BGPSTATE"],        
-        "rows": [
-                     [ "172.0.1.10", "65199", "65103", "10.255.255.101", "10.255.255.6", "Idle"],
-                     [ "172.0.2.10", "65199", "65103", "10.255.255.102", "10.255.255.6", "Idle"],
-                     [ "172.0.3.10", "65199", "65103", "10.255.255.103", "10.255.255.6", "Idle"],
-                     [ "172.0.4.10", "65199", "65103", "10.255.255.104", "10.255.255.6", "Idle"]
-        ]
-      }
-    },    
-    "spine01": {
-      "arp": {
-        "columns": [ "IPADDR", "MACADDR", "INTERFACE", "VLAN"],        
-        "rows": [
-                     [ "172.0.1.1", "52:11:00:11:11:56", "Ethernet0", ""],
-                     [ "172.0.1.3", "52:22:00:22:22:56", "Ethernet4", ""],
-                     [ "172.0.1.5", "52:33:00:33:33:56", "Ethernet8", ""],
-                     [ "172.0.1.7", "52:44:00:44:44:56", "Ethernet12", ""],
-                     [ "172.0.1.9", "52:54:00:01:11:56", "Ethernet16", ""],
-                     [ "172.0.1.11", "52:54:00:02:22:56", "Ethernet20", ""],
-                     [ "192.168.200.1", "44:38:39:00:00:6d", "eth0", ""]
-        ]
-      },      
-      "ipRoute": {
-        "columns": [ "INTERFACE", "VIA", "TO", "TYPE"],        
-        "rows": [
-                     [ "eth0", "192.168.200.1", "0.0.0.0/0", "K>*"],
-                     [ "Ethernet4", "172.0.1.3", "10.0.102.0/24", "B>*"],
-                     [ "Ethernet8", "172.0.1.5", "10.0.103.0/24", "B>*"],
-                     [ "Ethernet12", "172.0.1.7", "10.0.104.0/24", "B>*"],
-                     [ "Ethernet4", "172.0.1.3", "10.255.255.2/32", "B>*"],
-                     [ "Ethernet8", "172.0.1.5", "10.255.255.3/32", "B>*"],
-                     [ "Ethernet12", "172.0.1.7", "10.255.255.4/32", "B>*"],
-                     [ "Loopback0", "connected", "10.255.255.101/32", "C>*"],
-                     [ "Ethernet0", "connected", "172.0.1.0/31", "C>*"],
-                     [ "Ethernet4", "connected", "172.0.1.2/31", "C>*"],
-                     [ "Ethernet8", "connected", "172.0.1.4/31", "C>*"],
-                     [ "Ethernet12", "connected", "172.0.1.6/31", "C>*"],
-                     [ "Ethernet16", "connected", "172.0.1.8/31", "C>*"],
-                     [ "Ethernet20", "connected", "172.0.1.10/31", "C>*"],
-                     [ "eth0", "connected", "192.168.200.0/24", "C>*"]
-        ]
-      },      
-      "aclTable": {
-        "columns": [ "NAME", "TYPE", "BINDING", "DESCRIPTION", "STAGE"],        
-        "rows": []
-      },      
-      "aclRule": {
-        "columns": [ "TABLE", "RULE", "PRIORITY", "ACTION", "MATCH"],        
-        "rows": []
-      },      
-      "lldp": {
-        "columns": [ "LOCALPORT", "REMOTEDEVICE", "REMOTEPORT"],        
-        "rows": [
-                     [ "Ethernet0", "leaf01", "fortyGigE0/20"],
-                     [ "Ethernet4", "leaf02", "fortyGigE0/20"],
-                     [ "Ethernet8", "leaf03", "fortyGigE0/20"],
-                     [ "Ethernet12", "leaf04", "fortyGigE0/20"],
-                     [ "Ethernet16", "border01", "fortyGigE0/24"],
-                     [ "Ethernet20", "border02", "fortyGigE0/24"]
-        ]
-      },      
-      "vlan": {
-        "columns": [ "NAME", "VID", "MEMBER", "MODE"],        
-        "rows": []
-      },      
-      "interface": {
-        "columns": [ "NAME", "MACADDR", "IPADDR", "TYPE"],       
-        "rows": [
-                     [ "Bridge", "52:54:00:11:11:56", "", "Bridge"],
-                     [ "Ethernet0", "88:88:00:51:00:00", "172.0.1.0/31", "Other"],
-                     [ "Ethernet4", "88:88:00:51:00:04", "172.0.1.2/31", "Other"],
-                     [ "Ethernet8", "88:88:00:51:00:08", "172.0.1.4/31", "Other"],
-                     [ "Ethernet12", "88:88:00:51:00:12", "172.0.1.6/31", "Other"],
-                     [ "Ethernet16", "88:88:00:51:00:16", "172.0.1.8/31", "Other"],
-                     [ "Ethernet20", "88:88:00:51:00:20", "172.0.1.10/31", "Other"],
-                     [ "Ethernet24", "88:88:00:51:00:24", "", "Other"],
-                     [ "Ethernet28", "88:88:00:51:00:28", "", "Other"],
-                     [ "Ethernet32", "88:88:00:51:00:32", "", "Other"],
-                     [ "Ethernet36", "88:88:00:51:00:36", "", "Other"],
-                     [ "Ethernet40", "88:88:00:51:00:40", "", "Other"],
-                     [ "Ethernet44", "88:88:00:51:00:44", "", "Other"],
-                     [ "Ethernet48", "88:88:00:51:00:48", "", "Other"],
-                     [ "Loopback0", "de:66:cc:7d:db:fa", "10.255.255.101/32", "Other"],
-                     [ "docker0", "02:42:ce:c2:97:43", "", "Bridge"],
-                     [ "dummy", "fe:4b:bf:c0:ea:30", "", "Other"],
-                     [ "eth0", "44:38:39:00:01:82", "192.168.200.21/24", "Other"],
-                     [ "eth1", "44:38:39:00:00:01", "", "Other"],
-                     [ "eth2", "44:38:39:00:00:09", "", "Other"],
-                     [ "eth3", "44:38:39:00:00:11", "", "Other"],
-                     [ "eth4", "44:38:39:00:00:19", "", "Other"],
-                     [ "eth5", "44:38:39:00:00:21", "", "Other"],
-                     [ "eth6", "44:38:39:00:00:29", "", "Other"],
-                     [ "lo", "", "", "Other"]
-        ]
-      },      
-      "bgp": {
-        "columns": [ "NEIGHBORADDRESS", "REMOTEAS", "LOCALAS", "REMOTEROUTERID", "LOCALROUTERID", "BGPSTATE"],        
-        "rows": [
-                     [ "172.0.1.1", "65101", "65199", "10.255.255.1", "10.255.255.101", "Idle"],
-                     [ "172.0.1.3", "65101", "65199", "10.255.255.2", "10.255.255.101", "Established"],
-                     [ "172.0.1.5", "65102", "65199", "10.255.255.3", "10.255.255.101", "Established"],
-                     [ "172.0.1.7", "65102", "65199", "10.255.255.4", "10.255.255.101", "Established"],
-                     [ "172.0.1.9", "65254", "65199", "10.255.255.5", "10.255.255.101", "Idle"],
-                     [ "172.0.1.11", "65254", "65199", "10.255.255.6", "10.255.255.101", "Idle"]
-        ]
-      }
-    },    
-    "spine02": {
-      "arp": {
-        "columns": [ "IPADDR", "MACADDR", "INTERFACE", "VLAN"],        
-        "rows": [
-                     [ "172.0.2.1", "52:11:00:11:11:56", "Ethernet0", ""],
-                     [ "172.0.2.3", "52:22:00:22:22:56", "Ethernet4", ""],
-                     [ "172.0.2.5", "52:33:00:33:33:56", "Ethernet8", ""],
-                     [ "172.0.2.7", "52:44:00:44:44:56", "Ethernet12", ""],
-                     [ "172.0.2.9", "52:54:00:01:11:56", "Ethernet16", ""],
-                     [ "172.0.2.11", "52:54:00:02:22:56", "Ethernet20", ""],
-                     [ "192.168.200.1", "44:38:39:00:00:6d", "eth0", ""]
-        ]
-      },      
-      "ipRoute": {
-        "columns": [ "INTERFACE", "VIA", "TO", "TYPE"],        
-        "rows": [
-                     [ "eth0", "192.168.200.1", "0.0.0.0/0", "K>*"],
-                     [ "Ethernet4", "172.0.2.3", "10.0.102.0/24", "B>*"],
-                     [ "Ethernet8", "172.0.2.5", "10.0.103.0/24", "B>*"],
-                     [ "Ethernet12", "172.0.2.7", "10.0.104.0/24", "B>*"],
-                     [ "Ethernet4", "172.0.2.3", "10.255.255.2/32", "B>*"],
-                     [ "Ethernet8", "172.0.2.5", "10.255.255.3/32", "B>*"],
-                     [ "Ethernet12", "172.0.2.7", "10.255.255.4/32", "B>*"],
-                     [ "Loopback0", "connected", "10.255.255.102/32", "C>*"],
-                     [ "Ethernet0", "connected", "172.0.2.0/31", "C>*"],
-                     [ "Ethernet4", "connected", "172.0.2.2/31", "C>*"],
-                     [ "Ethernet8", "connected", "172.0.2.4/31", "C>*"],
-                     [ "Ethernet12", "connected", "172.0.2.6/31", "C>*"],
-                     [ "Ethernet16", "connected", "172.0.2.8/31", "C>*"],
-                     [ "Ethernet20", "connected", "172.0.2.10/31", "C>*"],
-                     [ "eth0", "connected", "192.168.200.0/24", "C>*"]
-        ]
-      },      
-      "aclTable": {
-        "columns": [ "NAME", "TYPE", "BINDING", "DESCRIPTION", "STAGE"],        
-        "rows": []
-      },      
-      "aclRule": {
-        "columns": [ "TABLE", "RULE", "PRIORITY", "ACTION", "MATCH"],        
-        "rows": []
-      },      
-      "lldp": {
-        "columns": [ "LOCALPORT", "REMOTEDEVICE", "REMOTEPORT"],        
-        "rows": [
-                     [ "Ethernet0", "leaf01", "fortyGigE0/24"],
-                     [ "Ethernet4", "leaf02", "fortyGigE0/24"],
-                     [ "Ethernet8", "leaf03", "fortyGigE0/24"],
-                     [ "Ethernet12", "leaf04", "fortyGigE0/24"],
-                     [ "Ethernet16", "border01", "fortyGigE0/28"],
-                     [ "Ethernet20", "border02", "fortyGigE0/28"]
-        ]
-      },      
-      "vlan": {
-        "columns": [ "NAME", "VID", "MEMBER", "MODE"],        
-        "rows": []
-      },      
-      "interface": {
-        "columns": [ "NAME", "MACADDR", "IPADDR", "TYPE"],        
-        "rows": [
-                     [ "Bridge", "52:54:00:22:22:56", "", "Bridge"],
-                     [ "Ethernet0", "88:88:00:52:00:00", "172.0.2.0/31", "Other"],
-                     [ "Ethernet4", "88:88:00:52:00:04", "172.0.2.2/31", "Other"],
-                     [ "Ethernet8", "88:88:00:52:00:08", "172.0.2.4/31", "Other"],
-                     [ "Ethernet12", "88:88:00:52:00:12", "172.0.2.6/31", "Other"],
-                     [ "Ethernet16", "88:88:00:52:00:16", "172.0.2.8/31", "Other"],
-                     [ "Ethernet20", "88:88:00:52:00:20", "172.0.2.10/31", "Other"],
-                     [ "Ethernet24", "88:88:00:52:00:24", "", "Other"],
-                     [ "Ethernet28", "88:88:00:52:00:28", "", "Other"],
-                     [ "Ethernet32", "88:88:00:52:00:32", "", "Other"],
-                     [ "Ethernet36", "88:88:00:52:00:36", "", "Other"],
-                     [ "Ethernet40", "88:88:00:52:00:40", "", "Other"],
-                     [ "Ethernet44", "88:88:00:52:00:44", "", "Other"],
-                     [ "Ethernet48", "88:88:00:52:00:48", "", "Other"],
-                     [ "Loopback0", "9e:86:7c:29:e6:ea", "10.255.255.102/32", "Other"],
-                     [ "docker0", "02:42:b0:c3:d2:95", "", "Bridge"],
-                     [ "dummy", "3a:ce:f7:35:5f:3e", "", "Other"],
-                     [ "eth0", "44:38:39:00:01:92", "192.168.200.22/24", "Other"],
-                     [ "eth1", "44:38:39:00:00:03", "", "Other"],
-                     [ "eth2", "44:38:39:00:00:0b", "", "Other"],
-                     [ "eth3", "44:38:39:00:00:13", "", "Other"],
-                     [ "eth4", "44:38:39:00:00:1b", "", "Other"],
-                     [ "eth5", "44:38:39:00:00:23", "", "Other"],
-                     [ "eth6", "44:38:39:00:00:2b", "", "Other"],
-                     [ "lo", "", "", "Other"]
-        ]
-      },      
-      "bgp": {
-        "columns": [ "NEIGHBORADDRESS", "REMOTEAS", "LOCALAS", "REMOTEROUTERID", "LOCALROUTERID", "BGPSTATE"],        
-        "rows": [
-                     [ "172.0.2.1", "65101", "65199", "10.255.255.1", "10.255.255.102", "Idle"],
-                     [ "172.0.2.3", "65101", "65199", "10.255.255.2", "10.255.255.102", "Established"],
-                     [ "172.0.2.5", "65102", "65199", "10.255.255.3", "10.255.255.102", "Established"],
-                     [ "172.0.2.7", "65102", "65199", "10.255.255.4", "10.255.255.102", "Established"],
-                     [ "172.0.2.9", "65254", "65199", "10.255.255.5", "10.255.255.102", "Idle"],
-                     [ "172.0.2.11", "65254", "65199", "10.255.255.6", "10.255.255.102", "Idle"]
-        ]
-      }
-    },    
-    "spine03": {
-      "arp": {
-        "columns": [ "IPADDR", "MACADDR", "INTERFACE", "VLAN"],        
-        "rows": [
-                     [ "172.0.3.1", "52:11:00:11:11:56", "Ethernet0", ""],
-                     [ "172.0.3.3", "52:22:00:22:22:56", "Ethernet4", ""],
-                     [ "172.0.3.5", "52:33:00:33:33:56", "Ethernet8", ""],
-                     [ "172.0.3.7", "52:44:00:44:44:56", "Ethernet12", ""],
-                     [ "172.0.3.9", "52:54:00:01:11:56", "Ethernet16", ""],
-                     [ "172.0.3.11", "52:54:00:02:22:56", "Ethernet20", ""],
-                     [ "192.168.200.1", "44:38:39:00:00:6d", "eth0", ""]
-        ]
-      },      
-      "ipRoute": {
-        "columns": [ "INTERFACE", "VIA", "TO", "TYPE"],        
-        "rows": [
-                     [ "eth0", "192.168.200.1", "0.0.0.0/0", "K>*"],
-                     [ "Ethernet4", "172.0.3.3", "10.0.102.0/24", "B>*"],
-                     [ "Ethernet8", "172.0.3.5", "10.0.103.0/24", "B>*"],
-                     [ "Ethernet12", "172.0.3.7", "10.0.104.0/24", "B>*"],
-                     [ "Ethernet4", "172.0.3.3", "10.255.255.2/32", "B>*"],
-                     [ "Ethernet8", "172.0.3.5", "10.255.255.3/32", "B>*"],
-                     [ "Ethernet12", "172.0.3.7", "10.255.255.4/32", "B>*"],
-                     [ "Loopback0", "connected", "10.255.255.103/32", "C>*"],
-                     [ "Ethernet0", "connected", "172.0.3.0/31", "C>*"],
-                     [ "Ethernet4", "connected", "172.0.3.2/31", "C>*"],
-                     [ "Ethernet8", "connected", "172.0.3.4/31", "C>*"],
-                     [ "Ethernet12", "connected", "172.0.3.6/31", "C>*"],
-                     [ "Ethernet16", "connected", "172.0.3.8/31", "C>*"],
-                     [ "Ethernet20", "connected", "172.0.3.10/31", "C>*"],
-                     [ "eth0", "connected", "192.168.200.0/24", "C>*"]
-        ]
-      },      
-      "aclTable": {
-        "columns": [ "NAME", "TYPE", "BINDING", "DESCRIPTION", "STAGE"],        
-        "rows": []
-      },      
-      "aclRule": {
-        "columns": [ "TABLE", "RULE", "PRIORITY", "ACTION", "MATCH"],        
-        "rows": []
-      },      
-      "lldp": {
-        "columns": [ "LOCALPORT", "REMOTEDEVICE", "REMOTEPORT"],        
-        "rows": [
-                     [ "Ethernet0", "leaf01", "fortyGigE0/28"],
-                     [ "Ethernet4", "leaf02", "fortyGigE0/28"],
-                     [ "Ethernet8", "leaf03", "fortyGigE0/28"],
-                     [ "Ethernet12", "leaf04", "fortyGigE0/28"],
-                     [ "Ethernet16", "border01", "fortyGigE0/32"],
-                     [ "Ethernet20", "border02", "fortyGigE0/32"]
-        ]
-      },      
-      "vlan": {
-        "columns": [ "NAME", "VID", "MEMBER", "MODE"],        
-        "rows": []
-      },      
-      "interface": {
-        "columns": [ "NAME", "MACADDR", "IPADDR", "TYPE"],        
-        "rows": [
-                     [ "Bridge", "52:54:00:33:33:56", "", "Bridge"],
-                     [ "Ethernet0", "88:88:00:53:00:00", "172.0.3.0/31", "Other"],
-                     [ "Ethernet4", "88:88:00:53:00:04", "172.0.3.2/31", "Other"],
-                     [ "Ethernet8", "88:88:00:53:00:08", "172.0.3.4/31", "Other"],
-                     [ "Ethernet12", "88:88:00:53:00:12", "172.0.3.6/31", "Other"],
-                     [ "Ethernet16", "88:88:00:53:00:16", "172.0.3.8/31", "Other"],
-                     [ "Ethernet20", "88:88:00:53:00:20", "172.0.3.10/31", "Other"],
-                     [ "Ethernet24", "88:88:00:53:00:24", "", "Other"],
-                     [ "Ethernet28", "88:88:00:53:00:28", "", "Other"],
-                     [ "Ethernet32", "88:88:00:53:00:32", "", "Other"],
-                     [ "Ethernet36", "88:88:00:53:00:36", "", "Other"],
-                     [ "Ethernet40", "88:88:00:53:00:40", "", "Other"],
-                     [ "Ethernet44", "88:88:00:53:00:44", "", "Other"],
-                     [ "Ethernet48", "88:88:00:53:00:48", "", "Other"],
-                     [ "Loopback0", "46:0a:8a:38:ba:8f", "10.255.255.103/32", "Other"],
-                     [ "docker0", "02:42:93:ac:7e:e0", "", "Bridge"],
-                     [ "dummy", "6a:bb:4d:9c:81:13", "", "Other"],
-                     [ "eth0", "44:38:39:00:01:70", "192.168.200.23/24", "Other"],
-                     [ "eth1", "44:38:39:00:00:05", "", "Other"],
-                     [ "eth2", "44:38:39:00:00:0d", "", "Other"],
-                     [ "eth3", "44:38:39:00:00:15", "", "Other"],
-                     [ "eth4", "44:38:39:00:00:1d", "", "Other"],
-                     [ "eth5", "44:38:39:00:00:25", "", "Other"],
-                     [ "eth6", "44:38:39:00:00:2d", "", "Other"],
-                     [ "lo", "", "", "Other"]
-        ]
-      },      
-      "bgp": {
-        "columns": [ "NEIGHBORADDRESS", "REMOTEAS", "LOCALAS", "REMOTEROUTERID", "LOCALROUTERID", "BGPSTATE"],        
-        "rows": [
-                     [ "172.0.3.1", "65101", "65199", "10.255.255.1", "10.255.255.103", "Idle"],
-                     [ "172.0.3.3", "65101", "65199", "10.255.255.2", "10.255.255.103", "Established"],
-                     [ "172.0.3.5", "65102", "65199", "10.255.255.3", "10.255.255.103", "Established"],
-                     [ "172.0.3.7", "65102", "65199", "10.255.255.4", "10.255.255.103", "Established"],
-                     [ "172.0.3.9", "65254", "65199", "10.255.255.5", "10.255.255.103", "Idle"],
-                     [ "172.0.3.11", "65254", "65199", "10.255.255.6", "10.255.255.103", "Idle"]
-        ]
-      }
-    },    
-    "spine04": {
-      "arp": {
-        "columns": [ "IPADDR", "MACADDR", "INTERFACE", "VLAN"],        
-        "rows": [
-                     [ "172.0.4.1", "52:11:00:11:11:56", "Ethernet0", ""],
-                     [ "172.0.4.3", "52:22:00:22:22:56", "Ethernet4", ""],
-                     [ "172.0.4.5", "52:33:00:33:33:56", "Ethernet8", ""],
-                     [ "172.0.4.7", "52:44:00:44:44:56", "Ethernet12", ""],
-                     [ "172.0.4.9", "52:54:00:01:11:56", "Ethernet16", ""],
-                     [ "172.0.4.11", "52:54:00:02:22:56", "Ethernet20", ""],
-                     [ "192.168.200.1", "44:38:39:00:00:6d", "eth0", ""]
-        ]
-      },      
-      "ipRoute": {
-        "columns": [ "INTERFACE", "VIA", "TO", "TYPE"],        
-        "rows": [
-                     [ "eth0", "192.168.200.1", "0.0.0.0/0", "K>*"],
-                     [ "Ethernet4", "172.0.4.3", "10.0.102.0/24", "B>*"],
-                     [ "Ethernet8", "172.0.4.5", "10.0.103.0/24", "B>*"],
-                     [ "Ethernet12", "172.0.4.7", "10.0.104.0/24", "B>*"],
-                     [ "Ethernet4", "172.0.4.3", "10.255.255.2/32", "B>*"],
-                     [ "Ethernet8", "172.0.4.5", "10.255.255.3/32", "B>*"],
-                     [ "Ethernet12", "172.0.4.7", "10.255.255.4/32", "B>*"],
-                     [ "Loopback0", "connected", "10.255.255.104/32", "C>*"],
-                     [ "Ethernet0", "connected", "172.0.4.0/31", "C>*"],
-                     [ "Ethernet4", "connected", "172.0.4.2/31", "C>*"],
-                     [ "Ethernet8", "connected", "172.0.4.4/31", "C>*"],
-                     [ "Ethernet12", "connected", "172.0.4.6/31", "C>*"],
-                     [ "Ethernet16", "connected", "172.0.4.8/31", "C>*"],
-                     [ "Ethernet20", "connected", "172.0.4.10/31", "C>*"],
-                     [ "eth0", "connected", "192.168.200.0/24", "C>*"]
-        ]
-      },      
-      "aclTable": {
-        "columns": [ "NAME", "TYPE", "BINDING", "DESCRIPTION", "STAGE"],        
-        "rows": []
-      },      
-      "aclRule": {
-        "columns": [ "TABLE", "RULE", "PRIORITY", "ACTION", "MATCH"],        
-        "rows": []
-      },      
-      "lldp": {
-        "columns": [ "LOCALPORT", "REMOTEDEVICE", "REMOTEPORT"],        
-        "rows": [
-                     [ "Ethernet0", "leaf01", "fortyGigE0/32"],
-                     [ "Ethernet4", "leaf02", "fortyGigE0/32"],
-                     [ "Ethernet8", "leaf03", "fortyGigE0/32"],
-                     [ "Ethernet12", "leaf04", "fortyGigE0/32"],
-                     [ "Ethernet16", "border01", "fortyGigE0/36"],
-                     [ "Ethernet20", "border02", "fortyGigE0/36"]
-        ]
-      },      
-      "vlan": {
-        "columns": [ "NAME", "VID", "MEMBER", "MODE"],        
-        "rows": []
-      },      
-      "interface": {
-        "columns": [ "NAME", "MACADDR", "IPADDR", "TYPE"],        
-        "rows": [
-                     [ "Bridge", "52:54:00:44:44:57", "", "Bridge"],
-                     [ "Ethernet0", "88:88:00:54:00:00", "172.0.4.0/31", "Other"],
-                     [ "Ethernet4", "88:88:00:54:00:04", "172.0.4.2/31", "Other"],
-                     [ "Ethernet8", "88:88:00:54:00:08", "172.0.4.4/31", "Other"],
-                     [ "Ethernet12", "88:88:00:54:00:12", "172.0.4.6/31", "Other"],
-                     [ "Ethernet16", "88:88:00:54:00:16", "172.0.4.8/31", "Other"],
-                     [ "Ethernet20", "88:88:00:54:00:20", "172.0.4.10/31", "Other"],
-                     [ "Ethernet24", "88:88:00:54:00:24", "", "Other"],
-                     [ "Ethernet28", "88:88:00:54:00:28", "", "Other"],
-                     [ "Ethernet32", "88:88:00:54:00:32", "", "Other"],
-                     [ "Ethernet36", "88:88:00:54:00:36", "", "Other"],
-                     [ "Ethernet40", "88:88:00:54:00:40", "", "Other"],
-                     [ "Ethernet44", "88:88:00:54:00:44", "", "Other"],
-                     [ "Ethernet48", "88:88:00:54:00:48", "", "Other"],
-                     [ "Loopback0", "de:51:72:49:3f:5b", "10.255.255.104/32", "Other"],
-                     [ "docker0", "02:42:b0:bd:47:62", "", "Bridge"],
-                     [ "dummy", "56:46:6a:0c:d2:d5", "", "Other"],
-                     [ "eth0", "44:38:39:00:01:6c", "192.168.200.24/24", "Other"],
-                     [ "eth1", "44:38:39:00:00:07", "", "Other"],
-                     [ "eth2", "44:38:39:00:00:0f", "", "Other"],
-                     [ "eth3", "44:38:39:00:00:17", "", "Other"],
-                     [ "eth4", "44:38:39:00:00:1f", "", "Other"],
-                     [ "eth5", "44:38:39:00:00:27", "", "Other"],
-                     [ "eth6", "44:38:39:00:00:2f", "", "Other"],
-                     [ "lo", "", "", "Other"]
-        ]
-      },      
-      "bgp": {
-        "columns": [ "NEIGHBORADDRESS", "REMOTEAS", "LOCALAS", "REMOTEROUTERID", "LOCALROUTERID", "BGPSTATE"],        
-        "rows": [
-                     [ "172.0.4.1", "65101", "65199", "10.255.255.1", "10.255.255.104", "Idle"],
-                     [ "172.0.4.3", "65101", "65199", "10.255.255.2", "10.255.255.104", "Established"],
-                     [ "172.0.4.5", "65102", "65199", "10.255.255.3", "10.255.255.104", "Established"],
-                     [ "172.0.4.7", "65102", "65199", "10.255.255.4", "10.255.255.104", "Established"],
-                     [ "172.0.4.9", "65254", "65199", "10.255.255.5", "10.255.255.104", "Idle"],
-                     [ "172.0.4.11", "65254", "65199", "10.255.255.6", "10.255.255.104", "Idle"]
-        ]
-      }
-    },    
-    "fw1": {
-      "arp": {
-        "columns": [ "IPADDR", "MACADDR", "INTERFACE", "VLAN"],        
-        "rows": [
-                     [ "192.168.200.1", "44:38:39:00:00:6d", "eth0", ""]
-        ]
-      },      
-      "ipRoute": {
-        "columns": [ "INTERFACE", "VIA", "TO", "TYPE"],        
-        "rows": [
-                     [ "eth0", "192.168.200.1", "0.0.0.0/0", "K>*"],
-                     [ "Loopback0", "connected", "10.255.255.11/32", "C>*"],
-                     [ "Ethernet0", "connected", "172.0.11.8/31", "C>*"],
-                     [ "Ethernet4", "connected", "172.0.21.8/31", "C>*"],
-                     [ "eth0", "connected", "192.168.200.0/24", "C>*"]
-        ]
-      },      
-      "aclTable": {
-        "columns": [ "NAME", "TYPE", "BINDING", "DESCRIPTION", "STAGE"],        
-        "rows": []
-      },      
-      "aclRule": {
-        "columns": [ "TABLE", "RULE", "PRIORITY", "ACTION", "MATCH"],        
-        "rows": []
-      },      
-      "lldp": {
-        "columns": [ "LOCALPORT", "REMOTEDEVICE", "REMOTEPORT"],        
-        "rows": [
-                     [ "Ethernet0", "border01", "fortyGigE0/8"],
-                     [ "Ethernet4", "border02", "fortyGigE0/8"]
-        ]
-      },      
-      "vlan": {
-        "columns": [ "NAME", "VID", "MEMBER", "MODE"],        
-        "rows": []
-      },      
-      "interface": {
-        "columns": [ "NAME", "MACADDR", "IPADDR", "TYPE"],        
-        "rows": [
-                     [ "Bridge", "52:54:00:aa:11:56", "", "Bridge"],
-                     [ "Ethernet0", "88:88:00:f1:00:00", "172.0.11.9/31", "Other"],
-                     [ "Ethernet4", "88:88:00:f1:00:04", "172.0.21.9/31", "Other"],
-                     [ "Ethernet8", "88:88:00:f1:00:08", "", "Other"],
-                     [ "Ethernet12", "88:88:00:f1:00:12", "", "Other"],
-                     [ "Ethernet16", "88:88:00:f1:00:16", "", "Other"],
-                     [ "Ethernet20", "88:88:00:f1:00:20", "", "Other"],
-                     [ "Ethernet24", "88:88:00:f1:00:24", "", "Other"],
-                     [ "Ethernet28", "88:88:00:f1:00:28", "", "Other"],
-                     [ "Ethernet32", "88:88:00:f1:00:32", "", "Other"],
-                     [ "Ethernet36", "88:88:00:f1:00:36", "", "Other"],
-                     [ "Ethernet40", "88:88:00:f1:00:40", "", "Other"],
-                     [ "Ethernet44", "88:88:00:f1:00:44", "", "Other"],
-                     [ "Ethernet48", "88:88:00:f1:00:48", "", "Other"],
-                     [ "Loopback0", "e6:84:43:a0:96:f9", "10.255.255.11/32", "Other"],
-                     [ "docker0", "02:42:01:ec:69:2e", "", "Bridge"],
-                     [ "dummy", "a6:a1:93:03:e9:a7", "", "Other"],
-                     [ "eth0", "44:38:39:00:01:8c", "192.168.200.61/24", "Other"],
-                     [ "eth1", "44:38:39:00:00:4e", "", "Other"],
-                     [ "eth2", "44:38:39:00:00:56", "", "Other"],
-                     [ "eth3", "44:38:39:00:00:69", "", "Other"],
-                     [ "lo", "", "", "Other"]
-        ]
-      },      
-      "bgp": {
-        "columns": [ "NEIGHBORADDRESS", "REMOTEAS", "LOCALAS", "REMOTEROUTERID", "LOCALROUTERID", "BGPSTATE"],        
-        "rows": []
-      }
-    },    
-    "fw2": {
-      "arp": {
-        "columns": [ "IPADDR", "MACADDR", "INTERFACE", "VLAN"],        
-        "rows": [
-                     [ "192.168.200.1", "44:38:39:00:00:6d", "eth0", ""]
-        ]
-      },      
-      "ipRoute": {
-        "columns": [ "INTERFACE", "VIA", "TO", "TYPE"],        
-        "rows": [
-                     [ "eth0", "192.168.200.1", "0.0.0.0/0", "K>*"],
-                     [ "Loopback0", "connected", "10.255.255.12/32", "C>*"],
-                     [ "Ethernet0", "connected", "172.0.12.8/31", "C>*"],
-                     [ "Ethernet4", "connected", "172.0.22.8/31", "C>*"],
-                     [ "eth0", "connected", "192.168.200.0/24", "C>*"]
-        ]
-      },      
-      "aclTable": {
-        "columns": [ "NAME", "TYPE", "BINDING", "DESCRIPTION", "STAGE"],        
-        "rows": []
-      },      
-      "aclRule": {
-        "columns": [ "TABLE", "RULE", "PRIORITY", "ACTION", "MATCH"],        
-        "rows": []
-      },      
-      "lldp": {
-        "columns": [ "LOCALPORT", "REMOTEDEVICE", "REMOTEPORT"],        
-        "rows": [
-                     [ "Ethernet0", "border01", "fortyGigE0/12"],
-                     [ "Ethernet4", "border02", "fortyGigE0/12"]
-        ]
-      },      
-      "vlan": {
-        "columns": [ "NAME", "VID", "MEMBER", "MODE"],        
-        "rows": []
-      },      
-      "interface": {
-        "columns": [ "NAME", "MACADDR", "IPADDR", "TYPE"],        
-        "rows": [
-                     [ "Bridge", "52:54:00:bb:11:56", "", "Bridge"],
-                     [ "Ethernet0", "88:88:00:f2:00:00", "172.0.12.9/31", "Other"],
-                     [ "Ethernet4", "88:88:00:f2:00:04", "172.0.22.9/31", "Other"],
-                     [ "Ethernet8", "88:88:00:f2:00:08", "", "Other"],
-                     [ "Ethernet12", "88:88:00:f2:00:12", "", "Other"],
-                     [ "Ethernet16", "88:88:00:f2:00:16", "", "Other"],
-                     [ "Ethernet20", "88:88:00:f2:00:20", "", "Other"],
-                     [ "Ethernet24", "88:88:00:f2:00:24", "", "Other"],
-                     [ "Ethernet28", "88:88:00:f2:00:28", "", "Other"],
-                     [ "Ethernet32", "88:88:00:f2:00:32", "", "Other"],
-                     [ "Ethernet36", "88:88:00:f2:00:36", "", "Other"],
-                     [ "Ethernet40", "88:88:00:f2:00:40", "", "Other"],
-                     [ "Ethernet44", "88:88:00:f2:00:44", "", "Other"],
-                     [ "Ethernet48", "88:88:00:f2:00:48", "", "Other"],
-                     [ "Loopback0", "1a:6f:96:03:c0:03", "10.255.255.12/32", "Other"],
-                     [ "docker0", "02:42:de:d4:ae:6c", "", "Bridge"],
-                     [ "dummy", "a2:d7:e3:f8:12:29", "", "Other"],
-                     [ "eth0", "44:38:39:00:01:8e", "192.168.200.62/24", "Other"],
-                     [ "eth1", "44:38:39:00:00:50", "", "Other"],
-                     [ "eth2", "44:38:39:00:00:58", "", "Other"],
-                     [ "eth3", "44:38:39:00:00:6b", "", "Other"],
-                     [ "lo", "", "", "Other"]
-        ]
-      },      
-      "bgp": {
-        "columns": [ "NEIGHBORADDRESS", "REMOTEAS", "LOCALAS", "REMOTEROUTERID", "LOCALROUTERID", "BGPSTATE"],        
-        "rows": []
-      }
-    },    
-    "leaf01": {
-      "arp": {
-        "columns": [ "IPADDR", "MACADDR", "INTERFACE", "VLAN"],        
-        "rows": [
-                     [ "172.0.1.0", "88:88:00:51:00:00", "Ethernet20", ""],
-                     [ "172.0.2.0", "88:88:00:52:00:00", "Ethernet24", ""],
-                     [ "172.0.3.0", "88:88:00:53:00:00", "Ethernet28", ""],
-                     [ "172.0.4.0", "88:88:00:54:00:00", "Ethernet32", ""],
-                     [ "192.168.200.1", "44:38:39:00:00:6d", "eth0", ""]
-        ]
-      },      
-      "ipRoute": {
-        "columns": [ "INTERFACE", "VIA", "TO", "TYPE"],        
-        "rows": [
-                     [ "eth0", "192.168.200.1", "0.0.0.0/0", "K>*"],
-                     [ "Vlan101", "connected", "10.0.101.0/24", "C>*"],
-                     [ "Loopback0", "connected", "10.255.255.1/32", "C>*"],
-                     [ "Ethernet20", "connected", "172.0.1.0/31", "C>*"],
-                     [ "Ethernet24", "connected", "172.0.2.0/31", "C>*"],
-                     [ "Ethernet28", "connected", "172.0.3.0/31", "C>*"],
-                     [ "Ethernet32", "connected", "172.0.4.0/31", "C>*"],
-                     [ "eth0", "connected", "192.168.200.0/24", "C>*"]
-        ]
-      },      
-      "aclTable": {
-        "columns": [ "NAME", "TYPE", "BINDING", "DESCRIPTION", "STAGE"],        
-        "rows": []
-      },      
-      "aclRule": {
-        "columns": [ "TABLE", "RULE", "PRIORITY", "ACTION", "MATCH"],        
-        "rows": []
-      },      
-      "lldp": {
-        "columns": [ "LOCALPORT", "REMOTEDEVICE", "REMOTEPORT"],        
-        "rows": [
-                     [ "Ethernet12", "leaf02", "fortyGigE0/12"],
-                     [ "Ethernet16", "leaf02", "fortyGigE0/16"],
-                     [ "Ethernet20", "spine01", "fortyGigE0/0"],
-                     [ "Ethernet24", "spine02", "fortyGigE0/0"],
-                     [ "Ethernet28", "spine03", "fortyGigE0/0"],
-                     [ "Ethernet32", "spine04", "fortyGigE0/0"]
-        ]
-      },      
-      "vlan": {
-        "columns": [ "NAME", "VID", "MEMBER", "MODE"],        
-        "rows": [
-                     [ "Vlan101", "101", "Ethernet0", "untagged"],
-                     [ "Vlan101", "101", "Ethernet4", "untagged"],
-                     [ "Vlan101", "101", "Ethernet8", "untagged"]
-        ]
-      },      
-      "interface": {
-        "columns": [ "NAME", "MACADDR", "IPADDR", "TYPE"],        
-        "rows": [
-                     [ "Bridge", "52:11:00:11:11:56", "", "Bridge"],
-                     [ "Ethernet0", "52:11:00:11:11:56", "", "Other"],
-                     [ "Ethernet4", "52:11:00:11:11:56", "", "Other"],
-                     [ "Ethernet8", "52:11:00:11:11:56", "", "Other"],
-                     [ "Ethernet12", "52:11:00:11:11:56", "", "Other"],
-                     [ "Ethernet16", "52:11:00:11:11:56", "", "Other"],
-                     [ "Ethernet20", "52:11:00:11:11:56", "172.0.1.1/31", "Other"],
-                     [ "Ethernet24", "52:11:00:11:11:56", "172.0.2.1/31", "Other"],
-                     [ "Ethernet28", "52:11:00:11:11:56", "172.0.3.1/31", "Other"],
-                     [ "Ethernet32", "52:11:00:11:11:56", "172.0.4.1/31", "Other"],
-                     [ "Ethernet36", "52:11:00:11:11:56", "", "Other"],
-                     [ "Ethernet40", "52:11:00:11:11:56", "", "Other"],
-                     [ "Ethernet44", "52:11:00:11:11:56", "", "Other"],
-                     [ "Ethernet48", "52:11:00:11:11:56", "", "Other"],
-                     [ "Loopback0", "5a:34:79:6c:e8:cb", "10.255.255.1/32", "Other"],
-                     [ "Vlan101", "52:11:00:11:11:56", "10.0.101.1/24", "Vlan"],
-                     [ "docker0", "02:42:5d:fa:82:c6", "", "Bridge"],
-                     [ "dummy", "d2:1d:50:02:eb:74", "", "Other"],
-                     [ "eth0", "44:38:39:00:01:7a", "192.168.200.11/24", "Other"],
-                     [ "eth1", "44:38:39:00:00:31", "", "Other"],
-                     [ "eth2", "44:38:39:00:00:33", "", "Other"],
-                     [ "eth3", "44:38:39:00:00:35", "", "Other"],
-                     [ "eth4", "44:38:39:00:00:59", "", "Other"],
-                     [ "eth5", "44:38:39:00:00:5b", "", "Other"],
-                     [ "eth6", "44:38:39:00:00:02", "", "Other"],
-                     [ "eth7", "44:38:39:00:00:04", "", "Other"],
-                     [ "eth8", "44:38:39:00:00:06", "", "Other"],
-                     [ "eth9", "44:38:39:00:00:08", "", "Other"],
-                     [ "lo", "", "", "Other"]
-        ]
-      },      
-      "bgp": {
-        "columns": [ "NEIGHBORADDRESS", "REMOTEAS", "LOCALAS", "REMOTEROUTERID", "LOCALROUTERID", "BGPSTATE"],        
-        "rows": [
-                     [ "172.0.1.0", "65001", "65101", "10.255.255.101", "10.255.255.1", "Idle"],
-                     [ "172.0.2.0", "65002", "65101", "10.255.255.102", "10.255.255.1", "Idle"],
-                     [ "172.0.3.0", "65003", "65101", "10.255.255.103", "10.255.255.1", "Idle"],
-                     [ "172.0.4.0", "65004", "65101", "10.255.255.104", "10.255.255.1", "Idle"]
-        ]
-      }
-    },    
-    "leaf02": {
-      "arp": {
-        "columns": [ "IPADDR", "MACADDR", "INTERFACE", "VLAN"],        
-        "rows": [
-                     [ "172.0.1.2", "88:88:00:51:00:04", "Ethernet20", ""],
-                     [ "172.0.2.2", "88:88:00:52:00:04", "Ethernet24", ""],
-                     [ "172.0.3.2", "88:88:00:53:00:04", "Ethernet28", ""],
-                     [ "172.0.4.2", "88:88:00:54:00:04", "Ethernet32", ""],
-                     [ "192.168.200.1", "44:38:39:00:00:6d", "eth0", ""]
-        ]
-      },      
-      "ipRoute": {
-        "columns": [ "INTERFACE", "VIA", "TO", "TYPE"],        
-        "rows": [
-                     [ "eth0", "192.168.200.1", "0.0.0.0/0", "K>*"],
-                     [ "Vlan101", "connected", "10.0.102.0/24", "C>*"],
-                     [ "Ethernet20", "172.0.1.2", "10.0.103.0/24", "B>*"],
-                     [ "Ethernet20", "172.0.1.2", "10.0.104.0/24", "B>*"],
-                     [ "Loopback0", "connected", "10.255.255.2/32", "C>*"],
-                     [ "Ethernet20", "172.0.1.2", "10.255.255.3/32", "B>*"],
-                     [ "Ethernet20", "172.0.1.2", "10.255.255.4/32", "B>*"],
-                     [ "Ethernet20", "172.0.1.2", "10.255.255.101/32", "B>*"],
-                     [ "Ethernet24", "172.0.2.2", "10.255.255.102/32", "B>*"],
-                     [ "Ethernet28", "172.0.3.2", "10.255.255.103/32", "B>*"],
-                     [ "Ethernet32", "172.0.4.2", "10.255.255.104/32", "B>*"],
-                     [ "Ethernet20", "connected", "172.0.1.2/31", "C>*"],
-                     [ "Ethernet24", "connected", "172.0.2.2/31", "C>*"],
-                     [ "Ethernet28", "connected", "172.0.3.2/31", "C>*"],
-                     [ "Ethernet32", "connected", "172.0.4.2/31", "C>*"],
-                     [ "eth0", "connected", "192.168.200.0/24", "C>*"]
-        ]
-      },      
-      "aclTable": {
-        "columns": [ "NAME", "TYPE", "BINDING", "DESCRIPTION", "STAGE"],        
-        "rows": []
-      },      
-      "aclRule": {
-        "columns": [ "TABLE", "RULE", "PRIORITY", "ACTION", "MATCH"],        
-        "rows": []
-      },      
-      "lldp": {
-        "columns": [ "LOCALPORT", "REMOTEDEVICE", "REMOTEPORT"],        
-        "rows": [
-                     [ "Ethernet12", "leaf01", "fortyGigE0/12"],
-                     [ "Ethernet16", "leaf01", "fortyGigE0/16"],
-                     [ "Ethernet20", "spine01", "fortyGigE0/4"],
-                     [ "Ethernet24", "spine02", "fortyGigE0/4"],
-                     [ "Ethernet28", "spine03", "fortyGigE0/4"],
-                     [ "Ethernet32", "spine04", "fortyGigE0/4"]
-        ]
-      },      
-      "vlan": {
-        "columns": [ "NAME", "VID", "MEMBER", "MODE"],        
-        "rows": [
-                     [ "Vlan101", "101", "Ethernet0", "untagged"],
-                     [ "Vlan101", "101", "Ethernet4", "untagged"],
-                     [ "Vlan101", "101", "Ethernet8", "untagged"]
-        ]
-      },      
-      "interface": {
-        "columns": [ "NAME", "MACADDR", "IPADDR", "TYPE"],        
-        "rows": [
-                     [ "Bridge", "52:22:00:22:22:56", "", "Bridge"],
-                     [ "Ethernet0", "52:22:00:22:22:56", "", "Other"],
-                     [ "Ethernet4", "52:22:00:22:22:56", "", "Other"],
-                     [ "Ethernet8", "52:22:00:22:22:56", "", "Other"],
-                     [ "Ethernet12", "52:22:00:22:22:56", "", "Other"],
-                     [ "Ethernet16", "52:22:00:22:22:56", "", "Other"],
-                     [ "Ethernet20", "52:22:00:22:22:56", "172.0.1.3/31", "Other"],
-                     [ "Ethernet24", "52:22:00:22:22:56", "172.0.2.3/31", "Other"],
-                     [ "Ethernet28", "52:22:00:22:22:56", "172.0.3.3/31", "Other"],
-                     [ "Ethernet32", "52:22:00:22:22:56", "172.0.4.3/31", "Other"],
-                     [ "Ethernet36", "52:22:00:22:22:56", "", "Other"],
-                     [ "Ethernet40", "52:22:00:22:22:56", "", "Other"],
-                     [ "Ethernet44", "52:22:00:22:22:56", "", "Other"],
-                     [ "Ethernet48", "52:22:00:22:22:56", "", "Other"],
-                     [ "Loopback0", "26:54:8c:4c:44:34", "10.255.255.2/32", "Other"],
-                     [ "Vlan101", "52:22:00:22:22:56", "10.0.102.1/24", "Vlan"],
-                     [ "docker0", "02:42:9d:59:96:00", "", "Bridge"],
-                     [ "dummy", "e2:dd:06:2d:7f:2c", "", "Other"],
-                     [ "eth0", "44:38:39:00:01:78", "192.168.200.12/24", "Other"],
-                     [ "eth1", "44:38:39:00:00:37", "", "Other"],
-                     [ "eth2", "44:38:39:00:00:39", "", "Other"],
-                     [ "eth3", "44:38:39:00:00:3b", "", "Other"],
-                     [ "eth4", "44:38:39:00:00:5a", "", "Other"],
-                     [ "eth5", "44:38:39:00:00:5c", "", "Other"],
-                     [ "eth6", "44:38:39:00:00:0a", "", "Other"],
-                     [ "eth7", "44:38:39:00:00:0c", "", "Other"],
-                     [ "eth8", "44:38:39:00:00:0e", "", "Other"],
-                     [ "eth9", "44:38:39:00:00:10", "", "Other"],
-                     [ "lo", "", "", "Other"]
-        ]
-      },      
-      "bgp": {
-        "columns": [ "NEIGHBORADDRESS", "REMOTEAS", "LOCALAS", "REMOTEROUTERID", "LOCALROUTERID", "BGPSTATE"],        
-        "rows": [
-                     [ "172.0.1.2", "65199", "65101", "10.255.255.101", "10.255.255.2", "Established"],
-                     [ "172.0.2.2", "65199", "65101", "10.255.255.102", "10.255.255.2", "Established"],
-                     [ "172.0.3.2", "65199", "65101", "10.255.255.103", "10.255.255.2", "Established"],
-                     [ "172.0.4.2", "65199", "65101", "10.255.255.104", "10.255.255.2", "Established"]
-        ]
-      }
-    },    
-    "leaf03": {
-      "arp": {
-        "columns": [ "IPADDR", "MACADDR", "INTERFACE", "VLAN"],        
-        "rows": [
-                     [ "172.0.1.4", "88:88:00:51:00:08", "Ethernet20", ""],
-                     [ "172.0.2.4", "88:88:00:52:00:08", "Ethernet24", ""],
-                     [ "172.0.3.4", "88:88:00:53:00:08", "Ethernet28", ""],
-                     [ "172.0.4.4", "88:88:00:54:00:08", "Ethernet32", ""],
-                     [ "192.168.200.1", "44:38:39:00:00:6d", "eth0", ""]
-        ]
-      },      
-      "ipRoute": {
-        "columns": [ "INTERFACE", "VIA", "TO", "TYPE"],        
-        "rows": [
-                     [ "eth0", "192.168.200.1", "0.0.0.0/0", "K>*"],
-                     [ "Ethernet20", "172.0.1.4", "10.0.102.0/24", "B>*"],
-                     [ "Vlan101", "connected", "10.0.103.0/24", "C>*"],
-                     [ "Ethernet20", "172.0.1.4", "10.255.255.2/32", "B>*"],
-                     [ "Loopback0", "connected", "10.255.255.3/32", "C>*"],
-                     [ "Ethernet20", "172.0.1.4", "10.255.255.101/32", "B>*"],
-                     [ "Ethernet24", "172.0.2.4", "10.255.255.102/32", "B>*"],
-                     [ "Ethernet28", "172.0.3.4", "10.255.255.103/32", "B>*"],
-                     [ "Ethernet32", "172.0.4.4", "10.255.255.104/32", "B>*"],
-                     [ "Ethernet20", "connected", "172.0.1.4/31", "C>*"],
-                     [ "Ethernet24", "connected", "172.0.2.4/31", "C>*"],
-                     [ "Ethernet28", "connected", "172.0.3.4/31", "C>*"],
-                     [ "Ethernet32", "connected", "172.0.4.4/31", "C>*"],
-                     [ "eth0", "connected", "192.168.200.0/24", "C>*"]
-        ]
-      },      
-      "aclTable": {
-        "columns": [ "NAME", "TYPE", "BINDING", "DESCRIPTION", "STAGE"],        
-        "rows": []
-      },      
-      "aclRule": {
-        "columns": [ "TABLE", "RULE", "PRIORITY", "ACTION", "MATCH"],        
-        "rows": []
-      },      
-      "lldp": {
-        "columns": [ "LOCALPORT", "REMOTEDEVICE", "REMOTEPORT"],        
-        "rows": [
-                     [ "Ethernet12", "leaf04", "fortyGigE0/12"],
-                     [ "Ethernet16", "leaf04", "fortyGigE0/16"],
-                     [ "Ethernet20", "spine01", "fortyGigE0/8"],
-                     [ "Ethernet24", "spine02", "fortyGigE0/8"],
-                     [ "Ethernet28", "spine03", "fortyGigE0/8"],
-                     [ "Ethernet32", "spine04", "fortyGigE0/8"]
-        ]
-      },      
-      "vlan": {
-        "columns": [ "NAME", "VID", "MEMBER", "MODE"],        
-        "rows": [
-                     [ "Vlan101", "101", "Ethernet0", "untagged"],
-                     [ "Vlan101", "101", "Ethernet4", "untagged"],
-                     [ "Vlan101", "101", "Ethernet8", "untagged"]
-        ]
-      },      
-      "interface": {
-        "columns": [ "NAME", "MACADDR", "IPADDR", "TYPE"],        
-        "rows": [
-                     [ "Bridge", "52:33:00:33:33:56", "", "Bridge"],
-                     [ "Ethernet0", "52:33:00:33:33:56", "", "Other"],
-                     [ "Ethernet4", "52:33:00:33:33:56", "", "Other"],
-                     [ "Ethernet8", "52:33:00:33:33:56", "", "Other"],
-                     [ "Ethernet12", "52:33:00:33:33:56", "", "Other"],
-                     [ "Ethernet16", "52:33:00:33:33:56", "", "Other"],
-                     [ "Ethernet20", "52:33:00:33:33:56", "172.0.1.5/31", "Other"],
-                     [ "Ethernet24", "52:33:00:33:33:56", "172.0.2.5/31", "Other"],
-                     [ "Ethernet28", "52:33:00:33:33:56", "172.0.3.5/31", "Other"],
-                     [ "Ethernet32", "52:33:00:33:33:56", "172.0.4.5/31", "Other"],
-                     [ "Ethernet36", "52:33:00:33:33:56", "", "Other"],
-                     [ "Ethernet40", "52:33:00:33:33:56", "", "Other"],
-                     [ "Ethernet44", "52:33:00:33:33:56", "", "Other"],
-                     [ "Ethernet48", "52:33:00:33:33:56", "", "Other"],
-                     [ "Loopback0", "d2:7b:9d:4f:1f:b3", "10.255.255.3/32", "Other"],
-                     [ "Vlan101", "52:33:00:33:33:56", "10.0.103.1/24", "Vlan"],
-                     [ "docker0", "02:42:f0:99:78:cb", "", "Bridge"],
-                     [ "dummy", "d6:90:0d:e4:33:e9", "", "Other"],
-                     [ "eth0", "44:38:39:00:01:84", "192.168.200.13/24", "Other"],
-                     [ "eth1", "44:38:39:00:00:3d", "", "Other"],
-                     [ "eth2", "44:38:39:00:00:3f", "", "Other"],
-                     [ "eth3", "44:38:39:00:00:41", "", "Other"],
-                     [ "eth4", "44:38:39:00:00:5d", "", "Other"],
-                     [ "eth5", "44:38:39:00:00:5f", "", "Other"],
-                     [ "eth6", "44:38:39:00:00:12", "", "Other"],
-                     [ "eth7", "44:38:39:00:00:14", "", "Other"],
-                     [ "eth8", "44:38:39:00:00:16", "", "Other"],
-                     [ "eth9", "44:38:39:00:00:18", "", "Other"],
-                     [ "lo", "", "", "Other"]
-        ]
-      },      
-      "bgp": {
-        "columns": [ "NEIGHBORADDRESS", "REMOTEAS", "LOCALAS", "REMOTEROUTERID", "LOCALROUTERID", "BGPSTATE"],        
-        "rows": [
-                     [ "172.0.1.4", "65199", "65102", "10.255.255.101", "10.255.255.3", "Established"],
-                     [ "172.0.2.4", "65199", "65102", "10.255.255.102", "10.255.255.3", "Established"],
-                     [ "172.0.3.4", "65199", "65102", "10.255.255.103", "10.255.255.3", "Established"],
-                     [ "172.0.4.4", "65199", "65102", "10.255.255.104", "10.255.255.3", "Established"]
-        ]
-      }
-    },    
-    "leaf04": {
-      "arp": {
-        "columns": [ "IPADDR", "MACADDR", "INTERFACE", "VLAN"],        
-        "rows": [
-                     [ "172.0.1.6", "88:88:00:51:00:12", "Ethernet20", ""],
-                     [ "172.0.2.6", "88:88:00:52:00:12", "Ethernet24", ""],
-                     [ "172.0.3.6", "88:88:00:53:00:12", "Ethernet28", ""],
-                     [ "172.0.4.6", "88:88:00:54:00:12", "Ethernet32", ""],
-                     [ "192.168.200.1", "44:38:39:00:00:6d", "eth0", ""]
-        ]
-      },      
-      "ipRoute": {
-        "columns": [ "INTERFACE", "VIA", "TO", "TYPE"],        
-        "rows": [
-                     [ "eth0", "192.168.200.1", "0.0.0.0/0", "K>*"],
-                     [ "Ethernet20", "172.0.1.6", "10.0.102.0/24", "B>*"],
-                     [ "Vlan101", "connected", "10.0.104.0/24", "C>*"],
-                     [ "Ethernet20", "172.0.1.6", "10.255.255.2/32", "B>*"],
-                     [ "Loopback0", "connected", "10.255.255.4/32", "C>*"],
-                     [ "Ethernet20", "172.0.1.6", "10.255.255.101/32", "B>*"],
-                     [ "Ethernet24", "172.0.2.6", "10.255.255.102/32", "B>*"],
-                     [ "Ethernet28", "172.0.3.6", "10.255.255.103/32", "B>*"],
-                     [ "Ethernet32", "172.0.4.6", "10.255.255.104/32", "B>*"],
-                     [ "Ethernet20", "connected", "172.0.1.6/31", "C>*"],
-                     [ "Ethernet24", "connected", "172.0.2.6/31", "C>*"],
-                     [ "Ethernet28", "connected", "172.0.3.6/31", "C>*"],
-                     [ "Ethernet32", "connected", "172.0.4.6/31", "C>*"],
-                     [ "eth0", "connected", "192.168.200.0/24", "C>*"]
-        ]
-      },      
-      "aclTable": {
-        "columns": [ "NAME", "TYPE", "BINDING", "DESCRIPTION", "STAGE"],        
-        "rows": []
-      },      
-      "aclRule": {
-        "columns": [ "TABLE", "RULE", "PRIORITY", "ACTION", "MATCH"],        
-        "rows": []
-      },      
-      "lldp": {
-        "columns": [ "LOCALPORT", "REMOTEDEVICE", "REMOTEPORT"],        
-        "rows": [
-                     [ "Ethernet12", "leaf03", "fortyGigE0/12"],
-                     [ "Ethernet16", "leaf03", "fortyGigE0/16"],
-                     [ "Ethernet20", "spine01", "fortyGigE0/12"],
-                     [ "Ethernet24", "spine02", "fortyGigE0/12"],
-                     [ "Ethernet28", "spine03", "fortyGigE0/12"],
-                     [ "Ethernet32", "spine04", "fortyGigE0/12"]
-        ]
-      },      
-      "vlan": {
-        "columns": [ "NAME", "VID", "MEMBER", "MODE"],        
-        "rows": [
-                     [ "Vlan101", "101", "Ethernet0", "untagged"],
-                     [ "Vlan101", "101", "Ethernet4", "untagged"],
-                     [ "Vlan101", "101", "Ethernet8", "untagged"]
-        ]
-      },      
-      "interface": {
-        "columns": [ "NAME", "MACADDR", "IPADDR", "TYPE"],        
-        "rows": [
-                     [ "Bridge", "52:44:00:44:44:56", "", "Bridge"],
-                     [ "Ethernet0", "52:44:00:44:44:56", "", "Other"],
-                     [ "Ethernet4", "52:44:00:44:44:56", "", "Other"],
-                     [ "Ethernet8", "52:44:00:44:44:56", "", "Other"],
-                     [ "Ethernet12", "52:44:00:44:44:56", "", "Other"],
-                     [ "Ethernet16", "52:44:00:44:44:56", "", "Other"],
-                     [ "Ethernet20", "52:44:00:44:44:56", "172.0.1.7/31", "Other"],
-                     [ "Ethernet24", "52:44:00:44:44:56", "172.0.2.7/31", "Other"],
-                     [ "Ethernet28", "52:44:00:44:44:56", "172.0.3.7/31", "Other"],
-                     [ "Ethernet32", "52:44:00:44:44:56", "172.0.4.7/31", "Other"],
-                     [ "Ethernet36", "52:44:00:44:44:56", "", "Other"],
-                     [ "Ethernet40", "52:44:00:44:44:56", "", "Other"],
-                     [ "Ethernet44", "52:44:00:44:44:56", "", "Other"],
-                     [ "Ethernet48", "52:44:00:44:44:56", "", "Other"],
-                     [ "Loopback0", "06:09:c9:a0:ca:f7", "10.255.255.4/32", "Other"],
-                     [ "Vlan101", "52:44:00:44:44:56", "10.0.104.1/24", "Vlan"],
-                     [ "docker0", "02:42:fd:5b:d2:98", "", "Bridge"],
-                     [ "dummy", "7a:75:99:54:6f:d3", "", "Other"],
-                     [ "eth0", "44:38:39:00:01:8a", "192.168.200.14/24", "Other"],
-                     [ "eth1", "44:38:39:00:00:43", "", "Other"],
-                     [ "eth2", "44:38:39:00:00:45", "", "Other"],
-                     [ "eth3", "44:38:39:00:00:47", "", "Other"],
-                     [ "eth4", "44:38:39:00:00:5e", "", "Other"],
-                     [ "eth5", "44:38:39:00:00:60", "", "Other"],
-                     [ "eth6", "44:38:39:00:00:1a", "", "Other"],
-                     [ "eth7", "44:38:39:00:00:1c", "", "Other"],
-                     [ "eth8", "44:38:39:00:00:1e", "", "Other"],
-                     [ "eth9", "44:38:39:00:00:20", "", "Other"],
-                     [ "lo", "", "", "Other"]
-        ]
-      },      
-      "bgp": {
-        "columns": [ "NEIGHBORADDRESS", "REMOTEAS", "LOCALAS", "REMOTEROUTERID", "LOCALROUTERID", "BGPSTATE"],        
-        "rows": [
-                     [ "172.0.1.6", "65199", "65102", "10.255.255.101", "10.255.255.4", "Established"],
-                     [ "172.0.2.6", "65199", "65102", "10.255.255.102", "10.255.255.4", "Established"],
-                     [ "172.0.3.6", "65199", "65102", "10.255.255.103", "10.255.255.4", "Established"],
-                     [ "172.0.4.6", "65199", "65102", "10.255.255.104", "10.255.255.4", "Established"]
-        ]
-      }
+  "border01": {
+    "arp": {
+      "type": "router",
+      "columns": [
+        "IPADDR",
+        "MACADDR",
+        "INTERFACE",
+        "VLAN"
+      ],
+      "rows": [
+        [
+          "172.0.1.8",
+          "88:88:00:51:00:16",
+          "Ethernet24",
+          ""
+        ],
+        [
+          "172.0.2.8",
+          "88:88:00:52:00:16",
+          "Ethernet28",
+          ""
+        ],
+        [
+          "172.0.3.8",
+          "88:88:00:53:00:16",
+          "Ethernet32",
+          ""
+        ],
+        [
+          "172.0.4.8",
+          "88:88:00:54:00:16",
+          "Ethernet36",
+          ""
+        ],
+        [
+          "192.168.200.1",
+          "44:38:39:00:00:6d",
+          "eth0",
+          ""
+        ]
+      ]
+    },
+    "ipRoute": {
+      "columns": [
+        "INTERFACE",
+        "VIA",
+        "TO",
+        "TYPE"
+      ],
+      "rows": [
+        [
+          "eth0",
+          "192.168.200.1",
+          "0.0.0.0/0",
+          "K>*"
+        ],
+        [
+          "Vlan111",
+          "connected",
+          "10.0.111.0/24",
+          "C>*"
+        ],
+        [
+          "Loopback0",
+          "connected",
+          "10.255.255.5/32",
+          "C>*"
+        ],
+        [
+          "Ethernet24",
+          "connected",
+          "172.0.1.8/31",
+          "C>*"
+        ],
+        [
+          "Ethernet28",
+          "connected",
+          "172.0.2.8/31",
+          "C>*"
+        ],
+        [
+          "Ethernet32",
+          "connected",
+          "172.0.3.8/31",
+          "C>*"
+        ],
+        [
+          "Ethernet36",
+          "connected",
+          "172.0.4.8/31",
+          "C>*"
+        ],
+        [
+          "Ethernet8",
+          "connected",
+          "172.0.11.8/31",
+          "C>*"
+        ],
+        [
+          "Ethernet12",
+          "connected",
+          "172.0.12.8/31",
+          "C>*"
+        ],
+        [
+          "eth0",
+          "connected",
+          "192.168.200.0/24",
+          "C>*"
+        ]
+      ]
+    },
+    "aclTable": {
+      "columns": [
+        "NAME",
+        "TYPE",
+        "BINDING",
+        "DESCRIPTION",
+        "STAGE"
+      ],
+      "rows": [
+        [
+          "BLK_SSH",
+          "CTRLPLANE",
+          "22",
+          "drop",
+          "ingress"
+        ]
+      ]
+    },
+    "aclRule": {
+      "columns": [
+        "TABLE",
+        "RULE",
+        "PRIORITY",
+        "ACTION",
+        "MATCH"
+      ],
+      "rows": [
+        [
+          "BLK_SSH",
+          "ACE_DROP",
+          "2",
+          "DROP",
+          "SRC_IP:"
+        ],
+        [
+          "BLK_SSH",
+          "ACE_FORWARD",
+          "1",
+          "FORWARD",
+          "IP_TYPE:"
+        ]
+      ]
+    },
+    "lldp": {
+      "columns": [
+        "LOCALPORT",
+        "REMOTEDEVICE",
+        "REMOTEPORT"
+      ],
+      "rows": [
+        [
+          "Ethernet8",
+          "fw1",
+          "fortyGigE0/0"
+        ],
+        [
+          "Ethernet12",
+          "fw2",
+          "fortyGigE0/0"
+        ],
+        [
+          "Ethernet16",
+          "border02",
+          "fortyGigE0/16"
+        ],
+        [
+          "Ethernet20",
+          "border02",
+          "fortyGigE0/20"
+        ],
+        [
+          "Ethernet24",
+          "spine01",
+          "fortyGigE0/16"
+        ],
+        [
+          "Ethernet28",
+          "spine02",
+          "fortyGigE0/16"
+        ],
+        [
+          "Ethernet32",
+          "spine03",
+          "fortyGigE0/16"
+        ],
+        [
+          "Ethernet36",
+          "spine04",
+          "fortyGigE0/16"
+        ]
+      ]
+    },
+    "vlan": {
+      "columns": [
+        "NAME",
+        "VID",
+        "MEMBER",
+        "MODE"
+      ],
+      "rows": [
+        [
+          "Vlan111",
+          "111",
+          "Ethernet0",
+          "untagged"
+        ],
+        [
+          "Vlan111",
+          "111",
+          "Ethernet4",
+          "untagged"
+        ],
+        [
+          "Vlan111",
+          "111",
+          "Ethernet8",
+          "untagged"
+        ]
+      ]
+    },
+    "interface": {
+      "columns": [
+        "NAME",
+        "MACADDR",
+        "IPADDR",
+        "TYPE"
+      ],
+      "rows": [
+        [
+          "Bridge",
+          "52:54:00:01:11:56",
+          "",
+          "Bridge"
+        ],
+        [
+          "Ethernet0",
+          "88:88:00:b1:00:00",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet4",
+          "88:88:00:b1:00:04",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet8",
+          "88:88:00:b1:00:08",
+          "172.0.11.8/31",
+          "Other"
+        ],
+        [
+          "Ethernet12",
+          "88:88:00:b1:00:12",
+          "172.0.12.8/31",
+          "Other"
+        ],
+        [
+          "Ethernet16",
+          "88:88:00:b1:00:16",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet20",
+          "88:88:00:b1:00:20",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet24",
+          "88:88:00:b1:00:24",
+          "172.0.1.9/31",
+          "Other"
+        ],
+        [
+          "Ethernet28",
+          "88:88:00:b1:00:28",
+          "172.0.2.9/31",
+          "Other"
+        ],
+        [
+          "Ethernet32",
+          "88:88:00:b1:00:32",
+          "172.0.3.9/31",
+          "Other"
+        ],
+        [
+          "Ethernet36",
+          "88:88:00:b1:00:36",
+          "172.0.4.9/31",
+          "Other"
+        ],
+        [
+          "Ethernet40",
+          "88:88:00:b1:00:40",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet44",
+          "88:88:00:b1:00:44",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet48",
+          "88:88:00:b1:00:48",
+          "",
+          "Other"
+        ],
+        [
+          "Loopback0",
+          "82:e5:c9:96:0a:d2",
+          "10.255.255.5/32",
+          "Other"
+        ],
+        [
+          "Vlan111",
+          "52:54:00:01:11:56",
+          "10.0.111.1/24",
+          "Vlan"
+        ],
+        [
+          "docker0",
+          "02:42:43:26:54:bf",
+          "",
+          "Bridge"
+        ],
+        [
+          "dummy",
+          "aa:54:02:b4:8d:6d",
+          "",
+          "Other"
+        ],
+        [
+          "eth0",
+          "44:38:39:00:01:74",
+          "192.168.200.63/24",
+          "Other"
+        ],
+        [
+          "eth1",
+          "44:38:39:00:00:49",
+          "",
+          "Other"
+        ],
+        [
+          "eth2",
+          "44:38:39:00:00:4b",
+          "",
+          "Other"
+        ],
+        [
+          "eth3",
+          "44:38:39:00:00:4d",
+          "",
+          "Other"
+        ],
+        [
+          "eth4",
+          "44:38:39:00:00:4f",
+          "",
+          "Other"
+        ],
+        [
+          "eth5",
+          "44:38:39:00:00:61",
+          "",
+          "Other"
+        ],
+        [
+          "eth6",
+          "44:38:39:00:00:63",
+          "",
+          "Other"
+        ],
+        [
+          "eth7",
+          "44:38:39:00:00:22",
+          "",
+          "Other"
+        ],
+        [
+          "eth8",
+          "44:38:39:00:00:24",
+          "",
+          "Other"
+        ],
+        [
+          "eth9",
+          "44:38:39:00:00:26",
+          "",
+          "Other"
+        ],
+        [
+          "eth10",
+          "44:38:39:00:00:28",
+          "",
+          "Other"
+        ],
+        [
+          "lo",
+          "",
+          "",
+          "Other"
+        ]
+      ]
+    },
+    "bgp": {
+      "columns": [
+        "NEIGHBORADDRESS",
+        "REMOTEAS",
+        "LOCALAS",
+        "REMOTEROUTERID",
+        "LOCALROUTERID",
+        "BGPSTATE"
+      ],
+      "rows": [
+        [
+          "172.0.1.8",
+          "65199",
+          "65103",
+          "10.255.255.101",
+          "10.255.255.5",
+          "Idle"
+        ],
+        [
+          "172.0.2.8",
+          "65199",
+          "65103",
+          "10.255.255.102",
+          "10.255.255.5",
+          "Idle"
+        ],
+        [
+          "172.0.3.8",
+          "65199",
+          "65103",
+          "10.255.255.103",
+          "10.255.255.5",
+          "Idle"
+        ],
+        [
+          "172.0.4.8",
+          "65199",
+          "65103",
+          "10.255.255.104",
+          "10.255.255.5",
+          "Idle"
+        ]
+      ]
+    }
+  },
+  "border02": {
+    "type": "router",
+    "arp": {
+      "columns": [
+        "IPADDR",
+        "MACADDR",
+        "INTERFACE",
+        "VLAN"
+      ],
+      "rows": [
+        [
+          "172.0.1.10",
+          "88:88:00:51:00:20",
+          "Ethernet24",
+          ""
+        ],
+        [
+          "172.0.2.10",
+          "88:88:00:52:00:20",
+          "Ethernet28",
+          ""
+        ],
+        [
+          "172.0.3.10",
+          "88:88:00:53:00:20",
+          "Ethernet32",
+          ""
+        ],
+        [
+          "172.0.4.10",
+          "88:88:00:54:00:20",
+          "Ethernet36",
+          ""
+        ],
+        [
+          "192.168.200.1",
+          "44:38:39:00:00:6d",
+          "eth0",
+          ""
+        ]
+      ]
+    },
+    "ipRoute": {
+      "columns": [
+        "INTERFACE",
+        "VIA",
+        "TO",
+        "TYPE"
+      ],
+      "rows": [
+        [
+          "eth0",
+          "192.168.200.1",
+          "0.0.0.0/0",
+          "K>*"
+        ],
+        [
+          "Vlan112",
+          "connected",
+          "10.0.112.0/24",
+          "C>*"
+        ],
+        [
+          "Loopback0",
+          "connected",
+          "10.255.255.6/32",
+          "C>*"
+        ],
+        [
+          "Ethernet24",
+          "connected",
+          "172.0.1.10/31",
+          "C>*"
+        ],
+        [
+          "Ethernet28",
+          "connected",
+          "172.0.2.10/31",
+          "C>*"
+        ],
+        [
+          "Ethernet32",
+          "connected",
+          "172.0.3.10/31",
+          "C>*"
+        ],
+        [
+          "Ethernet36",
+          "connected",
+          "172.0.4.10/31",
+          "C>*"
+        ],
+        [
+          "Ethernet8",
+          "connected",
+          "172.0.21.8/31",
+          "C>*"
+        ],
+        [
+          "Ethernet12",
+          "connected",
+          "172.0.22.8/31",
+          "C>*"
+        ],
+        [
+          "eth0",
+          "connected",
+          "192.168.200.0/24",
+          "C>*"
+        ]
+      ]
+    },
+    "aclTable": {
+      "columns": [
+        "NAME",
+        "TYPE",
+        "BINDING",
+        "DESCRIPTION",
+        "STAGE"
+      ],
+      "rows": [
+        [
+          "BLK_SSH",
+          "CTRLPLANE",
+          "22",
+          "drop",
+          "ingress"
+        ]
+      ]
+    },
+    "aclRule": {
+      "columns": [
+        "TABLE",
+        "RULE",
+        "PRIORITY",
+        "ACTION",
+        "MATCH"
+      ],
+      "rows": [
+        [
+          "BLK_SSH",
+          "ACE_DROP",
+          "2",
+          "DROP",
+          "SRC_IP:"
+        ],
+        [
+          "BLK_SSH",
+          "ACE_FORWARD",
+          "1",
+          "FORWARD",
+          "IP_TYPE:"
+        ]
+      ]
+    },
+    "lldp": {
+      "columns": [
+        "LOCALPORT",
+        "REMOTEDEVICE",
+        "REMOTEPORT"
+      ],
+      "rows": [
+        [
+          "Ethernet8",
+          "fw1",
+          "fortyGigE0/4"
+        ],
+        [
+          "Ethernet12",
+          "fw2",
+          "fortyGigE0/4"
+        ],
+        [
+          "Ethernet16",
+          "border01",
+          "fortyGigE0/16"
+        ],
+        [
+          "Ethernet20",
+          "border01",
+          "fortyGigE0/20"
+        ],
+        [
+          "Ethernet24",
+          "spine01",
+          "fortyGigE0/20"
+        ],
+        [
+          "Ethernet28",
+          "spine02",
+          "fortyGigE0/20"
+        ],
+        [
+          "Ethernet32",
+          "spine03",
+          "fortyGigE0/20"
+        ],
+        [
+          "Ethernet36",
+          "spine04",
+          "fortyGigE0/20"
+        ]
+      ]
+    },
+    "vlan": {
+      "columns": [
+        "NAME",
+        "VID",
+        "MEMBER",
+        "MODE"
+      ],
+      "rows": [
+        [
+          "Vlan112",
+          "112",
+          "Ethernet0",
+          "untagged"
+        ],
+        [
+          "Vlan112",
+          "112",
+          "Ethernet4",
+          "untagged"
+        ],
+        [
+          "Vlan112",
+          "112",
+          "Ethernet8",
+          "untagged"
+        ]
+      ]
+    },
+    "interface": {
+      "columns": [
+        "NAME",
+        "MACADDR",
+        "IPADDR",
+        "TYPE"
+      ],
+      "rows": [
+        [
+          "Bridge",
+          "52:54:00:02:22:56",
+          "",
+          "Bridge"
+        ],
+        [
+          "Ethernet0",
+          "88:88:00:b2:00:00",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet4",
+          "88:88:00:b2:00:04",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet8",
+          "88:88:00:b2:00:08",
+          "172.0.21.8/31",
+          "Other"
+        ],
+        [
+          "Ethernet12",
+          "88:88:00:b2:00:12",
+          "172.0.22.8/31",
+          "Other"
+        ],
+        [
+          "Ethernet16",
+          "88:88:00:b2:00:16",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet20",
+          "88:88:00:b2:00:20",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet24",
+          "88:88:00:b2:00:24",
+          "172.0.1.11/31",
+          "Other"
+        ],
+        [
+          "Ethernet28",
+          "88:88:00:b2:00:28",
+          "172.0.2.11/31",
+          "Other"
+        ],
+        [
+          "Ethernet32",
+          "88:88:00:b2:00:32",
+          "172.0.3.11/31",
+          "Other"
+        ],
+        [
+          "Ethernet36",
+          "88:88:00:b2:00:36",
+          "172.0.4.11/31",
+          "Other"
+        ],
+        [
+          "Ethernet40",
+          "88:88:00:b2:00:40",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet44",
+          "88:88:00:b2:00:44",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet48",
+          "88:88:00:b2:00:48",
+          "",
+          "Other"
+        ],
+        [
+          "Loopback0",
+          "66:95:93:4d:8f:6f",
+          "10.255.255.6/32",
+          "Other"
+        ],
+        [
+          "Vlan112",
+          "52:54:00:02:22:56",
+          "10.0.112.1/24",
+          "Vlan"
+        ],
+        [
+          "docker0",
+          "02:42:cb:f9:54:af",
+          "",
+          "Bridge"
+        ],
+        [
+          "dummy",
+          "72:28:fd:54:56:fe",
+          "",
+          "Other"
+        ],
+        [
+          "eth0",
+          "44:38:39:00:01:7c",
+          "192.168.200.64/24",
+          "Other"
+        ],
+        [
+          "eth1",
+          "44:38:39:00:00:51",
+          "",
+          "Other"
+        ],
+        [
+          "eth2",
+          "44:38:39:00:00:53",
+          "",
+          "Other"
+        ],
+        [
+          "eth3",
+          "44:38:39:00:00:55",
+          "",
+          "Other"
+        ],
+        [
+          "eth4",
+          "44:38:39:00:00:57",
+          "",
+          "Other"
+        ],
+        [
+          "eth5",
+          "44:38:39:00:00:62",
+          "",
+          "Other"
+        ],
+        [
+          "eth6",
+          "44:38:39:00:00:64",
+          "",
+          "Other"
+        ],
+        [
+          "eth7",
+          "44:38:39:00:00:2a",
+          "",
+          "Other"
+        ],
+        [
+          "eth8",
+          "44:38:39:00:00:2c",
+          "",
+          "Other"
+        ],
+        [
+          "eth9",
+          "44:38:39:00:00:2e",
+          "",
+          "Other"
+        ],
+        [
+          "eth10",
+          "44:38:39:00:00:30",
+          "",
+          "Other"
+        ],
+        [
+          "lo",
+          "",
+          "",
+          "Other"
+        ]
+      ]
+    },
+    "bgp": {
+      "columns": [
+        "NEIGHBORADDRESS",
+        "REMOTEAS",
+        "LOCALAS",
+        "REMOTEROUTERID",
+        "LOCALROUTERID",
+        "BGPSTATE"
+      ],
+      "rows": [
+        [
+          "172.0.1.10",
+          "65199",
+          "65103",
+          "10.255.255.101",
+          "10.255.255.6",
+          "Idle"
+        ],
+        [
+          "172.0.2.10",
+          "65199",
+          "65103",
+          "10.255.255.102",
+          "10.255.255.6",
+          "Idle"
+        ],
+        [
+          "172.0.3.10",
+          "65199",
+          "65103",
+          "10.255.255.103",
+          "10.255.255.6",
+          "Idle"
+        ],
+        [
+          "172.0.4.10",
+          "65199",
+          "65103",
+          "10.255.255.104",
+          "10.255.255.6",
+          "Idle"
+        ]
+      ]
+    }
+  },
+  "spine01": {
+    "type": "router",
+    "arp": {
+      "columns": [
+        "IPADDR",
+        "MACADDR",
+        "INTERFACE",
+        "VLAN"
+      ],
+      "rows": [
+        [
+          "172.0.1.1",
+          "88:88:00:11:00:20",
+          "Ethernet0",
+          ""
+        ],
+        [
+          "172.0.1.3",
+          "88:88:00:12:00:20",
+          "Ethernet4",
+          ""
+        ],
+        [
+          "172.0.1.5",
+          "88:88:00:13:00:20",
+          "Ethernet8",
+          ""
+        ],
+        [
+          "172.0.1.7",
+          "88:88:00:14:00:20",
+          "Ethernet12",
+          ""
+        ],
+        [
+          "172.0.1.9",
+          "88:88:00:b1:00:24",
+          "Ethernet16",
+          ""
+        ],
+        [
+          "172.0.1.11",
+          "88:88:00:b2:00:24",
+          "Ethernet20",
+          ""
+        ],
+        [
+          "192.168.200.1",
+          "44:38:39:00:00:6d",
+          "eth0",
+          ""
+        ]
+      ]
+    },
+    "ipRoute": {
+      "columns": [
+        "INTERFACE",
+        "VIA",
+        "TO",
+        "TYPE"
+      ],
+      "rows": [
+        [
+          "eth0",
+          "192.168.200.1",
+          "0.0.0.0/0",
+          "K>*"
+        ],
+        [
+          "Ethernet4",
+          "172.0.1.3",
+          "10.0.102.0/24",
+          "B>*"
+        ],
+        [
+          "Ethernet8",
+          "172.0.1.5",
+          "10.0.103.0/24",
+          "B>*"
+        ],
+        [
+          "Ethernet12",
+          "172.0.1.7",
+          "10.0.104.0/24",
+          "B>*"
+        ],
+        [
+          "Ethernet4",
+          "172.0.1.3",
+          "10.255.255.2/32",
+          "B>*"
+        ],
+        [
+          "Ethernet8",
+          "172.0.1.5",
+          "10.255.255.3/32",
+          "B>*"
+        ],
+        [
+          "Ethernet12",
+          "172.0.1.7",
+          "10.255.255.4/32",
+          "B>*"
+        ],
+        [
+          "Loopback0",
+          "connected",
+          "10.255.255.101/32",
+          "C>*"
+        ],
+        [
+          "Ethernet0",
+          "connected",
+          "172.0.1.0/31",
+          "C>*"
+        ],
+        [
+          "Ethernet4",
+          "connected",
+          "172.0.1.2/31",
+          "C>*"
+        ],
+        [
+          "Ethernet8",
+          "connected",
+          "172.0.1.4/31",
+          "C>*"
+        ],
+        [
+          "Ethernet12",
+          "connected",
+          "172.0.1.6/31",
+          "C>*"
+        ],
+        [
+          "Ethernet16",
+          "connected",
+          "172.0.1.8/31",
+          "C>*"
+        ],
+        [
+          "Ethernet20",
+          "connected",
+          "172.0.1.10/31",
+          "C>*"
+        ],
+        [
+          "eth0",
+          "connected",
+          "192.168.200.0/24",
+          "C>*"
+        ]
+      ]
+    },
+    "aclTable": {
+      "columns": [
+        "NAME",
+        "TYPE",
+        "BINDING",
+        "DESCRIPTION",
+        "STAGE"
+      ],
+      "rows": []
+    },
+    "aclRule": {
+      "columns": [
+        "TABLE",
+        "RULE",
+        "PRIORITY",
+        "ACTION",
+        "MATCH"
+      ],
+      "rows": []
+    },
+    "lldp": {
+      "columns": [
+        "LOCALPORT",
+        "REMOTEDEVICE",
+        "REMOTEPORT"
+      ],
+      "rows": [
+        [
+          "Ethernet0",
+          "leaf01",
+          "fortyGigE0/20"
+        ],
+        [
+          "Ethernet4",
+          "leaf02",
+          "fortyGigE0/20"
+        ],
+        [
+          "Ethernet8",
+          "leaf03",
+          "fortyGigE0/20"
+        ],
+        [
+          "Ethernet12",
+          "leaf04",
+          "fortyGigE0/20"
+        ],
+        [
+          "Ethernet16",
+          "border01",
+          "fortyGigE0/24"
+        ],
+        [
+          "Ethernet20",
+          "border02",
+          "fortyGigE0/24"
+        ]
+      ]
+    },
+    "vlan": {
+      "columns": [
+        "NAME",
+        "VID",
+        "MEMBER",
+        "MODE"
+      ],
+      "rows": []
+    },
+    "interface": {
+      "columns": [
+        "NAME",
+        "MACADDR",
+        "IPADDR",
+        "TYPE"
+      ],
+      "rows": [
+        [
+          "Bridge",
+          "52:54:00:11:11:56",
+          "",
+          "Bridge"
+        ],
+        [
+          "Ethernet0",
+          "88:88:00:51:00:00",
+          "172.0.1.0/31",
+          "Other"
+        ],
+        [
+          "Ethernet4",
+          "88:88:00:51:00:04",
+          "172.0.1.2/31",
+          "Other"
+        ],
+        [
+          "Ethernet8",
+          "88:88:00:51:00:08",
+          "172.0.1.4/31",
+          "Other"
+        ],
+        [
+          "Ethernet12",
+          "88:88:00:51:00:12",
+          "172.0.1.6/31",
+          "Other"
+        ],
+        [
+          "Ethernet16",
+          "88:88:00:51:00:16",
+          "172.0.1.8/31",
+          "Other"
+        ],
+        [
+          "Ethernet20",
+          "88:88:00:51:00:20",
+          "172.0.1.10/31",
+          "Other"
+        ],
+        [
+          "Ethernet24",
+          "88:88:00:51:00:24",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet28",
+          "88:88:00:51:00:28",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet32",
+          "88:88:00:51:00:32",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet36",
+          "88:88:00:51:00:36",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet40",
+          "88:88:00:51:00:40",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet44",
+          "88:88:00:51:00:44",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet48",
+          "88:88:00:51:00:48",
+          "",
+          "Other"
+        ],
+        [
+          "Loopback0",
+          "f6:53:b1:5b:32:c7",
+          "10.255.255.101/32",
+          "Other"
+        ],
+        [
+          "docker0",
+          "02:42:ce:c2:97:43",
+          "",
+          "Bridge"
+        ],
+        [
+          "dummy",
+          "da:38:63:a3:9f:40",
+          "",
+          "Other"
+        ],
+        [
+          "eth0",
+          "44:38:39:00:01:82",
+          "192.168.200.21/24",
+          "Other"
+        ],
+        [
+          "eth1",
+          "44:38:39:00:00:01",
+          "",
+          "Other"
+        ],
+        [
+          "eth2",
+          "44:38:39:00:00:09",
+          "",
+          "Other"
+        ],
+        [
+          "eth3",
+          "44:38:39:00:00:11",
+          "",
+          "Other"
+        ],
+        [
+          "eth4",
+          "44:38:39:00:00:19",
+          "",
+          "Other"
+        ],
+        [
+          "eth5",
+          "44:38:39:00:00:21",
+          "",
+          "Other"
+        ],
+        [
+          "eth6",
+          "44:38:39:00:00:29",
+          "",
+          "Other"
+        ],
+        [
+          "lo",
+          "",
+          "",
+          "Other"
+        ]
+      ]
+    },
+    "bgp": {
+      "columns": [
+        "NEIGHBORADDRESS",
+        "REMOTEAS",
+        "LOCALAS",
+        "REMOTEROUTERID",
+        "LOCALROUTERID",
+        "BGPSTATE"
+      ],
+      "rows": [
+        [
+          "172.0.1.1",
+          "65101",
+          "65199",
+          "10.255.255.1",
+          "10.255.255.101",
+          "Idle"
+        ],
+        [
+          "172.0.1.3",
+          "65101",
+          "65199",
+          "10.255.255.2",
+          "10.255.255.101",
+          "Established"
+        ],
+        [
+          "172.0.1.5",
+          "65102",
+          "65199",
+          "10.255.255.3",
+          "10.255.255.101",
+          "Established"
+        ],
+        [
+          "172.0.1.7",
+          "65102",
+          "65199",
+          "10.255.255.4",
+          "10.255.255.101",
+          "Established"
+        ],
+        [
+          "172.0.1.9",
+          "65254",
+          "65199",
+          "10.255.255.5",
+          "10.255.255.101",
+          "Idle"
+        ],
+        [
+          "172.0.1.11",
+          "65254",
+          "65199",
+          "10.255.255.6",
+          "10.255.255.101",
+          "Idle"
+        ]
+      ]
+    }
+  },
+  "spine02": {
+    "type": "router",
+    "arp": {
+      "columns": [
+        "IPADDR",
+        "MACADDR",
+        "INTERFACE",
+        "VLAN"
+      ],
+      "rows": [
+        [
+          "172.0.2.1",
+          "88:88:00:11:00:24",
+          "Ethernet0",
+          ""
+        ],
+        [
+          "172.0.2.3",
+          "88:88:00:12:00:24",
+          "Ethernet4",
+          ""
+        ],
+        [
+          "172.0.2.5",
+          "88:88:00:13:00:24",
+          "Ethernet8",
+          ""
+        ],
+        [
+          "172.0.2.7",
+          "88:88:00:14:00:24",
+          "Ethernet12",
+          ""
+        ],
+        [
+          "172.0.2.9",
+          "88:88:00:b1:00:28",
+          "Ethernet16",
+          ""
+        ],
+        [
+          "172.0.2.11",
+          "88:88:00:b2:00:28",
+          "Ethernet20",
+          ""
+        ],
+        [
+          "192.168.200.1",
+          "44:38:39:00:00:6d",
+          "eth0",
+          ""
+        ]
+      ]
+    },
+    "ipRoute": {
+      "columns": [
+        "INTERFACE",
+        "VIA",
+        "TO",
+        "TYPE"
+      ],
+      "rows": [
+        [
+          "eth0",
+          "192.168.200.1",
+          "0.0.0.0/0",
+          "K>*"
+        ],
+        [
+          "Ethernet4",
+          "172.0.2.3",
+          "10.0.102.0/24",
+          "B>*"
+        ],
+        [
+          "Ethernet8",
+          "172.0.2.5",
+          "10.0.103.0/24",
+          "B>*"
+        ],
+        [
+          "Ethernet12",
+          "172.0.2.7",
+          "10.0.104.0/24",
+          "B>*"
+        ],
+        [
+          "Ethernet4",
+          "172.0.2.3",
+          "10.255.255.2/32",
+          "B>*"
+        ],
+        [
+          "Ethernet8",
+          "172.0.2.5",
+          "10.255.255.3/32",
+          "B>*"
+        ],
+        [
+          "Ethernet12",
+          "172.0.2.7",
+          "10.255.255.4/32",
+          "B>*"
+        ],
+        [
+          "Loopback0",
+          "connected",
+          "10.255.255.102/32",
+          "C>*"
+        ],
+        [
+          "Ethernet0",
+          "connected",
+          "172.0.2.0/31",
+          "C>*"
+        ],
+        [
+          "Ethernet4",
+          "connected",
+          "172.0.2.2/31",
+          "C>*"
+        ],
+        [
+          "Ethernet8",
+          "connected",
+          "172.0.2.4/31",
+          "C>*"
+        ],
+        [
+          "Ethernet12",
+          "connected",
+          "172.0.2.6/31",
+          "C>*"
+        ],
+        [
+          "Ethernet16",
+          "connected",
+          "172.0.2.8/31",
+          "C>*"
+        ],
+        [
+          "Ethernet20",
+          "connected",
+          "172.0.2.10/31",
+          "C>*"
+        ],
+        [
+          "eth0",
+          "connected",
+          "192.168.200.0/24",
+          "C>*"
+        ]
+      ]
+    },
+    "aclTable": {
+      "columns": [
+        "NAME",
+        "TYPE",
+        "BINDING",
+        "DESCRIPTION",
+        "STAGE"
+      ],
+      "rows": []
+    },
+    "aclRule": {
+      "columns": [
+        "TABLE",
+        "RULE",
+        "PRIORITY",
+        "ACTION",
+        "MATCH"
+      ],
+      "rows": []
+    },
+    "lldp": {
+      "columns": [
+        "LOCALPORT",
+        "REMOTEDEVICE",
+        "REMOTEPORT"
+      ],
+      "rows": [
+        [
+          "Ethernet0",
+          "leaf01",
+          "fortyGigE0/24"
+        ],
+        [
+          "Ethernet4",
+          "leaf02",
+          "fortyGigE0/24"
+        ],
+        [
+          "Ethernet8",
+          "leaf03",
+          "fortyGigE0/24"
+        ],
+        [
+          "Ethernet12",
+          "leaf04",
+          "fortyGigE0/24"
+        ],
+        [
+          "Ethernet16",
+          "border01",
+          "fortyGigE0/28"
+        ],
+        [
+          "Ethernet20",
+          "border02",
+          "fortyGigE0/28"
+        ]
+      ]
+    },
+    "vlan": {
+      "columns": [
+        "NAME",
+        "VID",
+        "MEMBER",
+        "MODE"
+      ],
+      "rows": []
+    },
+    "interface": {
+      "columns": [
+        "NAME",
+        "MACADDR",
+        "IPADDR",
+        "TYPE"
+      ],
+      "rows": [
+        [
+          "Bridge",
+          "52:54:00:22:22:56",
+          "",
+          "Bridge"
+        ],
+        [
+          "Ethernet0",
+          "88:88:00:52:00:00",
+          "172.0.2.0/31",
+          "Other"
+        ],
+        [
+          "Ethernet4",
+          "88:88:00:52:00:04",
+          "172.0.2.2/31",
+          "Other"
+        ],
+        [
+          "Ethernet8",
+          "88:88:00:52:00:08",
+          "172.0.2.4/31",
+          "Other"
+        ],
+        [
+          "Ethernet12",
+          "88:88:00:52:00:12",
+          "172.0.2.6/31",
+          "Other"
+        ],
+        [
+          "Ethernet16",
+          "88:88:00:52:00:16",
+          "172.0.2.8/31",
+          "Other"
+        ],
+        [
+          "Ethernet20",
+          "88:88:00:52:00:20",
+          "172.0.2.10/31",
+          "Other"
+        ],
+        [
+          "Ethernet24",
+          "88:88:00:52:00:24",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet28",
+          "88:88:00:52:00:28",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet32",
+          "88:88:00:52:00:32",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet36",
+          "88:88:00:52:00:36",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet40",
+          "88:88:00:52:00:40",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet44",
+          "88:88:00:52:00:44",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet48",
+          "88:88:00:52:00:48",
+          "",
+          "Other"
+        ],
+        [
+          "Loopback0",
+          "4a:d1:cc:13:ce:66",
+          "10.255.255.102/32",
+          "Other"
+        ],
+        [
+          "docker0",
+          "02:42:b0:c3:d2:95",
+          "",
+          "Bridge"
+        ],
+        [
+          "dummy",
+          "7a:d6:f1:1f:64:4a",
+          "",
+          "Other"
+        ],
+        [
+          "eth0",
+          "44:38:39:00:01:92",
+          "192.168.200.22/24",
+          "Other"
+        ],
+        [
+          "eth1",
+          "44:38:39:00:00:03",
+          "",
+          "Other"
+        ],
+        [
+          "eth2",
+          "44:38:39:00:00:0b",
+          "",
+          "Other"
+        ],
+        [
+          "eth3",
+          "44:38:39:00:00:13",
+          "",
+          "Other"
+        ],
+        [
+          "eth4",
+          "44:38:39:00:00:1b",
+          "",
+          "Other"
+        ],
+        [
+          "eth5",
+          "44:38:39:00:00:23",
+          "",
+          "Other"
+        ],
+        [
+          "eth6",
+          "44:38:39:00:00:2b",
+          "",
+          "Other"
+        ],
+        [
+          "lo",
+          "",
+          "",
+          "Other"
+        ]
+      ]
+    },
+    "bgp": {
+      "columns": [
+        "NEIGHBORADDRESS",
+        "REMOTEAS",
+        "LOCALAS",
+        "REMOTEROUTERID",
+        "LOCALROUTERID",
+        "BGPSTATE"
+      ],
+      "rows": [
+        [
+          "172.0.2.1",
+          "65101",
+          "65199",
+          "10.255.255.1",
+          "10.255.255.102",
+          "Idle"
+        ],
+        [
+          "172.0.2.3",
+          "65101",
+          "65199",
+          "10.255.255.2",
+          "10.255.255.102",
+          "Established"
+        ],
+        [
+          "172.0.2.5",
+          "65102",
+          "65199",
+          "10.255.255.3",
+          "10.255.255.102",
+          "Established"
+        ],
+        [
+          "172.0.2.7",
+          "65102",
+          "65199",
+          "10.255.255.4",
+          "10.255.255.102",
+          "Established"
+        ],
+        [
+          "172.0.2.9",
+          "65254",
+          "65199",
+          "10.255.255.5",
+          "10.255.255.102",
+          "Idle"
+        ],
+        [
+          "172.0.2.11",
+          "65254",
+          "65199",
+          "10.255.255.6",
+          "10.255.255.102",
+          "Idle"
+        ]
+      ]
+    }
+  },
+  "spine03": {
+    "type": "router",
+    "arp": {
+      "columns": [
+        "IPADDR",
+        "MACADDR",
+        "INTERFACE",
+        "VLAN"
+      ],
+      "rows": [
+        [
+          "172.0.3.1",
+          "88:88:00:11:00:28",
+          "Ethernet0",
+          ""
+        ],
+        [
+          "172.0.3.3",
+          "88:88:00:12:00:28",
+          "Ethernet4",
+          ""
+        ],
+        [
+          "172.0.3.5",
+          "88:88:00:13:00:28",
+          "Ethernet8",
+          ""
+        ],
+        [
+          "172.0.3.7",
+          "88:88:00:14:00:28",
+          "Ethernet12",
+          ""
+        ],
+        [
+          "172.0.3.9",
+          "88:88:00:b1:00:32",
+          "Ethernet16",
+          ""
+        ],
+        [
+          "172.0.3.11",
+          "88:88:00:b2:00:32",
+          "Ethernet20",
+          ""
+        ],
+        [
+          "192.168.200.1",
+          "44:38:39:00:00:6d",
+          "eth0",
+          ""
+        ]
+      ]
+    },
+    "ipRoute": {
+      "columns": [
+        "INTERFACE",
+        "VIA",
+        "TO",
+        "TYPE"
+      ],
+      "rows": [
+        [
+          "eth0",
+          "192.168.200.1",
+          "0.0.0.0/0",
+          "K>*"
+        ],
+        [
+          "Ethernet4",
+          "172.0.3.3",
+          "10.0.102.0/24",
+          "B>*"
+        ],
+        [
+          "Ethernet8",
+          "172.0.3.5",
+          "10.0.103.0/24",
+          "B>*"
+        ],
+        [
+          "Ethernet12",
+          "172.0.3.7",
+          "10.0.104.0/24",
+          "B>*"
+        ],
+        [
+          "Ethernet4",
+          "172.0.3.3",
+          "10.255.255.2/32",
+          "B>*"
+        ],
+        [
+          "Ethernet8",
+          "172.0.3.5",
+          "10.255.255.3/32",
+          "B>*"
+        ],
+        [
+          "Ethernet12",
+          "172.0.3.7",
+          "10.255.255.4/32",
+          "B>*"
+        ],
+        [
+          "Loopback0",
+          "connected",
+          "10.255.255.103/32",
+          "C>*"
+        ],
+        [
+          "Ethernet0",
+          "connected",
+          "172.0.3.0/31",
+          "C>*"
+        ],
+        [
+          "Ethernet4",
+          "connected",
+          "172.0.3.2/31",
+          "C>*"
+        ],
+        [
+          "Ethernet8",
+          "connected",
+          "172.0.3.4/31",
+          "C>*"
+        ],
+        [
+          "Ethernet12",
+          "connected",
+          "172.0.3.6/31",
+          "C>*"
+        ],
+        [
+          "Ethernet16",
+          "connected",
+          "172.0.3.8/31",
+          "C>*"
+        ],
+        [
+          "Ethernet20",
+          "connected",
+          "172.0.3.10/31",
+          "C>*"
+        ],
+        [
+          "eth0",
+          "connected",
+          "192.168.200.0/24",
+          "C>*"
+        ]
+      ]
+    },
+    "aclTable": {
+      "columns": [
+        "NAME",
+        "TYPE",
+        "BINDING",
+        "DESCRIPTION",
+        "STAGE"
+      ],
+      "rows": []
+    },
+    "aclRule": {
+      "columns": [
+        "TABLE",
+        "RULE",
+        "PRIORITY",
+        "ACTION",
+        "MATCH"
+      ],
+      "rows": []
+    },
+    "lldp": {
+      "columns": [
+        "LOCALPORT",
+        "REMOTEDEVICE",
+        "REMOTEPORT"
+      ],
+      "rows": [
+        [
+          "Ethernet0",
+          "leaf01",
+          "fortyGigE0/28"
+        ],
+        [
+          "Ethernet4",
+          "leaf02",
+          "fortyGigE0/28"
+        ],
+        [
+          "Ethernet8",
+          "leaf03",
+          "fortyGigE0/28"
+        ],
+        [
+          "Ethernet12",
+          "leaf04",
+          "fortyGigE0/28"
+        ],
+        [
+          "Ethernet16",
+          "border01",
+          "fortyGigE0/32"
+        ],
+        [
+          "Ethernet20",
+          "border02",
+          "fortyGigE0/32"
+        ]
+      ]
+    },
+    "vlan": {
+      "columns": [
+        "NAME",
+        "VID",
+        "MEMBER",
+        "MODE"
+      ],
+      "rows": []
+    },
+    "interface": {
+      "columns": [
+        "NAME",
+        "MACADDR",
+        "IPADDR",
+        "TYPE"
+      ],
+      "rows": [
+        [
+          "Bridge",
+          "52:54:00:33:33:56",
+          "",
+          "Bridge"
+        ],
+        [
+          "Ethernet0",
+          "88:88:00:53:00:00",
+          "172.0.3.0/31",
+          "Other"
+        ],
+        [
+          "Ethernet4",
+          "88:88:00:53:00:04",
+          "172.0.3.2/31",
+          "Other"
+        ],
+        [
+          "Ethernet8",
+          "88:88:00:53:00:08",
+          "172.0.3.4/31",
+          "Other"
+        ],
+        [
+          "Ethernet12",
+          "88:88:00:53:00:12",
+          "172.0.3.6/31",
+          "Other"
+        ],
+        [
+          "Ethernet16",
+          "88:88:00:53:00:16",
+          "172.0.3.8/31",
+          "Other"
+        ],
+        [
+          "Ethernet20",
+          "88:88:00:53:00:20",
+          "172.0.3.10/31",
+          "Other"
+        ],
+        [
+          "Ethernet24",
+          "88:88:00:53:00:24",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet28",
+          "88:88:00:53:00:28",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet32",
+          "88:88:00:53:00:32",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet36",
+          "88:88:00:53:00:36",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet40",
+          "88:88:00:53:00:40",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet44",
+          "88:88:00:53:00:44",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet48",
+          "88:88:00:53:00:48",
+          "",
+          "Other"
+        ],
+        [
+          "Loopback0",
+          "26:e6:2e:79:71:d2",
+          "10.255.255.103/32",
+          "Other"
+        ],
+        [
+          "docker0",
+          "02:42:93:ac:7e:e0",
+          "",
+          "Bridge"
+        ],
+        [
+          "dummy",
+          "aa:01:d0:7e:e1:63",
+          "",
+          "Other"
+        ],
+        [
+          "eth0",
+          "44:38:39:00:01:70",
+          "192.168.200.23/24",
+          "Other"
+        ],
+        [
+          "eth1",
+          "44:38:39:00:00:05",
+          "",
+          "Other"
+        ],
+        [
+          "eth2",
+          "44:38:39:00:00:0d",
+          "",
+          "Other"
+        ],
+        [
+          "eth3",
+          "44:38:39:00:00:15",
+          "",
+          "Other"
+        ],
+        [
+          "eth4",
+          "44:38:39:00:00:1d",
+          "",
+          "Other"
+        ],
+        [
+          "eth5",
+          "44:38:39:00:00:25",
+          "",
+          "Other"
+        ],
+        [
+          "eth6",
+          "44:38:39:00:00:2d",
+          "",
+          "Other"
+        ],
+        [
+          "lo",
+          "",
+          "",
+          "Other"
+        ]
+      ]
+    },
+    "bgp": {
+      "columns": [
+        "NEIGHBORADDRESS",
+        "REMOTEAS",
+        "LOCALAS",
+        "REMOTEROUTERID",
+        "LOCALROUTERID",
+        "BGPSTATE"
+      ],
+      "rows": [
+        [
+          "172.0.3.1",
+          "65101",
+          "65199",
+          "10.255.255.1",
+          "10.255.255.103",
+          "Idle"
+        ],
+        [
+          "172.0.3.3",
+          "65101",
+          "65199",
+          "10.255.255.2",
+          "10.255.255.103",
+          "Established"
+        ],
+        [
+          "172.0.3.5",
+          "65102",
+          "65199",
+          "10.255.255.3",
+          "10.255.255.103",
+          "Established"
+        ],
+        [
+          "172.0.3.7",
+          "65102",
+          "65199",
+          "10.255.255.4",
+          "10.255.255.103",
+          "Established"
+        ],
+        [
+          "172.0.3.9",
+          "65254",
+          "65199",
+          "10.255.255.5",
+          "10.255.255.103",
+          "Idle"
+        ],
+        [
+          "172.0.3.11",
+          "65254",
+          "65199",
+          "10.255.255.6",
+          "10.255.255.103",
+          "Idle"
+        ]
+      ]
+    }
+  },
+  "spine04": {
+    "type": "router",
+    "arp": {
+      "columns": [
+        "IPADDR",
+        "MACADDR",
+        "INTERFACE",
+        "VLAN"
+      ],
+      "rows": [
+        [
+          "172.0.4.1",
+          "88:88:00:11:00:32",
+          "Ethernet0",
+          ""
+        ],
+        [
+          "172.0.4.3",
+          "88:88:00:12:00:32",
+          "Ethernet4",
+          ""
+        ],
+        [
+          "172.0.4.5",
+          "88:88:00:13:00:32",
+          "Ethernet8",
+          ""
+        ],
+        [
+          "172.0.4.7",
+          "88:88:00:14:00:32",
+          "Ethernet12",
+          ""
+        ],
+        [
+          "172.0.4.9",
+          "88:88:00:b1:00:36",
+          "Ethernet16",
+          ""
+        ],
+        [
+          "172.0.4.11",
+          "88:88:00:b2:00:36",
+          "Ethernet20",
+          ""
+        ],
+        [
+          "192.168.200.1",
+          "44:38:39:00:00:6d",
+          "eth0",
+          ""
+        ]
+      ]
+    },
+    "ipRoute": {
+      "columns": [
+        "INTERFACE",
+        "VIA",
+        "TO",
+        "TYPE"
+      ],
+      "rows": [
+        [
+          "eth0",
+          "192.168.200.1",
+          "0.0.0.0/0",
+          "K>*"
+        ],
+        [
+          "Ethernet4",
+          "172.0.4.3",
+          "10.0.102.0/24",
+          "B>*"
+        ],
+        [
+          "Ethernet8",
+          "172.0.4.5",
+          "10.0.103.0/24",
+          "B>*"
+        ],
+        [
+          "Ethernet12",
+          "172.0.4.7",
+          "10.0.104.0/24",
+          "B>*"
+        ],
+        [
+          "Ethernet4",
+          "172.0.4.3",
+          "10.255.255.2/32",
+          "B>*"
+        ],
+        [
+          "Ethernet8",
+          "172.0.4.5",
+          "10.255.255.3/32",
+          "B>*"
+        ],
+        [
+          "Ethernet12",
+          "172.0.4.7",
+          "10.255.255.4/32",
+          "B>*"
+        ],
+        [
+          "Loopback0",
+          "connected",
+          "10.255.255.104/32",
+          "C>*"
+        ],
+        [
+          "Ethernet0",
+          "connected",
+          "172.0.4.0/31",
+          "C>*"
+        ],
+        [
+          "Ethernet4",
+          "connected",
+          "172.0.4.2/31",
+          "C>*"
+        ],
+        [
+          "Ethernet8",
+          "connected",
+          "172.0.4.4/31",
+          "C>*"
+        ],
+        [
+          "Ethernet12",
+          "connected",
+          "172.0.4.6/31",
+          "C>*"
+        ],
+        [
+          "Ethernet16",
+          "connected",
+          "172.0.4.8/31",
+          "C>*"
+        ],
+        [
+          "Ethernet20",
+          "connected",
+          "172.0.4.10/31",
+          "C>*"
+        ],
+        [
+          "eth0",
+          "connected",
+          "192.168.200.0/24",
+          "C>*"
+        ]
+      ]
+    },
+    "aclTable": {
+      "columns": [
+        "NAME",
+        "TYPE",
+        "BINDING",
+        "DESCRIPTION",
+        "STAGE"
+      ],
+      "rows": []
+    },
+    "aclRule": {
+      "columns": [
+        "TABLE",
+        "RULE",
+        "PRIORITY",
+        "ACTION",
+        "MATCH"
+      ],
+      "rows": []
+    },
+    "lldp": {
+      "columns": [
+        "LOCALPORT",
+        "REMOTEDEVICE",
+        "REMOTEPORT"
+      ],
+      "rows": [
+        [
+          "Ethernet0",
+          "leaf01",
+          "fortyGigE0/32"
+        ],
+        [
+          "Ethernet4",
+          "leaf02",
+          "fortyGigE0/32"
+        ],
+        [
+          "Ethernet8",
+          "leaf03",
+          "fortyGigE0/32"
+        ],
+        [
+          "Ethernet12",
+          "leaf04",
+          "fortyGigE0/32"
+        ],
+        [
+          "Ethernet16",
+          "border01",
+          "fortyGigE0/36"
+        ],
+        [
+          "Ethernet20",
+          "border02",
+          "fortyGigE0/36"
+        ]
+      ]
+    },
+    "vlan": {
+      "columns": [
+        "NAME",
+        "VID",
+        "MEMBER",
+        "MODE"
+      ],
+      "rows": []
+    },
+    "interface": {
+      "columns": [
+        "NAME",
+        "MACADDR",
+        "IPADDR",
+        "TYPE"
+      ],
+      "rows": [
+        [
+          "Bridge",
+          "52:54:00:44:44:57",
+          "",
+          "Bridge"
+        ],
+        [
+          "Ethernet0",
+          "88:88:00:54:00:00",
+          "172.0.4.0/31",
+          "Other"
+        ],
+        [
+          "Ethernet4",
+          "88:88:00:54:00:04",
+          "172.0.4.2/31",
+          "Other"
+        ],
+        [
+          "Ethernet8",
+          "88:88:00:54:00:08",
+          "172.0.4.4/31",
+          "Other"
+        ],
+        [
+          "Ethernet12",
+          "88:88:00:54:00:12",
+          "172.0.4.6/31",
+          "Other"
+        ],
+        [
+          "Ethernet16",
+          "88:88:00:54:00:16",
+          "172.0.4.8/31",
+          "Other"
+        ],
+        [
+          "Ethernet20",
+          "88:88:00:54:00:20",
+          "172.0.4.10/31",
+          "Other"
+        ],
+        [
+          "Ethernet24",
+          "88:88:00:54:00:24",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet28",
+          "88:88:00:54:00:28",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet32",
+          "88:88:00:54:00:32",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet36",
+          "88:88:00:54:00:36",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet40",
+          "88:88:00:54:00:40",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet44",
+          "88:88:00:54:00:44",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet48",
+          "88:88:00:54:00:48",
+          "",
+          "Other"
+        ],
+        [
+          "Loopback0",
+          "ae:c3:8f:10:a8:c1",
+          "10.255.255.104/32",
+          "Other"
+        ],
+        [
+          "docker0",
+          "02:42:b0:bd:47:62",
+          "",
+          "Bridge"
+        ],
+        [
+          "dummy",
+          "e2:90:da:18:4f:a9",
+          "",
+          "Other"
+        ],
+        [
+          "eth0",
+          "44:38:39:00:01:6c",
+          "192.168.200.24/24",
+          "Other"
+        ],
+        [
+          "eth1",
+          "44:38:39:00:00:07",
+          "",
+          "Other"
+        ],
+        [
+          "eth2",
+          "44:38:39:00:00:0f",
+          "",
+          "Other"
+        ],
+        [
+          "eth3",
+          "44:38:39:00:00:17",
+          "",
+          "Other"
+        ],
+        [
+          "eth4",
+          "44:38:39:00:00:1f",
+          "",
+          "Other"
+        ],
+        [
+          "eth5",
+          "44:38:39:00:00:27",
+          "",
+          "Other"
+        ],
+        [
+          "eth6",
+          "44:38:39:00:00:2f",
+          "",
+          "Other"
+        ],
+        [
+          "lo",
+          "",
+          "",
+          "Other"
+        ]
+      ]
+    },
+    "bgp": {
+      "columns": [
+        "NEIGHBORADDRESS",
+        "REMOTEAS",
+        "LOCALAS",
+        "REMOTEROUTERID",
+        "LOCALROUTERID",
+        "BGPSTATE"
+      ],
+      "rows": [
+        [
+          "172.0.4.1",
+          "65101",
+          "65199",
+          "10.255.255.1",
+          "10.255.255.104",
+          "Idle"
+        ],
+        [
+          "172.0.4.3",
+          "65101",
+          "65199",
+          "10.255.255.2",
+          "10.255.255.104",
+          "Established"
+        ],
+        [
+          "172.0.4.5",
+          "65102",
+          "65199",
+          "10.255.255.3",
+          "10.255.255.104",
+          "Established"
+        ],
+        [
+          "172.0.4.7",
+          "65102",
+          "65199",
+          "10.255.255.4",
+          "10.255.255.104",
+          "Established"
+        ],
+        [
+          "172.0.4.9",
+          "65254",
+          "65199",
+          "10.255.255.5",
+          "10.255.255.104",
+          "Idle"
+        ],
+        [
+          "172.0.4.11",
+          "65254",
+          "65199",
+          "10.255.255.6",
+          "10.255.255.104",
+          "Idle"
+        ]
+      ]
+    }
+  },
+  "fw1": {
+    "type": "firewall",
+    "arp": {
+      "columns": [
+        "IPADDR",
+        "MACADDR",
+        "INTERFACE",
+        "VLAN"
+      ],
+      "rows": [
+        [
+          "192.168.200.1",
+          "44:38:39:00:00:6d",
+          "eth0",
+          ""
+        ]
+      ]
+    },
+    "ipRoute": {
+      "columns": [
+        "INTERFACE",
+        "VIA",
+        "TO",
+        "TYPE"
+      ],
+      "rows": [
+        [
+          "eth0",
+          "192.168.200.1",
+          "0.0.0.0/0",
+          "K>*"
+        ],
+        [
+          "Loopback0",
+          "connected",
+          "10.255.255.11/32",
+          "C>*"
+        ],
+        [
+          "Ethernet0",
+          "connected",
+          "172.0.11.8/31",
+          "C>*"
+        ],
+        [
+          "Ethernet4",
+          "connected",
+          "172.0.21.8/31",
+          "C>*"
+        ],
+        [
+          "eth0",
+          "connected",
+          "192.168.200.0/24",
+          "C>*"
+        ]
+      ]
+    },
+    "aclTable": {
+      "columns": [
+        "NAME",
+        "TYPE",
+        "BINDING",
+        "DESCRIPTION",
+        "STAGE"
+      ],
+      "rows": []
+    },
+    "aclRule": {
+      "columns": [
+        "TABLE",
+        "RULE",
+        "PRIORITY",
+        "ACTION",
+        "MATCH"
+      ],
+      "rows": []
+    },
+    "lldp": {
+      "columns": [
+        "LOCALPORT",
+        "REMOTEDEVICE",
+        "REMOTEPORT"
+      ],
+      "rows": [
+        [
+          "Ethernet0",
+          "border01",
+          "fortyGigE0/8"
+        ],
+        [
+          "Ethernet4",
+          "border02",
+          "fortyGigE0/8"
+        ]
+      ]
+    },
+    "vlan": {
+      "columns": [
+        "NAME",
+        "VID",
+        "MEMBER",
+        "MODE"
+      ],
+      "rows": []
+    },
+    "interface": {
+      "columns": [
+        "NAME",
+        "MACADDR",
+        "IPADDR",
+        "TYPE"
+      ],
+      "rows": [
+        [
+          "Bridge",
+          "52:54:00:aa:11:56",
+          "",
+          "Bridge"
+        ],
+        [
+          "Ethernet0",
+          "88:88:00:f1:00:00",
+          "172.0.11.9/31",
+          "Other"
+        ],
+        [
+          "Ethernet4",
+          "88:88:00:f1:00:04",
+          "172.0.21.9/31",
+          "Other"
+        ],
+        [
+          "Ethernet8",
+          "88:88:00:f1:00:08",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet12",
+          "88:88:00:f1:00:12",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet16",
+          "88:88:00:f1:00:16",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet20",
+          "88:88:00:f1:00:20",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet24",
+          "88:88:00:f1:00:24",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet28",
+          "88:88:00:f1:00:28",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet32",
+          "88:88:00:f1:00:32",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet36",
+          "88:88:00:f1:00:36",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet40",
+          "88:88:00:f1:00:40",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet44",
+          "88:88:00:f1:00:44",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet48",
+          "88:88:00:f1:00:48",
+          "",
+          "Other"
+        ],
+        [
+          "Loopback0",
+          "12:31:56:b6:b4:ca",
+          "10.255.255.11/32",
+          "Other"
+        ],
+        [
+          "docker0",
+          "02:42:01:ec:69:2e",
+          "",
+          "Bridge"
+        ],
+        [
+          "dummy",
+          "26:b0:d5:70:2a:74",
+          "",
+          "Other"
+        ],
+        [
+          "eth0",
+          "44:38:39:00:01:8c",
+          "192.168.200.61/24",
+          "Other"
+        ],
+        [
+          "eth1",
+          "44:38:39:00:00:4e",
+          "",
+          "Other"
+        ],
+        [
+          "eth2",
+          "44:38:39:00:00:56",
+          "",
+          "Other"
+        ],
+        [
+          "eth3",
+          "44:38:39:00:00:69",
+          "",
+          "Other"
+        ],
+        [
+          "lo",
+          "",
+          "",
+          "Other"
+        ]
+      ]
+    },
+    "bgp": {
+      "columns": [
+        "NEIGHBORADDRESS",
+        "REMOTEAS",
+        "LOCALAS",
+        "REMOTEROUTERID",
+        "LOCALROUTERID",
+        "BGPSTATE"
+      ],
+      "rows": []
+    }
+  },
+  "fw2": {
+    "type": "firewall",
+    "arp": {
+      "columns": [
+        "IPADDR",
+        "MACADDR",
+        "INTERFACE",
+        "VLAN"
+      ],
+      "rows": [
+        [
+          "192.168.200.1",
+          "44:38:39:00:00:6d",
+          "eth0",
+          ""
+        ]
+      ]
+    },
+    "ipRoute": {
+      "columns": [
+        "INTERFACE",
+        "VIA",
+        "TO",
+        "TYPE"
+      ],
+      "rows": [
+        [
+          "eth0",
+          "192.168.200.1",
+          "0.0.0.0/0",
+          "K>*"
+        ],
+        [
+          "Loopback0",
+          "connected",
+          "10.255.255.12/32",
+          "C>*"
+        ],
+        [
+          "Ethernet0",
+          "connected",
+          "172.0.12.8/31",
+          "C>*"
+        ],
+        [
+          "Ethernet4",
+          "connected",
+          "172.0.22.8/31",
+          "C>*"
+        ],
+        [
+          "eth0",
+          "connected",
+          "192.168.200.0/24",
+          "C>*"
+        ]
+      ]
+    },
+    "aclTable": {
+      "columns": [
+        "NAME",
+        "TYPE",
+        "BINDING",
+        "DESCRIPTION",
+        "STAGE"
+      ],
+      "rows": []
+    },
+    "aclRule": {
+      "columns": [
+        "TABLE",
+        "RULE",
+        "PRIORITY",
+        "ACTION",
+        "MATCH"
+      ],
+      "rows": []
+    },
+    "lldp": {
+      "columns": [
+        "LOCALPORT",
+        "REMOTEDEVICE",
+        "REMOTEPORT"
+      ],
+      "rows": [
+        [
+          "Ethernet0",
+          "border01",
+          "fortyGigE0/12"
+        ],
+        [
+          "Ethernet4",
+          "border02",
+          "fortyGigE0/12"
+        ]
+      ]
+    },
+    "vlan": {
+      "columns": [
+        "NAME",
+        "VID",
+        "MEMBER",
+        "MODE"
+      ],
+      "rows": []
+    },
+    "interface": {
+      "columns": [
+        "NAME",
+        "MACADDR",
+        "IPADDR",
+        "TYPE"
+      ],
+      "rows": [
+        [
+          "Bridge",
+          "52:54:00:bb:11:56",
+          "",
+          "Bridge"
+        ],
+        [
+          "Ethernet0",
+          "88:88:00:f2:00:00",
+          "172.0.12.9/31",
+          "Other"
+        ],
+        [
+          "Ethernet4",
+          "88:88:00:f2:00:04",
+          "172.0.22.9/31",
+          "Other"
+        ],
+        [
+          "Ethernet8",
+          "88:88:00:f2:00:08",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet12",
+          "88:88:00:f2:00:12",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet16",
+          "88:88:00:f2:00:16",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet20",
+          "88:88:00:f2:00:20",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet24",
+          "88:88:00:f2:00:24",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet28",
+          "88:88:00:f2:00:28",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet32",
+          "88:88:00:f2:00:32",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet36",
+          "88:88:00:f2:00:36",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet40",
+          "88:88:00:f2:00:40",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet44",
+          "88:88:00:f2:00:44",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet48",
+          "88:88:00:f2:00:48",
+          "",
+          "Other"
+        ],
+        [
+          "Loopback0",
+          "8e:87:73:21:50:fc",
+          "10.255.255.12/32",
+          "Other"
+        ],
+        [
+          "docker0",
+          "02:42:de:d4:ae:6c",
+          "",
+          "Bridge"
+        ],
+        [
+          "dummy",
+          "5a:da:5b:92:0a:f2",
+          "",
+          "Other"
+        ],
+        [
+          "eth0",
+          "44:38:39:00:01:8e",
+          "192.168.200.62/24",
+          "Other"
+        ],
+        [
+          "eth1",
+          "44:38:39:00:00:50",
+          "",
+          "Other"
+        ],
+        [
+          "eth2",
+          "44:38:39:00:00:58",
+          "",
+          "Other"
+        ],
+        [
+          "eth3",
+          "44:38:39:00:00:6b",
+          "",
+          "Other"
+        ],
+        [
+          "lo",
+          "",
+          "",
+          "Other"
+        ]
+      ]
+    },
+    "bgp": {
+      "columns": [
+        "NEIGHBORADDRESS",
+        "REMOTEAS",
+        "LOCALAS",
+        "REMOTEROUTERID",
+        "LOCALROUTERID",
+        "BGPSTATE"
+      ],
+      "rows": []
+    }
+  },
+  "leaf01": {
+    "type": "router",
+    "arp": {
+      "columns": [
+        "IPADDR",
+        "MACADDR",
+        "INTERFACE",
+        "VLAN"
+      ],
+      "rows": [
+        [
+          "172.0.1.0",
+          "88:88:00:51:00:00",
+          "Ethernet20",
+          ""
+        ],
+        [
+          "172.0.2.0",
+          "88:88:00:52:00:00",
+          "Ethernet24",
+          ""
+        ],
+        [
+          "172.0.3.0",
+          "88:88:00:53:00:00",
+          "Ethernet28",
+          ""
+        ],
+        [
+          "172.0.4.0",
+          "88:88:00:54:00:00",
+          "Ethernet32",
+          ""
+        ],
+        [
+          "192.168.200.1",
+          "44:38:39:00:00:6d",
+          "eth0",
+          ""
+        ]
+      ]
+    },
+    "ipRoute": {
+      "columns": [
+        "INTERFACE",
+        "VIA",
+        "TO",
+        "TYPE"
+      ],
+      "rows": [
+        [
+          "eth0",
+          "192.168.200.1",
+          "0.0.0.0/0",
+          "K>*"
+        ],
+        [
+          "Vlan101",
+          "connected",
+          "10.0.101.0/24",
+          "C>*"
+        ],
+        [
+          "Loopback0",
+          "connected",
+          "10.255.255.1/32",
+          "C>*"
+        ],
+        [
+          "Ethernet20",
+          "connected",
+          "172.0.1.0/31",
+          "C>*"
+        ],
+        [
+          "Ethernet24",
+          "connected",
+          "172.0.2.0/31",
+          "C>*"
+        ],
+        [
+          "Ethernet28",
+          "connected",
+          "172.0.3.0/31",
+          "C>*"
+        ],
+        [
+          "Ethernet32",
+          "connected",
+          "172.0.4.0/31",
+          "C>*"
+        ],
+        [
+          "eth0",
+          "connected",
+          "192.168.200.0/24",
+          "C>*"
+        ]
+      ]
+    },
+    "aclTable": {
+      "columns": [
+        "NAME",
+        "TYPE",
+        "BINDING",
+        "DESCRIPTION",
+        "STAGE"
+      ],
+      "rows": []
+    },
+    "aclRule": {
+      "columns": [
+        "TABLE",
+        "RULE",
+        "PRIORITY",
+        "ACTION",
+        "MATCH"
+      ],
+      "rows": []
+    },
+    "lldp": {
+      "columns": [
+        "LOCALPORT",
+        "REMOTEDEVICE",
+        "REMOTEPORT"
+      ],
+      "rows": [
+        [
+          "Ethernet12",
+          "leaf02",
+          "fortyGigE0/12"
+        ],
+        [
+          "Ethernet16",
+          "leaf02",
+          "fortyGigE0/16"
+        ],
+        [
+          "Ethernet20",
+          "spine01",
+          "fortyGigE0/0"
+        ],
+        [
+          "Ethernet24",
+          "spine02",
+          "fortyGigE0/0"
+        ],
+        [
+          "Ethernet28",
+          "spine03",
+          "fortyGigE0/0"
+        ],
+        [
+          "Ethernet32",
+          "spine04",
+          "fortyGigE0/0"
+        ]
+      ]
+    },
+    "vlan": {
+      "columns": [
+        "NAME",
+        "VID",
+        "MEMBER",
+        "MODE"
+      ],
+      "rows": [
+        [
+          "Vlan101",
+          "101",
+          "Ethernet0",
+          "untagged"
+        ],
+        [
+          "Vlan101",
+          "101",
+          "Ethernet4",
+          "untagged"
+        ],
+        [
+          "Vlan101",
+          "101",
+          "Ethernet8",
+          "untagged"
+        ]
+      ]
+    },
+    "interface": {
+      "columns": [
+        "NAME",
+        "MACADDR",
+        "IPADDR",
+        "TYPE"
+      ],
+      "rows": [
+        [
+          "Bridge",
+          "52:11:00:11:11:56",
+          "",
+          "Bridge"
+        ],
+        [
+          "Ethernet0",
+          "88:88:00:11:00:00",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet4",
+          "88:88:00:11:00:04",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet8",
+          "88:88:00:11:00:08",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet12",
+          "88:88:00:11:00:12",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet16",
+          "88:88:00:11:00:16",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet20",
+          "88:88:00:11:00:20",
+          "172.0.1.1/31",
+          "Other"
+        ],
+        [
+          "Ethernet24",
+          "88:88:00:11:00:24",
+          "172.0.2.1/31",
+          "Other"
+        ],
+        [
+          "Ethernet28",
+          "88:88:00:11:00:28",
+          "172.0.3.1/31",
+          "Other"
+        ],
+        [
+          "Ethernet32",
+          "88:88:00:11:00:32",
+          "172.0.4.1/31",
+          "Other"
+        ],
+        [
+          "Ethernet36",
+          "88:88:00:11:00:36",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet40",
+          "88:88:00:11:00:40",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet44",
+          "88:88:00:11:00:44",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet48",
+          "88:88:00:11:00:48",
+          "",
+          "Other"
+        ],
+        [
+          "Loopback0",
+          "12:f1:1f:11:21:2a",
+          "10.255.255.1/32",
+          "Other"
+        ],
+        [
+          "Vlan101",
+          "52:11:00:11:11:56",
+          "10.0.101.1/24",
+          "Vlan"
+        ],
+        [
+          "docker0",
+          "02:42:42:c6:17:d0",
+          "",
+          "Bridge"
+        ],
+        [
+          "dummy",
+          "8e:c7:4a:06:e5:1c",
+          "",
+          "Other"
+        ],
+        [
+          "eth0",
+          "44:38:39:00:01:7a",
+          "192.168.200.11/24",
+          "Other"
+        ],
+        [
+          "eth1",
+          "44:38:39:00:00:31",
+          "",
+          "Other"
+        ],
+        [
+          "eth2",
+          "44:38:39:00:00:33",
+          "",
+          "Other"
+        ],
+        [
+          "eth3",
+          "44:38:39:00:00:35",
+          "",
+          "Other"
+        ],
+        [
+          "eth4",
+          "44:38:39:00:00:59",
+          "",
+          "Other"
+        ],
+        [
+          "eth5",
+          "44:38:39:00:00:5b",
+          "",
+          "Other"
+        ],
+        [
+          "eth6",
+          "44:38:39:00:00:02",
+          "",
+          "Other"
+        ],
+        [
+          "eth7",
+          "44:38:39:00:00:04",
+          "",
+          "Other"
+        ],
+        [
+          "eth8",
+          "44:38:39:00:00:06",
+          "",
+          "Other"
+        ],
+        [
+          "eth9",
+          "44:38:39:00:00:08",
+          "",
+          "Other"
+        ],
+        [
+          "lo",
+          "",
+          "",
+          "Other"
+        ]
+      ]
+    },
+    "bgp": {
+      "columns": [
+        "NEIGHBORADDRESS",
+        "REMOTEAS",
+        "LOCALAS",
+        "REMOTEROUTERID",
+        "LOCALROUTERID",
+        "BGPSTATE"
+      ],
+      "rows": [
+        [
+          "172.0.1.0",
+          "65001",
+          "65101",
+          "10.255.255.101",
+          "10.255.255.1",
+          "Idle"
+        ],
+        [
+          "172.0.2.0",
+          "65002",
+          "65101",
+          "10.255.255.102",
+          "10.255.255.1",
+          "Idle"
+        ],
+        [
+          "172.0.3.0",
+          "65003",
+          "65101",
+          "10.255.255.103",
+          "10.255.255.1",
+          "Idle"
+        ],
+        [
+          "172.0.4.0",
+          "65004",
+          "65101",
+          "10.255.255.104",
+          "10.255.255.1",
+          "Idle"
+        ]
+      ]
+    }
+  },
+  "leaf02": {
+    "type": "router",
+    "arp": {
+      "columns": [
+        "IPADDR",
+        "MACADDR",
+        "INTERFACE",
+        "VLAN"
+      ],
+      "rows": [
+        [
+          "172.0.1.2",
+          "88:88:00:51:00:04",
+          "Ethernet20",
+          ""
+        ],
+        [
+          "172.0.2.2",
+          "88:88:00:52:00:04",
+          "Ethernet24",
+          ""
+        ],
+        [
+          "172.0.3.2",
+          "88:88:00:53:00:04",
+          "Ethernet28",
+          ""
+        ],
+        [
+          "172.0.4.2",
+          "88:88:00:54:00:04",
+          "Ethernet32",
+          ""
+        ],
+        [
+          "192.168.200.1",
+          "44:38:39:00:00:6d",
+          "eth0",
+          ""
+        ]
+      ]
+    },
+    "ipRoute": {
+      "columns": [
+        "INTERFACE",
+        "VIA",
+        "TO",
+        "TYPE"
+      ],
+      "rows": [
+        [
+          "eth0",
+          "192.168.200.1",
+          "0.0.0.0/0",
+          "K>*"
+        ],
+        [
+          "Vlan101",
+          "connected",
+          "10.0.102.0/24",
+          "C>*"
+        ],
+        [
+          "Ethernet20",
+          "172.0.1.2",
+          "10.0.103.0/24",
+          "B>*"
+        ],
+        [
+          "Ethernet20",
+          "172.0.1.2",
+          "10.0.104.0/24",
+          "B>*"
+        ],
+        [
+          "Loopback0",
+          "connected",
+          "10.255.255.2/32",
+          "C>*"
+        ],
+        [
+          "Ethernet20",
+          "172.0.1.2",
+          "10.255.255.3/32",
+          "B>*"
+        ],
+        [
+          "Ethernet20",
+          "172.0.1.2",
+          "10.255.255.4/32",
+          "B>*"
+        ],
+        [
+          "Ethernet20",
+          "172.0.1.2",
+          "10.255.255.101/32",
+          "B>*"
+        ],
+        [
+          "Ethernet24",
+          "172.0.2.2",
+          "10.255.255.102/32",
+          "B>*"
+        ],
+        [
+          "Ethernet28",
+          "172.0.3.2",
+          "10.255.255.103/32",
+          "B>*"
+        ],
+        [
+          "Ethernet32",
+          "172.0.4.2",
+          "10.255.255.104/32",
+          "B>*"
+        ],
+        [
+          "Ethernet20",
+          "connected",
+          "172.0.1.2/31",
+          "C>*"
+        ],
+        [
+          "Ethernet24",
+          "connected",
+          "172.0.2.2/31",
+          "C>*"
+        ],
+        [
+          "Ethernet28",
+          "connected",
+          "172.0.3.2/31",
+          "C>*"
+        ],
+        [
+          "Ethernet32",
+          "connected",
+          "172.0.4.2/31",
+          "C>*"
+        ],
+        [
+          "eth0",
+          "connected",
+          "192.168.200.0/24",
+          "C>*"
+        ]
+      ]
+    },
+    "aclTable": {
+      "columns": [
+        "NAME",
+        "TYPE",
+        "BINDING",
+        "DESCRIPTION",
+        "STAGE"
+      ],
+      "rows": []
+    },
+    "aclRule": {
+      "columns": [
+        "TABLE",
+        "RULE",
+        "PRIORITY",
+        "ACTION",
+        "MATCH"
+      ],
+      "rows": []
+    },
+    "lldp": {
+      "columns": [
+        "LOCALPORT",
+        "REMOTEDEVICE",
+        "REMOTEPORT"
+      ],
+      "rows": [
+        [
+          "Ethernet12",
+          "leaf01",
+          "fortyGigE0/12"
+        ],
+        [
+          "Ethernet16",
+          "leaf01",
+          "fortyGigE0/16"
+        ],
+        [
+          "Ethernet20",
+          "spine01",
+          "fortyGigE0/4"
+        ],
+        [
+          "Ethernet24",
+          "spine02",
+          "fortyGigE0/4"
+        ],
+        [
+          "Ethernet28",
+          "spine03",
+          "fortyGigE0/4"
+        ],
+        [
+          "Ethernet32",
+          "spine04",
+          "fortyGigE0/4"
+        ]
+      ]
+    },
+    "vlan": {
+      "columns": [
+        "NAME",
+        "VID",
+        "MEMBER",
+        "MODE"
+      ],
+      "rows": [
+        [
+          "Vlan101",
+          "101",
+          "Ethernet0",
+          "untagged"
+        ],
+        [
+          "Vlan101",
+          "101",
+          "Ethernet4",
+          "untagged"
+        ],
+        [
+          "Vlan101",
+          "101",
+          "Ethernet8",
+          "untagged"
+        ]
+      ]
+    },
+    "interface": {
+      "columns": [
+        "NAME",
+        "MACADDR",
+        "IPADDR",
+        "TYPE"
+      ],
+      "rows": [
+        [
+          "Bridge",
+          "52:22:00:22:22:56",
+          "",
+          "Bridge"
+        ],
+        [
+          "Ethernet0",
+          "88:88:00:12:00:00",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet4",
+          "88:88:00:12:00:04",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet8",
+          "88:88:00:12:00:08",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet12",
+          "88:88:00:12:00:12",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet16",
+          "88:88:00:12:00:16",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet20",
+          "88:88:00:12:00:20",
+          "172.0.1.3/31",
+          "Other"
+        ],
+        [
+          "Ethernet24",
+          "88:88:00:12:00:24",
+          "172.0.2.3/31",
+          "Other"
+        ],
+        [
+          "Ethernet28",
+          "88:88:00:12:00:28",
+          "172.0.3.3/31",
+          "Other"
+        ],
+        [
+          "Ethernet32",
+          "88:88:00:12:00:32",
+          "172.0.4.3/31",
+          "Other"
+        ],
+        [
+          "Ethernet36",
+          "88:88:00:12:00:36",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet40",
+          "88:88:00:12:00:40",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet44",
+          "88:88:00:12:00:44",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet48",
+          "88:88:00:12:00:48",
+          "",
+          "Other"
+        ],
+        [
+          "Loopback0",
+          "2e:0f:90:bb:04:c7",
+          "10.255.255.2/32",
+          "Other"
+        ],
+        [
+          "Vlan101",
+          "52:22:00:22:22:56",
+          "10.0.102.1/24",
+          "Vlan"
+        ],
+        [
+          "docker0",
+          "02:42:ac:51:24:da",
+          "",
+          "Bridge"
+        ],
+        [
+          "dummy",
+          "ae:d9:18:4d:9d:fa",
+          "",
+          "Other"
+        ],
+        [
+          "eth0",
+          "44:38:39:00:01:78",
+          "192.168.200.12/24",
+          "Other"
+        ],
+        [
+          "eth1",
+          "44:38:39:00:00:37",
+          "",
+          "Other"
+        ],
+        [
+          "eth2",
+          "44:38:39:00:00:39",
+          "",
+          "Other"
+        ],
+        [
+          "eth3",
+          "44:38:39:00:00:3b",
+          "",
+          "Other"
+        ],
+        [
+          "eth4",
+          "44:38:39:00:00:5a",
+          "",
+          "Other"
+        ],
+        [
+          "eth5",
+          "44:38:39:00:00:5c",
+          "",
+          "Other"
+        ],
+        [
+          "eth6",
+          "44:38:39:00:00:0a",
+          "",
+          "Other"
+        ],
+        [
+          "eth7",
+          "44:38:39:00:00:0c",
+          "",
+          "Other"
+        ],
+        [
+          "eth8",
+          "44:38:39:00:00:0e",
+          "",
+          "Other"
+        ],
+        [
+          "eth9",
+          "44:38:39:00:00:10",
+          "",
+          "Other"
+        ],
+        [
+          "lo",
+          "",
+          "",
+          "Other"
+        ]
+      ]
+    },
+    "bgp": {
+      "columns": [
+        "NEIGHBORADDRESS",
+        "REMOTEAS",
+        "LOCALAS",
+        "REMOTEROUTERID",
+        "LOCALROUTERID",
+        "BGPSTATE"
+      ],
+      "rows": [
+        [
+          "172.0.1.2",
+          "65199",
+          "65101",
+          "10.255.255.101",
+          "10.255.255.2",
+          "Established"
+        ],
+        [
+          "172.0.2.2",
+          "65199",
+          "65101",
+          "10.255.255.102",
+          "10.255.255.2",
+          "Established"
+        ],
+        [
+          "172.0.3.2",
+          "65199",
+          "65101",
+          "10.255.255.103",
+          "10.255.255.2",
+          "Established"
+        ],
+        [
+          "172.0.4.2",
+          "65199",
+          "65101",
+          "10.255.255.104",
+          "10.255.255.2",
+          "Established"
+        ]
+      ]
+    }
+  },
+  "leaf03": {
+    "type": "router",
+    "arp": {
+      "columns": [
+        "IPADDR",
+        "MACADDR",
+        "INTERFACE",
+        "VLAN"
+      ],
+      "rows": [
+        [
+          "172.0.1.4",
+          "88:88:00:51:00:08",
+          "Ethernet20",
+          ""
+        ],
+        [
+          "172.0.2.4",
+          "88:88:00:52:00:08",
+          "Ethernet24",
+          ""
+        ],
+        [
+          "172.0.3.4",
+          "88:88:00:53:00:08",
+          "Ethernet28",
+          ""
+        ],
+        [
+          "172.0.4.4",
+          "88:88:00:54:00:08",
+          "Ethernet32",
+          ""
+        ],
+        [
+          "192.168.200.1",
+          "44:38:39:00:00:6d",
+          "eth0",
+          ""
+        ]
+      ]
+    },
+    "ipRoute": {
+      "columns": [
+        "INTERFACE",
+        "VIA",
+        "TO",
+        "TYPE"
+      ],
+      "rows": [
+        [
+          "eth0",
+          "192.168.200.1",
+          "0.0.0.0/0",
+          "K>*"
+        ],
+        [
+          "Ethernet20",
+          "172.0.1.4",
+          "10.0.102.0/24",
+          "B>*"
+        ],
+        [
+          "Vlan101",
+          "connected",
+          "10.0.103.0/24",
+          "C>*"
+        ],
+        [
+          "Ethernet20",
+          "172.0.1.4",
+          "10.255.255.2/32",
+          "B>*"
+        ],
+        [
+          "Loopback0",
+          "connected",
+          "10.255.255.3/32",
+          "C>*"
+        ],
+        [
+          "Ethernet20",
+          "172.0.1.4",
+          "10.255.255.101/32",
+          "B>*"
+        ],
+        [
+          "Ethernet24",
+          "172.0.2.4",
+          "10.255.255.102/32",
+          "B>*"
+        ],
+        [
+          "Ethernet28",
+          "172.0.3.4",
+          "10.255.255.103/32",
+          "B>*"
+        ],
+        [
+          "Ethernet32",
+          "172.0.4.4",
+          "10.255.255.104/32",
+          "B>*"
+        ],
+        [
+          "Ethernet20",
+          "connected",
+          "172.0.1.4/31",
+          "C>*"
+        ],
+        [
+          "Ethernet24",
+          "connected",
+          "172.0.2.4/31",
+          "C>*"
+        ],
+        [
+          "Ethernet28",
+          "connected",
+          "172.0.3.4/31",
+          "C>*"
+        ],
+        [
+          "Ethernet32",
+          "connected",
+          "172.0.4.4/31",
+          "C>*"
+        ],
+        [
+          "eth0",
+          "connected",
+          "192.168.200.0/24",
+          "C>*"
+        ]
+      ]
+    },
+    "aclTable": {
+      "columns": [
+        "NAME",
+        "TYPE",
+        "BINDING",
+        "DESCRIPTION",
+        "STAGE"
+      ],
+      "rows": []
+    },
+    "aclRule": {
+      "columns": [
+        "TABLE",
+        "RULE",
+        "PRIORITY",
+        "ACTION",
+        "MATCH"
+      ],
+      "rows": []
+    },
+    "lldp": {
+      "columns": [
+        "LOCALPORT",
+        "REMOTEDEVICE",
+        "REMOTEPORT"
+      ],
+      "rows": [
+        [
+          "Ethernet12",
+          "leaf04",
+          "fortyGigE0/12"
+        ],
+        [
+          "Ethernet16",
+          "leaf04",
+          "fortyGigE0/16"
+        ],
+        [
+          "Ethernet20",
+          "spine01",
+          "fortyGigE0/8"
+        ],
+        [
+          "Ethernet24",
+          "spine02",
+          "fortyGigE0/8"
+        ],
+        [
+          "Ethernet28",
+          "spine03",
+          "fortyGigE0/8"
+        ],
+        [
+          "Ethernet32",
+          "spine04",
+          "fortyGigE0/8"
+        ]
+      ]
+    },
+    "vlan": {
+      "columns": [
+        "NAME",
+        "VID",
+        "MEMBER",
+        "MODE"
+      ],
+      "rows": [
+        [
+          "Vlan101",
+          "101",
+          "Ethernet0",
+          "untagged"
+        ],
+        [
+          "Vlan101",
+          "101",
+          "Ethernet4",
+          "untagged"
+        ],
+        [
+          "Vlan101",
+          "101",
+          "Ethernet8",
+          "untagged"
+        ]
+      ]
+    },
+    "interface": {
+      "columns": [
+        "NAME",
+        "MACADDR",
+        "IPADDR",
+        "TYPE"
+      ],
+      "rows": [
+        [
+          "Bridge",
+          "52:33:00:33:33:56",
+          "",
+          "Bridge"
+        ],
+        [
+          "Ethernet0",
+          "88:88:00:13:00:00",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet4",
+          "88:88:00:13:00:04",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet8",
+          "88:88:00:13:00:08",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet12",
+          "88:88:00:13:00:12",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet16",
+          "88:88:00:13:00:16",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet20",
+          "88:88:00:13:00:20",
+          "172.0.1.5/31",
+          "Other"
+        ],
+        [
+          "Ethernet24",
+          "88:88:00:13:00:24",
+          "172.0.2.5/31",
+          "Other"
+        ],
+        [
+          "Ethernet28",
+          "88:88:00:13:00:28",
+          "172.0.3.5/31",
+          "Other"
+        ],
+        [
+          "Ethernet32",
+          "88:88:00:13:00:32",
+          "172.0.4.5/31",
+          "Other"
+        ],
+        [
+          "Ethernet36",
+          "88:88:00:13:00:36",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet40",
+          "88:88:00:13:00:40",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet44",
+          "88:88:00:13:00:44",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet48",
+          "88:88:00:13:00:48",
+          "",
+          "Other"
+        ],
+        [
+          "Loopback0",
+          "5e:c1:3c:42:58:09",
+          "10.255.255.3/32",
+          "Other"
+        ],
+        [
+          "Vlan101",
+          "52:33:00:33:33:56",
+          "10.0.103.1/24",
+          "Vlan"
+        ],
+        [
+          "docker0",
+          "02:42:10:43:6f:a7",
+          "",
+          "Bridge"
+        ],
+        [
+          "dummy",
+          "aa:b8:69:40:39:93",
+          "",
+          "Other"
+        ],
+        [
+          "eth0",
+          "44:38:39:00:01:84",
+          "192.168.200.13/24",
+          "Other"
+        ],
+        [
+          "eth1",
+          "44:38:39:00:00:3d",
+          "",
+          "Other"
+        ],
+        [
+          "eth2",
+          "44:38:39:00:00:3f",
+          "",
+          "Other"
+        ],
+        [
+          "eth3",
+          "44:38:39:00:00:41",
+          "",
+          "Other"
+        ],
+        [
+          "eth4",
+          "44:38:39:00:00:5d",
+          "",
+          "Other"
+        ],
+        [
+          "eth5",
+          "44:38:39:00:00:5f",
+          "",
+          "Other"
+        ],
+        [
+          "eth6",
+          "44:38:39:00:00:12",
+          "",
+          "Other"
+        ],
+        [
+          "eth7",
+          "44:38:39:00:00:14",
+          "",
+          "Other"
+        ],
+        [
+          "eth8",
+          "44:38:39:00:00:16",
+          "",
+          "Other"
+        ],
+        [
+          "eth9",
+          "44:38:39:00:00:18",
+          "",
+          "Other"
+        ],
+        [
+          "lo",
+          "",
+          "",
+          "Other"
+        ]
+      ]
+    },
+    "bgp": {
+      "columns": [
+        "NEIGHBORADDRESS",
+        "REMOTEAS",
+        "LOCALAS",
+        "REMOTEROUTERID",
+        "LOCALROUTERID",
+        "BGPSTATE"
+      ],
+      "rows": [
+        [
+          "172.0.1.4",
+          "65199",
+          "65102",
+          "10.255.255.101",
+          "10.255.255.3",
+          "Established"
+        ],
+        [
+          "172.0.2.4",
+          "65199",
+          "65102",
+          "10.255.255.102",
+          "10.255.255.3",
+          "Established"
+        ],
+        [
+          "172.0.3.4",
+          "65199",
+          "65102",
+          "10.255.255.103",
+          "10.255.255.3",
+          "Established"
+        ],
+        [
+          "172.0.4.4",
+          "65199",
+          "65102",
+          "10.255.255.104",
+          "10.255.255.3",
+          "Established"
+        ]
+      ]
+    }
+  },
+  "leaf04": {
+    "type": "router",
+    "arp": {
+      "columns": [
+        "IPADDR",
+        "MACADDR",
+        "INTERFACE",
+        "VLAN"
+      ],
+      "rows": [
+        [
+          "172.0.1.6",
+          "88:88:00:51:00:12",
+          "Ethernet20",
+          ""
+        ],
+        [
+          "172.0.2.6",
+          "88:88:00:52:00:12",
+          "Ethernet24",
+          ""
+        ],
+        [
+          "172.0.3.6",
+          "88:88:00:53:00:12",
+          "Ethernet28",
+          ""
+        ],
+        [
+          "172.0.4.6",
+          "88:88:00:54:00:12",
+          "Ethernet32",
+          ""
+        ],
+        [
+          "192.168.200.1",
+          "44:38:39:00:00:6d",
+          "eth0",
+          ""
+        ]
+      ]
+    },
+    "ipRoute": {
+      "columns": [
+        "INTERFACE",
+        "VIA",
+        "TO",
+        "TYPE"
+      ],
+      "rows": [
+        [
+          "eth0",
+          "192.168.200.1",
+          "0.0.0.0/0",
+          "K>*"
+        ],
+        [
+          "Ethernet20",
+          "172.0.1.6",
+          "10.0.102.0/24",
+          "B>*"
+        ],
+        [
+          "Vlan101",
+          "connected",
+          "10.0.104.0/24",
+          "C>*"
+        ],
+        [
+          "Ethernet20",
+          "172.0.1.6",
+          "10.255.255.2/32",
+          "B>*"
+        ],
+        [
+          "Loopback0",
+          "connected",
+          "10.255.255.4/32",
+          "C>*"
+        ],
+        [
+          "Ethernet20",
+          "172.0.1.6",
+          "10.255.255.101/32",
+          "B>*"
+        ],
+        [
+          "Ethernet24",
+          "172.0.2.6",
+          "10.255.255.102/32",
+          "B>*"
+        ],
+        [
+          "Ethernet28",
+          "172.0.3.6",
+          "10.255.255.103/32",
+          "B>*"
+        ],
+        [
+          "Ethernet32",
+          "172.0.4.6",
+          "10.255.255.104/32",
+          "B>*"
+        ],
+        [
+          "Ethernet20",
+          "connected",
+          "172.0.1.6/31",
+          "C>*"
+        ],
+        [
+          "Ethernet24",
+          "connected",
+          "172.0.2.6/31",
+          "C>*"
+        ],
+        [
+          "Ethernet28",
+          "connected",
+          "172.0.3.6/31",
+          "C>*"
+        ],
+        [
+          "Ethernet32",
+          "connected",
+          "172.0.4.6/31",
+          "C>*"
+        ],
+        [
+          "eth0",
+          "connected",
+          "192.168.200.0/24",
+          "C>*"
+        ]
+      ]
+    },
+    "aclTable": {
+      "columns": [
+        "NAME",
+        "TYPE",
+        "BINDING",
+        "DESCRIPTION",
+        "STAGE"
+      ],
+      "rows": []
+    },
+    "aclRule": {
+      "columns": [
+        "TABLE",
+        "RULE",
+        "PRIORITY",
+        "ACTION",
+        "MATCH"
+      ],
+      "rows": []
+    },
+    "lldp": {
+      "columns": [
+        "LOCALPORT",
+        "REMOTEDEVICE",
+        "REMOTEPORT"
+      ],
+      "rows": [
+        [
+          "Ethernet12",
+          "leaf03",
+          "fortyGigE0/12"
+        ],
+        [
+          "Ethernet16",
+          "leaf03",
+          "fortyGigE0/16"
+        ],
+        [
+          "Ethernet20",
+          "spine01",
+          "fortyGigE0/12"
+        ],
+        [
+          "Ethernet24",
+          "spine02",
+          "fortyGigE0/12"
+        ],
+        [
+          "Ethernet28",
+          "spine03",
+          "fortyGigE0/12"
+        ],
+        [
+          "Ethernet32",
+          "spine04",
+          "fortyGigE0/12"
+        ]
+      ]
+    },
+    "vlan": {
+      "columns": [
+        "NAME",
+        "VID",
+        "MEMBER",
+        "MODE"
+      ],
+      "rows": [
+        [
+          "Vlan101",
+          "101",
+          "Ethernet0",
+          "untagged"
+        ],
+        [
+          "Vlan101",
+          "101",
+          "Ethernet4",
+          "untagged"
+        ],
+        [
+          "Vlan101",
+          "101",
+          "Ethernet8",
+          "untagged"
+        ]
+      ]
+    },
+    "interface": {
+      "columns": [
+        "NAME",
+        "MACADDR",
+        "IPADDR",
+        "TYPE"
+      ],
+      "rows": [
+        [
+          "Bridge",
+          "52:44:00:44:44:56",
+          "",
+          "Bridge"
+        ],
+        [
+          "Ethernet0",
+          "88:88:00:14:00:00",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet4",
+          "88:88:00:14:00:04",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet8",
+          "88:88:00:14:00:08",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet12",
+          "88:88:00:14:00:12",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet16",
+          "88:88:00:14:00:16",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet20",
+          "88:88:00:14:00:20",
+          "172.0.1.7/31",
+          "Other"
+        ],
+        [
+          "Ethernet24",
+          "88:88:00:14:00:24",
+          "172.0.2.7/31",
+          "Other"
+        ],
+        [
+          "Ethernet28",
+          "88:88:00:14:00:28",
+          "172.0.3.7/31",
+          "Other"
+        ],
+        [
+          "Ethernet32",
+          "88:88:00:14:00:32",
+          "172.0.4.7/31",
+          "Other"
+        ],
+        [
+          "Ethernet36",
+          "88:88:00:14:00:36",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet40",
+          "88:88:00:14:00:40",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet44",
+          "88:88:00:14:00:44",
+          "",
+          "Other"
+        ],
+        [
+          "Ethernet48",
+          "88:88:00:14:00:48",
+          "",
+          "Other"
+        ],
+        [
+          "Loopback0",
+          "26:ef:40:1d:b7:8a",
+          "10.255.255.4/32",
+          "Other"
+        ],
+        [
+          "Vlan101",
+          "52:44:00:44:44:56",
+          "10.0.104.1/24",
+          "Vlan"
+        ],
+        [
+          "docker0",
+          "02:42:22:03:e4:99",
+          "",
+          "Bridge"
+        ],
+        [
+          "dummy",
+          "de:05:44:2f:b7:9d",
+          "",
+          "Other"
+        ],
+        [
+          "eth0",
+          "44:38:39:00:01:8a",
+          "192.168.200.14/24",
+          "Other"
+        ],
+        [
+          "eth1",
+          "44:38:39:00:00:43",
+          "",
+          "Other"
+        ],
+        [
+          "eth2",
+          "44:38:39:00:00:45",
+          "",
+          "Other"
+        ],
+        [
+          "eth3",
+          "44:38:39:00:00:47",
+          "",
+          "Other"
+        ],
+        [
+          "eth4",
+          "44:38:39:00:00:5e",
+          "",
+          "Other"
+        ],
+        [
+          "eth5",
+          "44:38:39:00:00:60",
+          "",
+          "Other"
+        ],
+        [
+          "eth6",
+          "44:38:39:00:00:1a",
+          "",
+          "Other"
+        ],
+        [
+          "eth7",
+          "44:38:39:00:00:1c",
+          "",
+          "Other"
+        ],
+        [
+          "eth8",
+          "44:38:39:00:00:1e",
+          "",
+          "Other"
+        ],
+        [
+          "eth9",
+          "44:38:39:00:00:20",
+          "",
+          "Other"
+        ],
+        [
+          "lo",
+          "",
+          "",
+          "Other"
+        ]
+      ]
+    },
+    "bgp": {
+      "columns": [
+        "NEIGHBORADDRESS",
+        "REMOTEAS",
+        "LOCALAS",
+        "REMOTEROUTERID",
+        "LOCALROUTERID",
+        "BGPSTATE"
+      ],
+      "rows": [
+        [
+          "172.0.1.6",
+          "65199",
+          "65102",
+          "10.255.255.101",
+          "10.255.255.4",
+          "Established"
+        ],
+        [
+          "172.0.2.6",
+          "65199",
+          "65102",
+          "10.255.255.102",
+          "10.255.255.4",
+          "Established"
+        ],
+        [
+          "172.0.3.6",
+          "65199",
+          "65102",
+          "10.255.255.103",
+          "10.255.255.4",
+          "Established"
+        ],
+        [
+          "172.0.4.6",
+          "65199",
+          "65102",
+          "10.255.255.104",
+          "10.255.255.4",
+          "Established"
+        ]
+      ]
     }
   }
+}
