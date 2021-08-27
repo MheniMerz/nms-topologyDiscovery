@@ -1,6 +1,6 @@
 {
   "border01": {
-    "type":"router",
+    "type": "router",
     "arp": {
       "columns": [
         "IPADDR",
@@ -266,52 +266,52 @@
         [
           "Ethernet0",
           "server07",
-          "44:38:39:00:00:4a"
+          "eth1"
         ],
         [
           "Ethernet4",
           "server08",
-          "44:38:39:00:00:4c"
+          "eth1"
         ],
         [
           "Ethernet8",
           "fw1",
-          "fortyGigE0/0"
+          "Ethernet0"
         ],
         [
           "Ethernet12",
           "fw2",
-          "fortyGigE0/0"
+          "Ethernet0"
         ],
         [
           "Ethernet16",
           "border02",
-          "fortyGigE0/16"
+          "Ethernet16"
         ],
         [
           "Ethernet20",
           "border02",
-          "fortyGigE0/20"
+          "Ethernet20"
         ],
         [
           "Ethernet24",
           "spine01",
-          "fortyGigE0/16"
+          "Ethernet16"
         ],
         [
           "Ethernet28",
           "spine02",
-          "fortyGigE0/16"
+          "Ethernet16"
         ],
         [
           "Ethernet32",
           "spine03",
-          "fortyGigE0/16"
+          "Ethernet16"
         ],
         [
           "Ethernet36",
           "spine04",
-          "fortyGigE0/16"
+          "Ethernet16"
         ]
       ]
     },
@@ -437,7 +437,7 @@
         ],
         [
           "Loopback0",
-          "96:4b:80:48:c2:28",
+          "32:5e:66:59:97:f2",
           "10.255.255.5/32",
           "Other"
         ],
@@ -449,13 +449,13 @@
         ],
         [
           "docker0",
-          "02:42:bf:24:b5:f1",
+          "02:42:a0:75:b5:df",
           "",
           "Bridge"
         ],
         [
           "dummy",
-          "42:a1:dc:f5:ee:42",
+          "f6:df:a5:2f:d7:6a",
           "",
           "Other"
         ],
@@ -579,7 +579,7 @@
     }
   },
   "border02": {
-    "type":"router",
+    "type": "router",
     "arp": {
       "columns": [
         "IPADDR",
@@ -845,52 +845,52 @@
         [
           "Ethernet0",
           "server07",
-          "44:38:39:00:00:52"
+          "eth2"
         ],
         [
           "Ethernet4",
           "server08",
-          "44:38:39:00:00:54"
+          "eth2"
         ],
         [
           "Ethernet8",
           "fw1",
-          "fortyGigE0/4"
+          "Ethernet4"
         ],
         [
           "Ethernet12",
           "fw2",
-          "fortyGigE0/4"
+          "Ethernet4"
         ],
         [
           "Ethernet16",
           "border01",
-          "fortyGigE0/16"
+          "Ethernet16"
         ],
         [
           "Ethernet20",
           "border01",
-          "fortyGigE0/20"
+          "Ethernet20"
         ],
         [
           "Ethernet24",
           "spine01",
-          "fortyGigE0/20"
+          "Ethernet20"
         ],
         [
           "Ethernet28",
           "spine02",
-          "fortyGigE0/20"
+          "Ethernet20"
         ],
         [
           "Ethernet32",
           "spine03",
-          "fortyGigE0/20"
+          "Ethernet20"
         ],
         [
           "Ethernet36",
           "spine04",
-          "fortyGigE0/20"
+          "Ethernet20"
         ]
       ]
     },
@@ -1016,7 +1016,7 @@
         ],
         [
           "Loopback0",
-          "a2:67:bf:ef:6d:94",
+          "16:62:f5:e2:77:fd",
           "10.255.255.6/32",
           "Other"
         ],
@@ -1028,13 +1028,13 @@
         ],
         [
           "docker0",
-          "02:42:50:a7:09:6f",
+          "02:42:c6:c5:52:65",
           "",
           "Bridge"
         ],
         [
           "dummy",
-          "7e:fe:2c:7a:61:d3",
+          "6a:14:11:b4:60:18",
           "",
           "Other"
         ],
@@ -1158,7 +1158,7 @@
     }
   },
   "spine01": {
-    "type":"router",
+    "type": "router",
     "arp": {
       "columns": [
         "IPADDR",
@@ -1395,32 +1395,32 @@
         [
           "Ethernet0",
           "leaf01",
-          "fortyGigE0/20"
+          "Ethernet20"
         ],
         [
           "Ethernet4",
           "leaf02",
-          "fortyGigE0/20"
+          "Ethernet20"
         ],
         [
           "Ethernet8",
           "leaf03",
-          "fortyGigE0/20"
+          "Ethernet20"
         ],
         [
           "Ethernet12",
           "leaf04",
-          "fortyGigE0/20"
+          "Ethernet20"
         ],
         [
           "Ethernet16",
           "border01",
-          "fortyGigE0/24"
+          "Ethernet24"
         ],
         [
           "Ethernet20",
           "border02",
-          "fortyGigE0/24"
+          "Ethernet24"
         ]
       ]
     },
@@ -1527,19 +1527,19 @@
         ],
         [
           "Loopback0",
-          "be:e0:78:8c:b7:68",
+          "b2:7f:1d:3f:6b:03",
           "10.255.255.101/32",
           "Other"
         ],
         [
           "docker0",
-          "02:42:ce:c2:97:43",
+          "02:42:2d:c4:5e:28",
           "",
           "Bridge"
         ],
         [
           "dummy",
-          "4a:f7:89:de:35:c3",
+          "4e:15:77:51:55:4e",
           "",
           "Other"
         ],
@@ -1655,7 +1655,7 @@
     }
   },
   "spine02": {
-    "type":"router",
+    "type": "router",
     "arp": {
       "columns": [
         "IPADDR",
@@ -1892,32 +1892,32 @@
         [
           "Ethernet0",
           "leaf01",
-          "fortyGigE0/24"
+          "Ethernet24"
         ],
         [
           "Ethernet4",
           "leaf02",
-          "fortyGigE0/24"
+          "Ethernet24"
         ],
         [
           "Ethernet8",
           "leaf03",
-          "fortyGigE0/24"
+          "Ethernet24"
         ],
         [
           "Ethernet12",
           "leaf04",
-          "fortyGigE0/24"
+          "Ethernet24"
         ],
         [
           "Ethernet16",
           "border01",
-          "fortyGigE0/28"
+          "Ethernet28"
         ],
         [
           "Ethernet20",
           "border02",
-          "fortyGigE0/28"
+          "Ethernet28"
         ]
       ]
     },
@@ -2024,19 +2024,19 @@
         ],
         [
           "Loopback0",
-          "a2:7c:a5:af:77:48",
+          "3a:02:c5:9d:44:fd",
           "10.255.255.102/32",
           "Other"
         ],
         [
           "docker0",
-          "02:42:b0:c3:d2:95",
+          "02:42:69:53:7f:9a",
           "",
           "Bridge"
         ],
         [
           "dummy",
-          "5a:77:35:00:70:53",
+          "4e:10:fb:39:16:9d",
           "",
           "Other"
         ],
@@ -2152,8 +2152,7 @@
     }
   },
   "spine03": {
-    "type":"router",
-
+    "type": "router",
     "arp": {
       "columns": [
         "IPADDR",
@@ -2390,32 +2389,32 @@
         [
           "Ethernet0",
           "leaf01",
-          "fortyGigE0/28"
+          "Ethernet28"
         ],
         [
           "Ethernet4",
           "leaf02",
-          "fortyGigE0/28"
+          "Ethernet28"
         ],
         [
           "Ethernet8",
           "leaf03",
-          "fortyGigE0/28"
+          "Ethernet28"
         ],
         [
           "Ethernet12",
           "leaf04",
-          "fortyGigE0/28"
+          "Ethernet28"
         ],
         [
           "Ethernet16",
           "border01",
-          "fortyGigE0/32"
+          "Ethernet32"
         ],
         [
           "Ethernet20",
           "border02",
-          "fortyGigE0/32"
+          "Ethernet32"
         ]
       ]
     },
@@ -2522,19 +2521,19 @@
         ],
         [
           "Loopback0",
-          "76:49:a1:c7:c4:3d",
+          "36:c8:ec:b0:6c:f6",
           "10.255.255.103/32",
           "Other"
         ],
         [
           "docker0",
-          "02:42:93:ac:7e:e0",
+          "02:42:ad:34:94:5c",
           "",
           "Bridge"
         ],
         [
           "dummy",
-          "4a:51:46:4b:2b:f9",
+          "ce:3e:d4:45:a4:72",
           "",
           "Other"
         ],
@@ -2650,7 +2649,7 @@
     }
   },
   "spine04": {
-    "type":"router",
+    "type": "router",
     "arp": {
       "columns": [
         "IPADDR",
@@ -2887,32 +2886,32 @@
         [
           "Ethernet0",
           "leaf01",
-          "fortyGigE0/32"
+          "Ethernet32"
         ],
         [
           "Ethernet4",
           "leaf02",
-          "fortyGigE0/32"
+          "Ethernet32"
         ],
         [
           "Ethernet8",
           "leaf03",
-          "fortyGigE0/32"
+          "Ethernet32"
         ],
         [
           "Ethernet12",
           "leaf04",
-          "fortyGigE0/32"
+          "Ethernet32"
         ],
         [
           "Ethernet16",
           "border01",
-          "fortyGigE0/36"
+          "Ethernet36"
         ],
         [
           "Ethernet20",
           "border02",
-          "fortyGigE0/36"
+          "Ethernet36"
         ]
       ]
     },
@@ -3019,19 +3018,19 @@
         ],
         [
           "Loopback0",
-          "3e:4b:f6:43:db:88",
+          "aa:37:51:2a:74:6d",
           "10.255.255.104/32",
           "Other"
         ],
         [
           "docker0",
-          "02:42:b0:bd:47:62",
+          "02:42:1d:df:68:c9",
           "",
           "Bridge"
         ],
         [
           "dummy",
-          "02:e5:b4:c9:97:53",
+          "7e:7f:1a:20:46:07",
           "",
           "Other"
         ],
@@ -3147,7 +3146,7 @@
     }
   },
   "fw1": {
-    "type":"firewall",
+    "type": "firewall",
     "arp": {
       "columns": [
         "IPADDR",
@@ -3234,12 +3233,12 @@
         [
           "Ethernet0",
           "border01",
-          "fortyGigE0/8"
+          "Ethernet8"
         ],
         [
           "Ethernet4",
           "border02",
-          "fortyGigE0/8"
+          "Ethernet8"
         ]
       ]
     },
@@ -3346,19 +3345,19 @@
         ],
         [
           "Loopback0",
-          "ea:15:34:77:0c:e4",
+          "de:34:c0:1b:c6:31",
           "10.255.255.11/32",
           "Other"
         ],
         [
           "docker0",
-          "02:42:01:ec:69:2e",
+          "02:42:81:c0:95:41",
           "",
           "Bridge"
         ],
         [
           "dummy",
-          "26:9f:4c:f5:1e:c4",
+          "5e:c8:07:ac:82:54",
           "",
           "Other"
         ],
@@ -3407,7 +3406,7 @@
     }
   },
   "fw2": {
-    "type":"firewall",
+    "type": "firewall",
     "arp": {
       "columns": [
         "IPADDR",
@@ -3494,12 +3493,12 @@
         [
           "Ethernet0",
           "border01",
-          "fortyGigE0/12"
+          "Ethernet12"
         ],
         [
           "Ethernet4",
           "border02",
-          "fortyGigE0/12"
+          "Ethernet12"
         ]
       ]
     },
@@ -3606,19 +3605,19 @@
         ],
         [
           "Loopback0",
-          "6a:9f:0c:8f:02:6a",
+          "ba:1a:b9:3e:09:e6",
           "10.255.255.12/32",
           "Other"
         ],
         [
           "docker0",
-          "02:42:de:d4:ae:6c",
+          "02:42:d5:05:e0:c8",
           "",
           "Bridge"
         ],
         [
           "dummy",
-          "c6:8f:7a:e1:51:c8",
+          "8e:23:fa:99:e8:8a",
           "",
           "Other"
         ],
@@ -3667,7 +3666,7 @@
     }
   },
   "leaf01": {
-    "type":"router",
+    "type": "router",
     "arp": {
       "columns": [
         "IPADDR",
@@ -3904,47 +3903,47 @@
         [
           "Ethernet0",
           "server01",
-          "44:38:39:00:00:32"
+          "eth1"
         ],
         [
           "Ethernet4",
           "server02",
-          "44:38:39:00:00:34"
+          "eth1"
         ],
         [
           "Ethernet8",
           "server03",
-          "44:38:39:00:00:36"
+          "eth1"
         ],
         [
           "Ethernet12",
           "leaf02",
-          "fortyGigE0/12"
+          "Ethernet12"
         ],
         [
           "Ethernet16",
           "leaf02",
-          "fortyGigE0/16"
+          "Ethernet16"
         ],
         [
           "Ethernet20",
           "spine01",
-          "fortyGigE0/0"
+          "Ethernet0"
         ],
         [
           "Ethernet24",
           "spine02",
-          "fortyGigE0/0"
+          "Ethernet0"
         ],
         [
           "Ethernet28",
           "spine03",
-          "fortyGigE0/0"
+          "Ethernet0"
         ],
         [
           "Ethernet32",
           "spine04",
-          "fortyGigE0/0"
+          "Ethernet0"
         ]
       ]
     },
@@ -4070,7 +4069,7 @@
         ],
         [
           "Loopback0",
-          "d6:77:8e:0b:46:90",
+          "56:a9:13:6c:33:c2",
           "10.255.255.1/32",
           "Other"
         ],
@@ -4082,13 +4081,13 @@
         ],
         [
           "docker0",
-          "02:42:e9:b8:dd:3e",
+          "02:42:82:09:c8:48",
           "",
           "Bridge"
         ],
         [
           "dummy",
-          "d6:18:e5:0d:b5:4a",
+          "42:ba:7b:42:1e:54",
           "",
           "Other"
         ],
@@ -4230,7 +4229,7 @@
     }
   },
   "leaf02": {
-    "type":"router",
+    "type": "router",
     "arp": {
       "columns": [
         "IPADDR",
@@ -4467,47 +4466,47 @@
         [
           "Ethernet0",
           "server01",
-          "44:38:39:00:00:38"
+          "eth2"
         ],
         [
           "Ethernet4",
           "server02",
-          "44:38:39:00:00:3a"
+          "eth2"
         ],
         [
           "Ethernet8",
           "server03",
-          "44:38:39:00:00:3c"
+          "eth2"
         ],
         [
           "Ethernet12",
           "leaf01",
-          "fortyGigE0/12"
+          "Ethernet12"
         ],
         [
           "Ethernet16",
           "leaf01",
-          "fortyGigE0/16"
+          "Ethernet16"
         ],
         [
           "Ethernet20",
           "spine01",
-          "fortyGigE0/4"
+          "Ethernet4"
         ],
         [
           "Ethernet24",
           "spine02",
-          "fortyGigE0/4"
+          "Ethernet4"
         ],
         [
           "Ethernet28",
           "spine03",
-          "fortyGigE0/4"
+          "Ethernet4"
         ],
         [
           "Ethernet32",
           "spine04",
-          "fortyGigE0/4"
+          "Ethernet4"
         ]
       ]
     },
@@ -4633,7 +4632,7 @@
         ],
         [
           "Loopback0",
-          "52:86:8d:1d:36:f2",
+          "0a:9e:0d:bb:9e:65",
           "10.255.255.2/32",
           "Other"
         ],
@@ -4645,13 +4644,13 @@
         ],
         [
           "docker0",
-          "02:42:ac:51:24:da",
+          "02:42:81:21:62:c7",
           "",
           "Bridge"
         ],
         [
           "dummy",
-          "42:e3:45:18:a5:4f",
+          "02:7f:fb:49:67:1f",
           "",
           "Other"
         ],
@@ -4793,7 +4792,7 @@
     }
   },
   "leaf03": {
-    "type":"router",
+    "type": "router",
     "arp": {
       "columns": [
         "IPADDR",
@@ -5030,47 +5029,47 @@
         [
           "Ethernet0",
           "server04",
-          "44:38:39:00:00:3e"
+          "eth1"
         ],
         [
           "Ethernet4",
           "server05",
-          "44:38:39:00:00:40"
+          "eth1"
         ],
         [
           "Ethernet8",
           "server06",
-          "44:38:39:00:00:42"
+          "eth1"
         ],
         [
           "Ethernet12",
           "leaf04",
-          "fortyGigE0/12"
+          "Ethernet12"
         ],
         [
           "Ethernet16",
           "leaf04",
-          "fortyGigE0/16"
+          "Ethernet16"
         ],
         [
           "Ethernet20",
           "spine01",
-          "fortyGigE0/8"
+          "Ethernet8"
         ],
         [
           "Ethernet24",
           "spine02",
-          "fortyGigE0/8"
+          "Ethernet8"
         ],
         [
           "Ethernet28",
           "spine03",
-          "fortyGigE0/8"
+          "Ethernet8"
         ],
         [
           "Ethernet32",
           "spine04",
-          "fortyGigE0/8"
+          "Ethernet8"
         ]
       ]
     },
@@ -5196,7 +5195,7 @@
         ],
         [
           "Loopback0",
-          "42:cb:a9:95:5b:b1",
+          "a6:d0:94:f3:cb:26",
           "10.255.255.3/32",
           "Other"
         ],
@@ -5208,13 +5207,13 @@
         ],
         [
           "docker0",
-          "02:42:28:a5:5e:43",
+          "02:42:db:24:08:b2",
           "",
           "Bridge"
         ],
         [
           "dummy",
-          "f2:73:5c:dd:a1:4f",
+          "3e:dd:ed:08:d0:ec",
           "",
           "Other"
         ],
@@ -5332,7 +5331,7 @@
     }
   },
   "leaf04": {
-    "type":"router",
+    "type": "router",
     "arp": {
       "columns": [
         "IPADDR",
@@ -5569,47 +5568,47 @@
         [
           "Ethernet0",
           "server04",
-          "44:38:39:00:00:44"
+          "eth2"
         ],
         [
           "Ethernet4",
           "server05",
-          "44:38:39:00:00:46"
+          "eth2"
         ],
         [
           "Ethernet8",
           "server06",
-          "44:38:39:00:00:48"
+          "eth2"
         ],
         [
           "Ethernet12",
           "leaf03",
-          "fortyGigE0/12"
+          "Ethernet12"
         ],
         [
           "Ethernet16",
           "leaf03",
-          "fortyGigE0/16"
+          "Ethernet16"
         ],
         [
           "Ethernet20",
           "spine01",
-          "fortyGigE0/12"
+          "Ethernet12"
         ],
         [
           "Ethernet24",
           "spine02",
-          "fortyGigE0/12"
+          "Ethernet12"
         ],
         [
           "Ethernet28",
           "spine03",
-          "fortyGigE0/12"
+          "Ethernet12"
         ],
         [
           "Ethernet32",
           "spine04",
-          "fortyGigE0/12"
+          "Ethernet12"
         ]
       ]
     },
@@ -5735,7 +5734,7 @@
         ],
         [
           "Loopback0",
-          "82:5e:ee:66:81:6f",
+          "7e:cd:fd:ad:d6:14",
           "10.255.255.4/32",
           "Other"
         ],
@@ -5747,13 +5746,13 @@
         ],
         [
           "docker0",
-          "02:42:3e:14:39:c6",
+          "02:42:da:68:94:a0",
           "",
           "Bridge"
         ],
         [
           "dummy",
-          "7e:c4:9e:77:07:b2",
+          "6e:1b:b8:c6:89:3a",
           "",
           "Other"
         ],
@@ -5874,10 +5873,10 @@
     "type": "server",
     "interface": {
       "columns": [
-        "name",
-        "macAddr",
-        "ipAddr",
-        "type"
+        "NAME",
+        "MACADDR",
+        "IPADDR",
+        "TYPE"
       ],
       "rows": [
         [
@@ -5914,38 +5913,38 @@
     },
     "arp": {
       "columns": [
-        "interface",
-        "macAddr",
-        "ipAddr",
-        "vlan"
+        "IPADDR",
+        "MACADDR",
+        "INTERFACE",
+        "VLAN"
       ],
       "rows": [
         [
-          "eth1",
-          "52:11:00:11:11:56",
           "10.0.101.1",
+          "52:11:00:11:11:56",
+          "eth1",
           ""
         ],
         [
-          "eth0",
-          "44:38:39:00:00:6d",
           "192.168.200.1",
+          "44:38:39:00:00:6d",
+          "eth0",
           ""
         ],
         [
-          "eth2",
-          "52:22:00:22:22:56",
           "10.0.102.1",
+          "52:22:00:22:22:56",
+          "eth2",
           ""
         ]
       ]
     },
     "ipRoute": {
       "columns": [
-        "interface",
-        "via",
-        "to",
-        "type"
+        "INTERFACE",
+        "VIA",
+        "TO",
+        "TYPE"
       ],
       "rows": [
         [
@@ -5979,10 +5978,10 @@
     "type": "server",
     "interface": {
       "columns": [
-        "name",
-        "macAddr",
-        "ipAddr",
-        "type"
+        "NAME",
+        "MACADDR",
+        "IPADDR",
+        "TYPE"
       ],
       "rows": [
         [
@@ -6019,38 +6018,38 @@
     },
     "arp": {
       "columns": [
-        "interface",
-        "macAddr",
-        "ipAddr",
-        "vlan"
+        "IPADDR",
+        "MACADDR",
+        "INTERFACE",
+        "VLAN"
       ],
       "rows": [
         [
-          "eth0",
-          "44:38:39:00:00:6d",
           "192.168.200.1",
-          ""
-        ],
-        [
+          "44:38:39:00:00:6d",
           "eth0",
-          "44:38:39:00:01:80",
-          "192.168.200.250",
           ""
         ],
         [
-          "eth1",
-          "52:11:00:11:11:56",
+          "192.168.200.250",
+          "44:38:39:00:01:80",
+          "eth0",
+          ""
+        ],
+        [
           "10.0.101.1",
+          "52:11:00:11:11:56",
+          "eth1",
           ""
         ]
       ]
     },
     "ipRoute": {
       "columns": [
-        "interface",
-        "via",
-        "to",
-        "type"
+        "INTERFACE",
+        "VIA",
+        "TO",
+        "TYPE"
       ],
       "rows": [
         [
@@ -6084,10 +6083,10 @@
     "type": "server",
     "interface": {
       "columns": [
-        "name",
-        "macAddr",
-        "ipAddr",
-        "type"
+        "NAME",
+        "MACADDR",
+        "IPADDR",
+        "TYPE"
       ],
       "rows": [
         [
@@ -6124,38 +6123,38 @@
     },
     "arp": {
       "columns": [
-        "interface",
-        "macAddr",
-        "ipAddr",
-        "vlan"
+        "IPADDR",
+        "MACADDR",
+        "INTERFACE",
+        "VLAN"
       ],
       "rows": [
         [
-          "eth1",
-          "52:11:00:11:11:56",
           "10.0.101.1",
+          "52:11:00:11:11:56",
+          "eth1",
           ""
         ],
         [
-          "eth0",
-          "44:38:39:00:00:6d",
           "192.168.200.1",
+          "44:38:39:00:00:6d",
+          "eth0",
           ""
         ],
         [
-          "eth2",
-          "52:22:00:22:22:56",
           "10.0.102.1",
+          "52:22:00:22:22:56",
+          "eth2",
           ""
         ]
       ]
     },
     "ipRoute": {
       "columns": [
-        "interface",
-        "via",
-        "to",
-        "type"
+        "INTERFACE",
+        "VIA",
+        "TO",
+        "TYPE"
       ],
       "rows": [
         [
@@ -6189,10 +6188,10 @@
     "type": "server",
     "interface": {
       "columns": [
-        "name",
-        "macAddr",
-        "ipAddr",
-        "type"
+        "NAME",
+        "MACADDR",
+        "IPADDR",
+        "TYPE"
       ],
       "rows": [
         [
@@ -6229,38 +6228,38 @@
     },
     "arp": {
       "columns": [
-        "interface",
-        "macAddr",
-        "ipAddr",
-        "vlan"
+        "IPADDR",
+        "MACADDR",
+        "INTERFACE",
+        "VLAN"
       ],
       "rows": [
         [
-          "eth2",
-          "52:44:00:44:44:56",
           "10.0.104.1",
+          "52:44:00:44:44:56",
+          "eth2",
           ""
         ],
         [
-          "eth1",
-          "52:33:00:33:33:56",
           "10.0.103.1",
+          "52:33:00:33:33:56",
+          "eth1",
           ""
         ],
         [
-          "eth0",
-          "44:38:39:00:00:6d",
           "192.168.200.1",
+          "44:38:39:00:00:6d",
+          "eth0",
           ""
         ]
       ]
     },
     "ipRoute": {
       "columns": [
-        "interface",
-        "via",
-        "to",
-        "type"
+        "INTERFACE",
+        "VIA",
+        "TO",
+        "TYPE"
       ],
       "rows": [
         [
@@ -6294,10 +6293,10 @@
     "type": "server",
     "interface": {
       "columns": [
-        "name",
-        "macAddr",
-        "ipAddr",
-        "type"
+        "NAME",
+        "MACADDR",
+        "IPADDR",
+        "TYPE"
       ],
       "rows": [
         [
@@ -6334,38 +6333,38 @@
     },
     "arp": {
       "columns": [
-        "interface",
-        "macAddr",
-        "ipAddr",
-        "vlan"
+        "IPADDR",
+        "MACADDR",
+        "INTERFACE",
+        "VLAN"
       ],
       "rows": [
         [
-          "eth1",
-          "52:33:00:33:33:56",
           "10.0.103.1",
+          "52:33:00:33:33:56",
+          "eth1",
           ""
         ],
         [
-          "eth0",
-          "44:38:39:00:01:80",
           "192.168.200.250",
+          "44:38:39:00:01:80",
+          "eth0",
           ""
         ],
         [
-          "eth2",
-          "52:44:00:44:44:56",
           "10.0.104.1",
+          "52:44:00:44:44:56",
+          "eth2",
           ""
         ]
       ]
     },
     "ipRoute": {
       "columns": [
-        "interface",
-        "via",
-        "to",
-        "type"
+        "INTERFACE",
+        "VIA",
+        "TO",
+        "TYPE"
       ],
       "rows": [
         [
@@ -6399,10 +6398,10 @@
     "type": "server",
     "interface": {
       "columns": [
-        "name",
-        "macAddr",
-        "ipAddr",
-        "type"
+        "NAME",
+        "MACADDR",
+        "IPADDR",
+        "TYPE"
       ],
       "rows": [
         [
@@ -6439,38 +6438,38 @@
     },
     "arp": {
       "columns": [
-        "interface",
-        "macAddr",
-        "ipAddr",
-        "vlan"
+        "IPADDR",
+        "MACADDR",
+        "INTERFACE",
+        "VLAN"
       ],
       "rows": [
         [
-          "eth0",
-          "44:38:39:00:01:80",
           "192.168.200.250",
-          ""
-        ],
-        [
+          "44:38:39:00:01:80",
           "eth0",
-          "44:38:39:00:00:6d",
-          "192.168.200.1",
           ""
         ],
         [
-          "eth2",
-          "52:44:00:44:44:56",
+          "192.168.200.1",
+          "44:38:39:00:00:6d",
+          "eth0",
+          ""
+        ],
+        [
           "10.0.104.1",
+          "52:44:00:44:44:56",
+          "eth2",
           ""
         ]
       ]
     },
     "ipRoute": {
       "columns": [
-        "interface",
-        "via",
-        "to",
-        "type"
+        "INTERFACE",
+        "VIA",
+        "TO",
+        "TYPE"
       ],
       "rows": [
         [
@@ -6504,10 +6503,10 @@
     "type": "server",
     "interface": {
       "columns": [
-        "name",
-        "macAddr",
-        "ipAddr",
-        "type"
+        "NAME",
+        "MACADDR",
+        "IPADDR",
+        "TYPE"
       ],
       "rows": [
         [
@@ -6544,38 +6543,38 @@
     },
     "arp": {
       "columns": [
-        "interface",
-        "macAddr",
-        "ipAddr",
-        "vlan"
+        "IPADDR",
+        "MACADDR",
+        "INTERFACE",
+        "VLAN"
       ],
       "rows": [
         [
-          "eth2",
-          "52:54:00:02:22:56",
           "10.0.112.1",
+          "52:54:00:02:22:56",
+          "eth2",
           ""
         ],
         [
-          "eth0",
-          "44:38:39:00:01:80",
           "192.168.200.250",
+          "44:38:39:00:01:80",
+          "eth0",
           ""
         ],
         [
-          "eth1",
-          "52:54:00:01:11:56",
           "10.0.111.1",
+          "52:54:00:01:11:56",
+          "eth1",
           ""
         ]
       ]
     },
     "ipRoute": {
       "columns": [
-        "interface",
-        "via",
-        "to",
-        "type"
+        "INTERFACE",
+        "VIA",
+        "TO",
+        "TYPE"
       ],
       "rows": [
         [
@@ -6609,10 +6608,10 @@
     "type": "server",
     "interface": {
       "columns": [
-        "name",
-        "macAddr",
-        "ipAddr",
-        "type"
+        "NAME",
+        "MACADDR",
+        "IPADDR",
+        "TYPE"
       ],
       "rows": [
         [
@@ -6649,38 +6648,38 @@
     },
     "arp": {
       "columns": [
-        "interface",
-        "macAddr",
-        "ipAddr",
-        "vlan"
+        "IPADDR",
+        "MACADDR",
+        "INTERFACE",
+        "VLAN"
       ],
       "rows": [
         [
-          "eth2",
-          "52:54:00:02:22:56",
           "10.0.112.1",
+          "52:54:00:02:22:56",
+          "eth2",
           ""
         ],
         [
-          "eth0",
-          "44:38:39:00:01:80",
           "192.168.200.250",
+          "44:38:39:00:01:80",
+          "eth0",
           ""
         ],
         [
-          "eth0",
-          "44:38:39:00:00:6d",
           "192.168.200.1",
+          "44:38:39:00:00:6d",
+          "eth0",
           ""
         ]
       ]
     },
     "ipRoute": {
       "columns": [
-        "interface",
-        "via",
-        "to",
-        "type"
+        "INTERFACE",
+        "VIA",
+        "TO",
+        "TYPE"
       ],
       "rows": [
         [
