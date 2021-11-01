@@ -4553,7 +4553,7 @@
             "HWSKU": "Force10-S6000",
             "MAC": "52:11:00:11:11:56",
             "PLATFORM": "x86_64-kvm_x86_64-r0",
-            "TYPE": ""
+            "TYPE": "LeafRouter"
         },
         "arp": {
             "columns": [
@@ -5184,7 +5184,7 @@
             "HWSKU": "Force10-S6000",
             "MAC": "52:22:00:22:22:56",
             "PLATFORM": "x86_64-kvm_x86_64-r0",
-            "TYPE": ""
+            "TYPE": "LeafRouter"
         },
         "arp": {
             "columns": [
@@ -5815,7 +5815,7 @@
             "HWSKU": "Force10-S6000",
             "MAC": "52:33:00:33:33:56",
             "PLATFORM": "x86_64-kvm_x86_64-r0",
-            "TYPE": ""
+            "TYPE": "LeafRouter"
         },
         "arp": {
             "columns": [
@@ -6446,7 +6446,7 @@
             "HWSKU": "Force10-S6000",
             "MAC": "52:44:00:44:44:56",
             "PLATFORM": "x86_64-kvm_x86_64-r0",
-            "TYPE": ""
+            "TYPE": "LeafRouter"
         },
         "arp": {
             "columns": [
