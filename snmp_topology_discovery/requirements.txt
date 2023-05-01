@@ -1,4 +1,4 @@
-Flask==1.0
+Flask==2.3.2
 pysmi==0.3.4
 pysnmp==4.4.12
 pysnmp-mibs==0.1.6
